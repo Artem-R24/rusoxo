@@ -1,0 +1,157 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 170 163 N "_3DFace" 1
+"$sens_num"
+E E E E E 1 -1 -1 0  52 72
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+2 3
+"PRIMITIVE_TEXT2"
+""
+1 59.75 67.15521074940565 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1 0 0.9155501465621073 -1.75 34.01603695597245 0 E 45 67.15521074940565 75 85
+0 2 2 "0s" 0 0 0 193 0 0  59.75 67.15521074940565 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 7 вкл.
+2 4
+"PRIMITIVE_TEXT3"
+""
+1 102.25 96.08038944752818 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  dpConnect(\"set_visible\",\"xy_4011\"+$sens_num+\".SimOn\");
+}
+
+set_visible(string dpe, bool nval)
+{
+  this.visible(nval);
+}" 0
+ E 0 1 3 2 1 E U  0 E 83 96.08038944752818 121 114
+0 2 2 "0s" 0 0 0 193 0 0  102.25 96.08038944752818 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 знач.
+30 205
+"FRAME1"
+""
+1 176 183 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+14 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.text(\"XY-4011\"+$sens_num);
+}" 0
+ E 0 1 3 2 1 E 1.386138613861386 0 2.431749212160858 -229.9603960396039 -441.9833093429277 0 E 176 183 278 243
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 1
+LANG:10027 11 Frame Title
+0
+LAYER, 1 
+1
+LANG:10027 0 
+1 206 5 "" 0
+0
+1 220 6 "" 0
+0
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 5 "PANEL_REF9" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_SWITCHES/switch_1.pnl" 164 153 T 13 1 0 1 -132.75 -120.4732035174906
+5
+"$b_IBit""TRUE"
+"$b_Toggle""TRUE"
+"$dpe_value_Off""\"xy_4011\"+$sens_num+\".SimOn\""
+"$dpe_value_On""\"xy_4011\"+$sens_num+\".SimOn\""
+"$dpe_value_Rm""\"xy_4011\"+$sens_num+\".SimOn\""
+3 6 "PANEL_REF10" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  dpConnect(\"set_visible\",\"xy_4011\"+$sens_num+\".SimOn\");
+}
+
+set_visible(string dpe, bool nval)
+{
+  this.visible(nval);
+}"
+"" ""
+"objects/STD_SWITCHES/switch_1.pnl" 202.2499999999999 194.5535929650188 T 15 1 0 1 -126.9999999999999 -162.4732035174906
+5
+"$b_IBit""TRUE"
+"$b_Toggle""TRUE"
+"$dpe_value_Off""\"xy_4011\"+$sens_num+\".SimValue\""
+"$dpe_value_On""\"xy_4011\"+$sens_num+\".SimValue\""
+"$dpe_value_Rm""\"xy_4011\"+$sens_num+\".SimValue\""
+0

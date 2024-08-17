@@ -1,0 +1,5 @@
+[general]
+pvss_path = "C:/Siemens/Automation/WinCC_OA/3.16"
+proj_path = "C:/WinCC_OA_Proj/RUSOXO"
+proj_version = "3.16"
+langs = "ru_RU.utf8"

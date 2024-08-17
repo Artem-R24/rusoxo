@@ -1,0 +1,236 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 264 78 N "_3DFace" 1
+"$dpe_FA"
+E E E E E 1 -1 -1 0  8 12
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+2 1
+"PRIMITIVE_TEXT38"
+""
+1 9 41 E E E 1 E 1 E N "White" E N "stoerKamGingUnq" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists($dpe_FA+\".ESD:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  if( !dpExists($dpe_FA+\".BTN_STOP:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_FA+\".ESD:_online.._value\", $dpe_FA+\".BTN_STOP:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue, string dp2, bool boNewValue2)
+{
+
+   setValue(\"\", \"visible\", boNewValue || boNewValue2);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:bool2.}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  1 E 9 41 256 64
+1 2 2 "0s" 0 0 0 192 0 0  9 41 1
+1
+LANG:10027 47 Arial,-1,20,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 35  АВАРИЙНЫЙ ОСТАНОВ 
+2 2
+"PRIMITIVE_TEXT53"
+""
+1 9 14 E E E 1 E 1 E N "White" E N "stoerKamGingUnq" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists($dpe_FA+\".Fire:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_FA+\".Fire:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:bool2.}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  1 E 9 14 84 37
+1 2 2 "0s" 0 0 0 192 0 0  9 14 1
+1
+LANG:10027 47 Arial,-1,20,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 10 ПОЖАР
+2 3
+"PRIMITIVE_TEXT54"
+""
+1 99 14 E E E 1 E 1 E N "White" E N "stoerKamGingUnq" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists($dpe_FA+\".KKNVD:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_FA+\".KKNVD:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:bool2.}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  1 E 99 14 255 37
+1 2 2 "0s" 0 0 0 192 0 0  99 14 1
+1
+LANG:10027 47 Arial,-1,20,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 23 НИЗКОЕ ККНВД
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

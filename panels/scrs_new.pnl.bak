@@ -1,0 +1,255 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 400 400 N "_3DFace" 0
+E E E E E 1 -1 -1 0  158 101
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+13 1
+"PUSH_BUTTON1"
+""
+1 20 39.97727272727272 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+0 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  18 32.97727272727272 142 58.97727272727272
+
+T 
+1
+LANG:10027 5 bytes
+"main(mapping event)
+{
+  for(int i=0;i<=62;i++)
+  {
+    dpSetWait(\"byte\"+i+\".:_address.._reference\", \"M.3.3.\"+(i+4000));
+    dpSetWait(\"byte\"+i+\".:_address.._active\", 1);
+  }
+  DebugN(\"success\");
+}" 0
+ E E E
+13 2
+"PUSH_BUTTON2"
+""
+1 20 61.97727272727272 E E E 1 E 1 E N "_ButtonText" E N {0,255,0} E E
+ E E
+1 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  18 54.97727272727272 142 80.97727272727272
+
+T 
+1
+LANG:10027 7 dpfuncs
+E E E E
+13 3
+"PUSH_BUTTON3"
+""
+1 20 83.98863636363637 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+2 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  18 76.98863636363637 142 102.9886363636364
+
+T 
+1
+LANG:10027 5 words
+"main(mapping event)
+{
+  for(int i=1;i<=3;i++)
+  {
+    dpSetWait(\"buttons_off_pnl\"+i+\".:_address.._reference\", \"M.3.16.\"+(i+3703));
+    dpSetWait(\"buttons_off_pnl\"+i+\".:_address.._active\", 1);
+
+    dpSetWait(\"buttons_on_pnl\"+i+\".:_address.._reference\", \"M.3.16.\"+(i+3700));
+    dpSetWait(\"buttons_on_pnl\"+i+\".:_address.._active\", 1);
+  }
+  DebugN(\"success\");
+}" 0
+ E E E
+13 4
+"PUSH_BUTTON4"
+""
+1 20 105.9886363636364 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+3 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  18 98.98863636363637 142 124.9886363636364
+
+T 
+1
+LANG:10027 6 mbword
+"main(mapping event)
+{
+  for(int i=1;i<=12;i++)
+  {
+    dpSetWait(\"status\"+i+\".:_address.._reference\", \"M.3.3.\"+(i+199));
+    dpSetWait(\"status\"+i+\".:_address.._active\", 1);
+  }
+
+//   dpSetWait(\"commands.:_address.._reference\", \"M.3.16.220\");
+//   dpSetWait(\"commands.:_address.._active\", 1);
+
+  DebugN(\"success\");
+}" 0
+ E E E
+13 5
+"PUSH_BUTTON5"
+""
+1 20 127.9943181818182 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+4 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  18 120.9943181818182 142 146.9943181818182
+
+T 
+1
+LANG:10027 12 gdpackedbits
+"main(mapping event)
+{
+  for(int i=1;i<=9;i++)
+  {
+    dpSetWait(\"gd\"+i+\".packed_bits:_address.._reference\", \"M.3.3.\"+(i+3594));
+    dpSetWait(\"gd\"+i+\".packed_bits:_address.._active\", 1);
+  }
+
+  DebugN(\"success\");
+}" 0
+ E E E
+13 6
+"PUSH_BUTTON6"
+""
+1 175 52.01136363636363 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+5 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  173 32.96590909090907 359 111.9659090909091
+
+T 
+1
+LANG:10027 29 IT'S THE FINAL COUNTDOWN!!!!!
+"main(mapping event)
+{
+  for(int i=0;i<9;i++)
+  {
+    dpSetWait(\"gd\"+(i+1)+\".countdown:_address.._reference\", \"M.3.3.\"+(i*2+3565));
+    dpSetWait(\"gd\"+(i+1)+\".countdown:_address.._active\", 1);
+  }
+  DebugN(\"success\");
+}" 0
+ E E E
+13 7
+"PUSH_BUTTON7"
+""
+1 20 149.9971590909091 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+6 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  18 142.9971590909091 142 168.9971590909091
+
+T 
+1
+LANG:10027 8 trycount
+"main(mapping event)
+{
+  for(int i=0;i<9;i++)
+  {
+    dpSetWait(\"gd\"+(i+1)+\".try_count:_address.._reference\", \"M.3.3.\"+(i*2+3564));
+    dpSetWait(\"gd\"+(i+1)+\".try_count:_address.._active\", 1);
+  }
+  DebugN(\"success\");
+}" 0
+ E E E
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

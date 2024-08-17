@@ -1,0 +1,996 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 545 599 N "_3DFace" 6
+"$dp_value"
+"$flag"
+"$num_stage"
+"$sensor0"
+"$sensor1"
+"$sensor2"
+E E E E E 1 -1 -1 0  31 73
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+4 323
+"LINE40"
+""
+1 153.5 83.18246527777774 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+54 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  this.visible($flag);
+}" 0
+ E 0 1 3 2 1 E  153.5 83.18246527777774 207 83.18246527777774
+1 525 0 "" 2
+0
+4 13
+"LINE7"
+""
+1 255.7857142857143 60 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  255.7857142857143 60 255.7857142857143 195.1214547428016
+1 537 1 "" 4
+31 "transform" 0 0 1 0 1 5.684341886080801e-14 -2.842170943040401e-14
+0
+1 538 1 "" 5
+31 "transform" 0 0 1 0 1 1.4210854715202e-13 0
+0
+1 539 1 "" 6
+31 "transform" 0 0 1 0 1 5.684341886080801e-14 -2.842170943040401e-14
+0
+1 540 1 "" 7
+31 "transform" 0 0 1 0 1 5.684341886080801e-14 -2.842170943040401e-14
+0
+1 541 2 "" 3
+0
+4 22
+"LINE8"
+""
+1 255.7857142857143 161.6214547428016 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  255.7857142857143 161.6214547428016 305 161.6214547428016
+4 23
+"LINE9"
+""
+1 305 161.6214547428016 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  305 161.6214547428016 305 194.1214547428016
+1 545 3 "" 4
+31 "transform" 0 0 1 0 1 0 1.4210854715202e-13
+0
+1 546 3 "" 5
+31 "transform" 0 0 1 0 1 2.557953848736361e-13 8.5265128291212e-14
+0
+1 547 3 "" 6
+31 "transform" 0 0 1 0 1 0 1.4210854715202e-13
+0
+1 548 3 "" 7
+31 "transform" 0 0 1 0 1 0 1.4210854715202e-13
+0
+4 28
+"LINE10"
+""
+1 255.7857142857143 234.3785452571983 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  255.7857142857143 234.3785452571983 255.7857142857143 358.1214547428016
+4 29
+"LINE11"
+""
+1 255.7857142857143 263.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  255.7857142857143 263.7499999999999 211 263.7499999999999
+4 30
+"LINE12"
+""
+1 170.7715349461295 263.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  170.7715349461295 263.7499999999999 145 263.7499999999999
+1 549 4 "" 4
+0
+4 35
+"LINE13"
+""
+1 106 263.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  106 263.7499999999999 84 263.7499999999999
+1 553 5 "" 4
+0
+4 37
+"LINE16"
+""
+1 49.93125 263.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  49.93125 263.7499999999999 32 263.7499999999999
+4 38
+"LINE17"
+""
+1 32 263.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  32 263.7499999999999 32 314.1214547428016
+4 39
+"LINE18"
+""
+1 32 314.1214547428016 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  32 314.1214547428016 503 314.1214547428016
+1 554 6 "" 4
+31 "transform" 0 0 1 0 1 2.842170943040401e-14 5.684341886080801e-14
+0
+1 555 6 "" 5
+31 "transform" 0 0 1 0 1 1.4210854715202e-13 5.684341886080801e-14
+0
+1 556 6 "" 6
+31 "transform" 0 0 1 0 1 2.842170943040401e-14 5.684341886080801e-14
+0
+1 557 6 "" 7
+31 "transform" 0 0 1 0 1 2.842170943040401e-14 5.684341886080801e-14
+0
+4 44
+"LINE19"
+""
+1 305 234.3785452571983 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  305 234.3785452571983 305 254.1214547428016
+1 558 7 "" 4
+31 "transform" 0 0 -1 0 1 610 0
+0
+1 559 7 "" 5
+31 "transform" 0 0 -1 0 1 609.9999999999998 0
+0
+1 560 7 "" 6
+31 "transform" 0 0 -1 0 1 610 0
+0
+1 561 7 "" 7
+31 "transform" 0 0 -1 0 1 610 0
+0
+4 49
+"LINE20"
+""
+1 255.7857142857143 397.3785452571983 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  255.7857142857143 397.3785452571983 255.7857142857143 447.1214547428016
+1 562 8 "" 4
+31 "transform" 0 0 1 0 1 2.842170943040401e-14 0
+0
+1 563 8 "" 5
+31 "transform" 0 0 1 0 1 1.70530256582424e-13 1.13686837721616e-13
+0
+1 564 8 "" 6
+31 "transform" 0 0 1 0 1 2.842170943040401e-14 0
+0
+1 565 8 "" 7
+31 "transform" 0 0 1 0 1 2.842170943040401e-14 0
+0
+1 566 9 "" 4
+31 "transform" 0 0 1 0 1 1.4210854715202e-13 0
+0
+1 567 9 "" 5
+31 "transform" 0 0 1 0 1 2.27373675443232e-13 2.842170943040401e-13
+0
+1 568 9 "" 6
+31 "transform" 0 0 1 0 1 1.4210854715202e-13 0
+0
+1 569 9 "" 7
+31 "transform" 0 0 1 0 1 1.4210854715202e-13 0
+0
+4 58
+"LINE21"
+""
+1 304.9999999999999 293.3785452571983 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  304.9999999999999 293.3785452571983 304.9999999999999 446.1214547428016
+4 59
+"LINE23"
+""
+1 255.7857142857143 486.3785452571983 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  255.7857142857143 486.3785452571983 255.7857142857143 536.1214547428017
+4 60
+"LINE24"
+""
+1 304.9999999999999 486.3785452571983 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  304.9999999999999 486.3785452571983 304.9999999999999 497.1214547428016
+4 61
+"LINE25"
+""
+1 304.9999999999999 497.1214547428016 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  304.9999999999999 497.1214547428016 257 497.1214547428016
+4 62
+"LINE27"
+""
+1 305 419.1214547428016 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  305 419.1214547428016 335 419.1214547428016
+4 63
+"LINE28"
+""
+1 335 419.1214547428016 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  335 419.1214547428016 335 393.1214547428016
+1 570 10 "" 4
+0
+4 65
+"LINE29"
+""
+1 125.5 263.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  125.5 263.7499999999999 125.5 216
+4 76
+"LINE31"
+""
+1 255.7857142857143 377.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  255.7857142857143 377.7499999999999 186.4999999999999 377.7499999999999
+4 87
+"LINE33"
+""
+1 304.9999999999999 273.7499999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  this.visible(!$flag);
+}" 0
+ E 0 1 3 2 1 E  304.9999999999999 273.7499999999999 343 273.7499999999999
+4 98
+"LINE35"
+""
+1 452.2500000000003 247.7500000000001 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+41 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  this.visible(!$flag);
+}" 0
+ E 0 1 3 2 1 E  452.2500000000003 247.7500000000001 452.2500000000003 203.8714547428018
+6 99
+"RECTANGLE2"
+""
+1 383 154 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.visible(!$flag);
+}" 0
+ E 0 1 3 2 1 E 1 0 1 52.25000000000028 -38.1285452571982 1 E 383 154 417 242
+2 146
+"PRIMITIVE_TEXT1"
+""
+1 106 74 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+43 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text($num_stage);
+}" 0
+ E 0 1 3 2 1 E 1.841370651044808 0 1.255365837915551 -163.1852890107496 -61.77048627780844 0 E 91 54 121 95
+0 2 2 "0s" 0 0 0 201 0 0  106 74 1
+1
+LANG:10027 56 MS Shell Dlg 2,-1,35,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 #
+4 193
+"LINE36"
+""
+1 256 109 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  this.visible($flag);
+}" 0
+ E 0 1 3 2 1 E  256 109 207 109
+1 571 11 "" 1
+0
+1 572 12 "" 2
+0
+1 573 13 "" 1
+0
+4 248
+"LINE37"
+""
+1 125.5 204.8749999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+47 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  125.5 204.8749999999999 125.5 171.8749999999999
+1 576 14 "" 1
+0
+1 579 15 "" 2
+0
+4 253
+"LINE38"
+""
+1 151.5 378.2499999999998 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+50 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  151.5 378.2499999999998 106 378.2499999999998
+1 580 16 "" 1
+0
+1 583 17 "" 2
+0
+4 258
+"LINE39"
+""
+1 378.0000000000001 274.0000000000003 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+53 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  this.visible(!$flag);
+}" 0
+ E 0 1 3 2 1 E  378.0000000000001 274.0000000000003 423.5000000000001 274.0000000000003
+1 584 18 "" 1
+0
+4 324
+"LINE41"
+""
+1 207 83.18246527777774 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+55 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  this.visible($flag);
+}" 0
+ E 0 1 3 2 1 E  207 83.18246527777774 207 108
+2 325
+"PRIMITIVE_TEXT2"
+""
+1 122 57 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+56 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.visible($flag);
+  this.text($dp_value);
+}" 0
+ E 0 1 3 2 1 E U  0 E 102 50 142 65
+0 2 2 "0s" 0 0 0 201 0 0  122 57 1
+1
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 6 sensor
+4 390
+"LINE42"
+""
+1 304.9999999999999 254.1214547428015 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+57 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  this.visible($flag);
+}" 0
+ E 0 1 3 2 1 E  304.9999999999999 254.1214547428015 304.9999999999999 293.3785452571983
+2 455
+"PRIMITIVE_TEXT3"
+""
+1 85.7499999999998 130 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+58 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(\"xy4011\"+$sensor1);
+}" 0
+ E 0 1 3 2 1 E U  0 E 72 130 85.7499999999998 145
+0 2 2 "0s" 0 0 0 194 0 0  85.7499999999998 130 1
+1
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2 xy
+2 456
+"PRIMITIVE_TEXT4"
+""
+1 485.7499999999998 266.3749999999998 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+59 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(\"xy4011\"+$sensor2);
+}" 0
+ E 0 1 3 2 1 E U  0 E 485.7499999999998 266.3749999999998 501 281
+0 2 2 "0s" 0 0 0 192 0 0  485.7499999999998 266.3749999999998 1
+1
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2 xy
+2 457
+"PRIMITIVE_TEXT5"
+""
+1 77.49999999999983 410.3749999999998 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+60 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(\"xy4011\"+$sensor0);
+}" 0
+ E 0 1 3 2 1 E U  0 E 70 410.3749999999998 84 425
+0 2 2 "0s" 0 0 0 193 0 0  77.49999999999983 410.3749999999998 1
+1
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2 xy
+2 522
+"PRIMITIVE_TEXT6"
+""
+1 86 214.8749999999999 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+61 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(\"zx4011\"+$sensor1);
+}" 0
+ E 0 1 3 2 1 E U  0 E 72 214.8749999999999 86 230
+0 2 2 "0s" 0 0 0 194 0 0  86 214.8749999999999 1
+1
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2 zx
+2 523
+"PRIMITIVE_TEXT7"
+""
+1 169.4999999999998 410.3749999999998 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+62 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(\"zx4011\"+$sensor0);
+}" 0
+ E 0 1 3 2 1 E U  0 E 162 410.3749999999998 176 425
+0 2 2 "0s" 0 0 0 193 0 0  169.4999999999998 410.3749999999998 1
+1
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2 zx
+2 524
+"PRIMITIVE_TEXT8"
+""
+1 359.875 232 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+63 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(\"zx4011\"+$sensor2);
+}" 0
+ E 0 1 3 2 1 E U  0 E 353 232 367 247
+0 2 2 "0s" 0 0 0 193 0 0  359.875 232 1
+1
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2 zx
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 0 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/BurneStage.pnl" 451 410.5 T 0 1 0 1 -149 -176.1214547428017
+0
+3 1 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 141 301 T 1 -0.009588269871302461 -0.9999540314838853 0.9999540314838853 -0.009588269871302461 -59.17999590433398 376.2774014044629
+0
+3 2 "PANEL_REF4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveReverse.pnl" 245.7857142857143 407 T 2 1 0 1 -77.01417933958476 -158.6441153370252
+0
+3 3 "PANEL_REF5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 141 301 T 3 -0.009588269871302461 -0.9999540314838853 0.9999540314838853 -0.009588269871302461 -9.965710190048199 376.2774014044629
+0
+3 4 "PANEL_REF6" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 100 288.1285452571983 T 4 1 0 1 8 -39.87854525719837
+0
+3 5 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve3.pnl" -25.29296875000003 200.6285452571983 T 5 0.5 0 0.4897959183673469 44.11210937500002 114.7890798740252
+0
+3 6 "PANEL_REF12" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 141 301 T 6 -0.009588269871302461 -0.9999540314838853 0.9999540314838853 -0.009588269871302461 -59.17999590433398 539.277401404463
+0
+3 7 "PANEL_REF13" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  this.visible(!$flag);
+}"
+"" ""
+"objects/ValveRotate.pnl" 141 301 T 7 -0.009588269871302461 -0.9999540314838853 0.9999540314838853 -0.009588269871302461 -9.965710190048199 435.2774014044629
+0
+3 8 "PANEL_REF14" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 141 301 T 8 -0.009588269871302461 -0.9999540314838853 0.9999540314838853 -0.009588269871302461 -59.17999590433398 628.277401404463
+0
+3 9 "PANEL_REF15" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 141 301 T 9 -0.009588269871302461 -0.9999540314838853 0.9999540314838853 -0.009588269871302461 -9.965710190048426 628.277401404463
+0
+3 10 "PANEL_REF16" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve3.pnl" -25.29296875000003 200.6285452571983 T 10 -9.184850993605148e-17 0.5 -0.4897959183673469 -8.997405054960145e-17 483.9609201259748 353.2335641178016
+0
+3 11 "PANEL_REF17" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  this.visible($flag);
+}"
+"" ""
+"objects/ValveSimple.pnl" 112.75 131 T 45 1 0 1 69.5 -35
+0
+3 12 "PANEL_REF18" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXY.pnl" 95 177.5 T 45 1 0 1 1.5 -46
+1
+"$sensor""$sensor1"
+3 13 "PANEL_REF19" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXZ.pnl" 34.465625 181.5561224489795 T 46 1 0 1 76.53437500000001 26.81887755102045
+1
+"$zx_sens""$sensor1"
+3 14 "PANEL_REF20" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXZ.pnl" 155 363.7499999999999 T 48 6.123233995736766e-17 -1 1 6.123233995736766e-17 -208.7499999999999 547.7499999999998
+1
+"$zx_sens""$sensor0"
+3 15 "PANEL_REF21" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXY.pnl" 95 177.5 T 49 6.123233995736766e-17 -1 1 6.123233995736766e-17 -109.7500000000002 502
+1
+"$sensor""$sensor0"
+3 16 "PANEL_REF22" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  this.visible(!$flag);
+}"
+"" ""
+"objects/ValveXZ.pnl" 155 363.7499999999999 T 51 -1.83697019872103e-16 1 -1 -1.83697019872103e-16 738.25 104.5000000000003
+1
+"$zx_sens""$sensor2"
+3 17 "PANEL_REF23" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  this.visible(!$flag);
+}"
+"" ""
+"objects/ValveXY.pnl" 95 177.5 T 52 -1.83697019872103e-16 1 -1 -1.83697019872103e-16 639.2500000000002 150.2500000000001
+1
+"$sensor""$sensor2"
+3 18 "PANEL_REF24" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  this.visible($flag);
+}"
+"" ""
+"objects/value_ind.pnl" 88.24999999999977 47.53623188405797 T 54 1 0 1 -12.74999999999977 22.64623339371975
+4
+"$b_Alarm""TRUE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""$dp_value"
+0

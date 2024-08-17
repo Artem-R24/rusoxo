@@ -1,0 +1,364 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 1066 594 N "_3DFace" 1
+"$num"
+E E E E E 1 -1 -1 0  50.83939320384538 110
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+31 19
+"PIPE14"
+""
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 0.2281879194630873 455.3212135923092 109.68378149194 0 0 0 6 2 240 350
+240 648
+6 1
+"RECTANGLE35"
+""
+1 240 80 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"Stage\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"Stage\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.4 0 1 540 6.549553304020606 2  1 0  "pictures/Flame.png" 4294967295 E 240 80 290 130
+6 2
+"RECTANGLE36"
+""
+1 240 80 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"Stage\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"Stage\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.4 0 1 564.2857142857143 6.549553304020606 2  1 0  "pictures/Flame.png" 4294967295 E 240 80 290 130
+6 3
+"RECTANGLE37"
+""
+1 240 80 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"Stage\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"Stage\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.4 0 1 588.5714285714287 6.549553304020606 2  1 0  "pictures/Flame.png" 4294967295 E 240 80 290 130
+1 41 0 "" 1
+0
+1 42 1 "" 1
+0
+1 43 2 "" 1
+0
+1 44 3 "" 2
+0
+1 56 4 "" 4
+0
+31 39
+"PIPE15"
+""
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 0.3825503355704697 455.3212135923092 163.1073825503356 0 0 0 6 2 240 350
+240 648
+7 40
+"ELLIPSE5"
+""
+1 174.9047619047619 264 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 520.4164516875474 -30.45044669597939 1 E 174.9047619047619 264 3 3
+1 60 5 "" 3
+0
+7 64
+"ELLIPSE6"
+""
+1 174.9047619047619 264 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 520.4164516875474 129.5495533040207 1 E 174.9047619047619 264 3 3
+31 65
+"PIPE94"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "STD_value_default" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 2.333333333333341 0 1 -340.7808991936055 -127.4504466959793 0 0 0 3 2 410 520
+443 520
+31 66
+"PIPE95"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "STD_value_default" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.5991374226099693 0 1 312.3536567299126 -127.4504466959793 0 0 0 3 2 410 520
+443 520
+1 67 6 "" 4
+0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 0 "PANEL_REF169" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Wind.pnl" 77.67878640769078 74.79028039337646 T 0 0.6540151699038652 0 0.6848785049172058 573.5764402125321 63.47851283669421
+1
+"$FlowON""\"Stage\"+$num+\".FlowNitro\""
+3 1 "PANEL_REF170" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Wind.pnl" 77.67878640769078 74.79028039337646 T 1 0.6540151699038652 0 0.6848785049172058 597.7370470086867 63.47851283669421
+1
+"$FlowON""\"Stage\"+$num+\".FlowNitro\""
+3 2 "PANEL_REF171" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Wind.pnl" 77.67878640769078 74.79028039337646 T 2 0.6540151699038652 0 0.6848785049172058 622.8976538048413 63.47851283669421
+1
+"$FlowON""\"Stage\"+$num+\".FlowNitro\""
+3 3 "PANEL_REF43" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/BurneStage.pnl" 550 440 T 3 1 0 1 190.9999999999995 -78.45044669597939
+0
+3 4 "PANEL_REF172" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 139.3212135923092 386.1764703909956 T 8 -0.01688923688832168 0.9998573666665311 -0.9998573666665311 -0.01688923688832168 1099.588982154831 127.2599400530529
+0
+3 5 "PANEL_REF173" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveReverse.pnl" 596.3393932038455 381.0495533040207 T 14 1 0 1 -20.56785825771647 -3.894115337025141
+0
+3 6 "PANEL_REF174" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveRotate.pnl" 139.3212135923092 386.1764703909956 T 18 -0.9999898764945137 0.004499656485449734 -0.004499656485449734 -0.9999898764945137 695.6270321469403 793.5163157302682
+0
+0

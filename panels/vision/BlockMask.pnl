@@ -1,0 +1,230 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 153 353 N "_3DFace" 1
+"$dp_value"
+E E E E E 1 -1 -1 0  117 64
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+20 4
+"CHECK_BOX1"
+""
+1 39.5 28.5 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  37.5 26.5 110 321.9999999999999
+16
+T 
+1
+LANG:10027 4 bit1
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit2
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit3
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit4
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit5
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit6
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit7
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit8
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 4 bit9
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 5 bit10
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 5 bit11
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 5 bit12
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 5 bit13
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 5 bit14
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 5 bit15
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+T 
+1
+LANG:10027 5 bit16
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+0
+"main()
+{
+  for(int i=0; i<16; ++i)
+  {
+    this.itemEnabled(i,FALSE);
+  }
+  dpConnect(\"setBlockMask\",$dp_value+\".block_mask\");
+}
+
+setBlockMask(string dpe, int nval)
+{
+  for(int i=0; i<16; ++i)
+  {
+    this.state(i,getBit(nval,i));
+  }
+
+}" 0
+"main(int button, int state)
+{
+  DebugN(button);
+}" 0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

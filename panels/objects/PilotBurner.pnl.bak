@@ -1,0 +1,968 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 339 251 N "_3DFace" 3
+"$Alarm"
+"$dp_value"
+"$num"
+E E E E E 1 -1 -1 0  20.88230620814846 20.0151515151541
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+1 273 30 "" 3
+0
+4 201
+"LINE75"
+""
+1 199.0000000000001 145.0304237573058 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+122 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  199.0000000000001 145.0304237573058 199.0000000000001 126.3029095760276
+4 223
+"LINE76"
+""
+1 144 103.6666666666666 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+137 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  144 103.6666666666667 89.79999999999995 103.6666666666667
+10 173
+"POLYGON31"
+""
+1 110 120 E E E 1 E 1 E N {0,0,0} E N "STD_led_On" E E
+ E E
+104 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 3.507787032358345e-17 0.19095503208493 0.375 -6.888638245203862e-17 74.72601914879507 151.9044145521074 1 E 5 110 120
+150 120
+150 180
+130 200
+110 180
+ 1
+4 174
+"LINE67"
+""
+1 120.0000000000001 176.7285687231483 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+105 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  120.0000000000001 176.7285687231483 75.0000000000001 176.7285687231483
+4 175
+"LINE68"
+""
+1 74.89713542354968 171.7285687231483 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+106 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  74.89713542354968 171.7285687231483 74.89713542354968 181.7285687231483
+31 69
+"PIPE71"
+""
+1 270 120 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+49 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 0.08299039780521027 -105.520999718453 37.70781893004146 0 0 0 4 10 270 120
+270 130
+270 140
+270 150
+270 160
+270 170
+270 180
+270 190
+270 200
+270 210
+31 73
+"PIPE72"
+""
+1 270 120 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+50 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 0.6151298193483102 -104.902838485105 8.851088344869456 0 0 0 4 10 270 120
+270 130
+270 140
+270 150
+270 160
+270 170
+270 180
+270 190
+270 200
+270 210
+1 257 8 "" 5
+31 "transform" 0 0 1 0 -0.9999999999999999 1.563194018672221e-13 307.4922311954895
+0
+1 258 8 "" 6
+31 "transform" 0 0 1 0 -1 -7.105427357601002e-14 307.4922311954887
+0
+2 76
+"PRIMITIVE_TEXT100"
+""
+1 206.9944299938849 61.46313363197688 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+51 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 263;
+  setValue(\"\", \"text\", \"930SV\"+\"\\n\"+\"0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.05 0 1 -102.7697397670696 3.462962962962905 0 E 178 61.46313363197688 236 74
+0 1 1 "0s" 0 0 0 193 0 0  206.9944299938849 61.46313363197688 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930SV0264
+2 77
+"PRIMITIVE_TEXT111"
+""
+1 102.6827594391956 22.28361141142934 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+52 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+ // int number = $num;
+ // number = number + 248;
+  setValue(\"\", \"text\", \"Горелка дежурная\" +  $num);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.028761327556247 0 1 -3.279657299097853 1.333333333333353 0 E 102.6827594391956 22.28361141142934 225.4685185626091 37.63163193556771
+0 0 0 "0s" 0 0 0 192 0 0  102.6827594391956 22.28361141142934 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 33 Горелка дежурная 1
+6 78
+"RECTANGLE29"
+""
+1 210 30 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+53 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"GD\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"GD\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.3379463171036217 0 0.7035528456411583 85.67977699554345 141.154254403066 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
+1 259 10 "" 1
+0
+2 176
+"PRIMITIVE_TEXT115"
+""
+1 99.00072562009552 161.4377769083381 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+107 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 99.00072562009552 161.4377769083381 115 174.6666666666667
+0 2 2 "0s" 0 0 0 192 0 0  99.00072562009552 161.4377769083381 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4  °C
+2 177
+"PRIMITIVE_TEXT116"
+""
+1 18.19208053684773 204.613636363639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+108 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.067301196730637 0 1 22.41916800190049 -61.16222309166187 0 E 18.19208053684773 204.613636363639 74 218
+0 2 2 "0s" 0 0 0 192 0 0  18.19208053684773 204.613636363639 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930TE0250
+2 188
+"PRIMITIVE_TEXT117"
+""
+1 98.66739228676219 187.4377769083382 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+109 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 98.66739228676219 187.4377769083382 134 200.6666666666667
+0 2 2 "0s" 0 0 0 192 0 0  98.66739228676219 187.4377769083382 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 11  °C/сек
+1 267 27 "" 1
+0
+6 195
+"RECTANGLE42"
+""
+1 59.99999999999999 150 E E E 1 E 1 E N {0,0,0} E N "STD_led_Off" E E
+ E E
+116 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9365357200028365 0 0.6633788563051362 119.8745834035716 14.35114048117916 1 E 59.99999999999999 150 129.6893939393939 171.3181818181818
+2 196
+"PRIMITIVE_TEXT118"
+""
+1 18.19208053684773 204.613636363639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+117 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.067301196730637 0 1 189.4064052377148 -90.23768220319182 0 E -10 204.613636363639 46 218
+0 0 0 "0s" 0 0 0 193 0 0  18.19208053684773 204.613636363639 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930ES0250
+10 198
+"POLYGON34"
+""
+1 80 140 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+119 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -0.1379128584387045 -0.1448448945502252 -0.1932718766174972 0.1840222055661693 222.6882529164405 148.085322557055 1 E 3 80 140
+100 140
+90 170
+ 1
+4 200
+"LINE74"
+""
+1 183.2180329305075 160.8123908267984 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+121 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  183.2180329305075 160.8123908267984 199.0000000000001 145.0304237573058
+13 203
+"PUSH_BUTTON1"
+""
+1 -166.2420796870495 412.8341345611007 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
+ E E
+124 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  247.6486791552418 111.2707490354713 317 130.6666666666666
+
+T 
+1
+LANG:10027 7 ВКЛ.
+E E E E
+13 204
+"PUSH_BUTTON2"
+""
+1 -97.017944682194 397.6279746515215 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
+ E E
+125 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  174.6307344730478 45.39611003464859 221.6307344730478 67.39611003464859
+
+T 
+1
+LANG:10027 9 ОТКР.
+E E E E
+13 205
+"PUSH_BUTTON3"
+""
+1 -97.16658762653981 423.0513404768551 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
+ E E
+126 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  174.482091528702 70.81947585998233 221.482091528702 92.81947585998233
+
+T 
+1
+LANG:10027 9 ЗАКР.
+E E E E
+13 206
+"PUSH_BUTTON4"
+""
+1 -396.3528207687057 354.9977205991404 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
+ E E
+127 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  14.66886486678146 24.09626628601441 83.5693516411053 45
+
+T 
+1
+LANG:10027 10 СТАРТ
+E E E E
+13 207
+"PUSH_BUTTON5"
+""
+1 -217.2936230580792 983.3125669178122 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
+ E E
+128 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  254.0995132256762 24 323 45
+
+T 
+1
+LANG:10027 8 СТОП
+E E E E
+2 252
+"PRIMITIVE_TEXT1"
+""
+1 12 11.5 E E E 1 E 1 E N "white" E N "stoerKamGingUnq" E E
+ E E
+141 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $Alarm+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $Alarm+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.9422798328364296 0 0.7692307692307697 132.5309509601394 40.33101192360443 1 E -60 11.5 22 27
+1 2 2 "0s" 0 0 0 194 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 ОШИБКА УПР.
+6 253
+"RECTANGLE44"
+""
+1 10 10 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+142 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 6.380000000000001 0 4.4 -53.8 -24.00000000000002 0 E 10 10 60 60
+1 268 29 "" 3
+0
+1 278 31 "" 3
+0
+1 291 34 "" 1
+0
+4 294
+"LINE39"
+""
+1 144.8282841390211 122.4334894680199 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+155 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  144.828284139021 122.4334894680199 144.828284139021 103.6666666666666
+4 295
+"LINE34"
+""
+1 134.5823123944653 120.1397525789851 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+156 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  134.5823123944653 120.139752578985 134.5823123944653 145.3710300918609
+4 296
+"LINE35"
+""
+1 155.0742558835766 120.1397525789851 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+157 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  155.0742558835763 120.139752578985 155.0742558835763 145.3710300918609
+4 297
+"LINE38"
+""
+1 134.5823123944653 120.1397525789851 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+158 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  134.5823123944653 120.1397525789851 155.0742558835766 120.1397525789851
+9 298
+"ARC1"
+""
+1 210 280 E E E 1 E 1 E N {0,0,0} E N "STD_led_On" E E
+ E E
+159 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 1 1 E 1.02459717445556 0 -0.7347154288575085 -70.33712249664649 325.8600726590876 1 E 210 280 10.944444 10.944444
+ 0 220.9444444444445 280 200 280 1
+4 299
+"LINE40"
+""
+1 128.21947245318 160.7595131400158 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+160 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 0 1 E  128.2194724531801 160.7595131400158 139.0516706124425 151.6531810640355
+10 300
+"POLYGON22"
+""
+1 60 50 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+161 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.1727386327905462 0.1143867910312349 -0.1919318142117177 0.160856424887674 133.7490734271615 137.4843754049822 1 E 3 60 50
+70 10
+80 50
+ 1
+4 301
+"LINE43"
+""
+1 140.9465164601012 162.2608397723009 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+162 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 0 1 E  140.946516460101 162.2608397723007 151.778714619364 153.1545076963205
+10 302
+"POLYGON24"
+""
+1 60 50 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+163 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.1727386327905462 0.1143867910312349 -0.1919318142117177 0.160856424887674 146.4761174340829 138.9857020372672 1 E 3 60 50
+70 10
+80 50
+ 1
+2 303
+"PRIMITIVE_TEXT124"
+""
+1 18.19208053684773 204.613636363639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+164 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.067301196730637 0 1 22.92318085230981 -115.7802789022046 0 E 18.19208053684773 204.613636363639 75 218
+0 2 2 "0s" 0 0 0 192 0 0  18.19208053684773 204.613636363639 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930BT0250
+2 304
+"PRIMITIVE_TEXT125"
+""
+1 100.1053730005689 105.2197210977954 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+165 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 100.1053730005689 105.2197210977954 114.1090873147174 117.9742933640115
+0 2 2 "0s" 0 0 0 192 0 0  100.1053730005689 105.2197210977954 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2  %
+6 224
+"RECTANGLE43"
+""
+1 140 110 E E E 1 E 1 E N {0,0,0} E N "Red" E E
+ E E
+138 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.8714285714285714 0 1.3 -81.54241719901489 -25.17864862049497 1 E 140 110 210 120
+2 226
+"PRIMITIVE_TEXT123"
+""
+1 71.62424946765177 128.1546847128383 E E E 1 E 1 E N "white" E N "_Window" E E
+ E E
+140 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9793814432989691 0 1 0.8270893361027831 -9.333333333333314 0 E 42.12424946765179 128.1546847128383 102.1242494676518 138.1546847128383
+0 2 2 "0s" 0 0 0 65 0 0  72.12424946765177 128.1546847128383 1
+1
+LANG:10027 55 MS Shell Dlg 2,-1,9,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 15 DI "ОТКАЗ"
+2 305
+"PRIMITIVE_TEXT126"
+""
+1 206.9944299938849 61.46313363197688 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+166 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.05 0 1 -8.166606729591635 40.42898446347482 0 E 179 61.46313363197688 235 74
+0 1 1 "0s" 0 0 0 193 0 0  206.9944299938849 61.46313363197688 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 18 Зажигание
+6 306
+"RECTANGLE45"
+""
+1 30 210 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+167 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.659992743799046 0 0.3989555642499522 -132.7994195039236 126.2715532950124 1 E 30 210 80 260
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 8 "PANEL_REF117" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Burner.pnl" 995.0714285714288 439.5 T 45 0.610985387896514 0 0.6058122341071381 -396.136559081475 11.95269991961839
+0
+3 10 "PANEL_REF146" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ignition.pnl" 77 133.7930954248944 T 47 1 0 1 123.173532594286 56.19282799619
+3
+"$dpe_fail""\"GD\"+ $num + \".AlarmIgnitionFail\""
+"$dpe_on""\"GD\"+ $num + \".IgnitionON\""
+"$dpe_start""false"
+3 27 "PANEL_REF207" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/No_Fire2.pnl" 116.9301075268818 210.5 T 110 1 0 1 28.66705398801275 -48.23916022769934
+1
+"$dpe""\"GD\"+ $num + \".AlarmNOFlame\""
+3 29 "PANEL_REF208" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 56.10373145097401 77.66626688973069 T 143 0.9999999999999999 0 1 6.670711815127397 49.82175115644101
+4
+"$b_Alarm""TRUE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""$dp_value"
+3 30 "PANEL_REF209" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 56.10373145097401 77.66626688973069 T 144 1 0 1 5.896631359073723 105.3859548977717
+4
+"$b_Alarm""TRUE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""$dp_value"
+3 31 "PANEL_REF210" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 56.10373145097401 77.66626688973069 T 145 1 0 1 5.896631359073723 132.3859548977717
+4
+"$b_Alarm""TRUE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""$dp_value"
+3 34 "PANEL_REF211" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve.pnl" 257.1711936839057 538.0905740388325 T 154 2.963546576894474e-17 -0.4940668824163995 0.5298757114492553 3.312147823400062e-17 -87.14833988895478 198.622517123944
+2
+"$Ctrl""\"GD\"+$num+\".SV.Control\""
+"$State""\"GD\"+$num+\".SV.State\""
+1 36 "SHAPE_GROUP29" -1
+4 0 
+299 300 301 302 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

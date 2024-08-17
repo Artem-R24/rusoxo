@@ -1,0 +1,615 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 269 489 N "_3DFace" 1
+"$num"
+E E E E E 1 -1 -1 0  34 10
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+31 37
+"PIPE19"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.65942295771713 0 0.8240202043644713 -599.2196818823838 -275.913121618473 0 0 0 3 2 410 520
+443 520
+1 134 23 "" 1
+0
+1 133 22 "" 1
+0
+31 1
+"PIPE107"
+""
+1 266.0292776864037 513.6151524232312 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.9940676828804897 0 0.8240202043644713 -126.504130517988 -140.1331072746033 0 0 0 3 4 266.0292776864037 513.6151524232312
+290 513.6151524232312
+290 440
+264 440
+31 2
+"PIPE15"
+""
+1 310.3333333333336 524 E E E 1 E 1 E N {0,0,0} E N "STD_value_bad" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.9147990694273072 0 0.8240202043644713 -146.6476009550116 -178.7639396194112 0 0 0 3 3 310.3333333333336 524
+282 524
+282 547
+1 112 2 "" 4
+0
+31 25
+"PIPE13"
+""
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.8455537466579612 0 0.498322147651006 -65.68785560731455 95.08724832214813 0 0 0 6 2 240 350
+240 648
+31 26
+"PIPE14"
+""
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.8455537466579612 0 0.4152632410145075 -66.15760768879137 -34.21546301448095 0 0 0 6 2 240 350
+240 648
+2 27
+"PRIMITIVE_TEXT15"
+""
+1 280 360 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+ // int number = $num;
+//  number = number + 249;
+  setValue(\"\", \"text\", $num +\"-я ступень\");
+}
+
+" 0
+ E 0 1 3 2 1 E 0.8455537466579612 0 1.116639599380769 -169.5419242389645 -290.8905703549672 0 E 280 360 351 375
+0 0 0 "0s" 0 0 0 192 0 0  280 360 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 19 2-я ступень
+1 113 3 "" 1
+0
+31 31
+"PIPE18"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "STD_value_default" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.2520592607231252 0 0.8240202043644713 35.31582051749283 -226.2105418076421 0 0 0 3 2 410 520
+443 520
+2 32
+"PRIMITIVE_TEXT16"
+""
+1 178.4571425827104 306.8763862732902 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 255;
+  setValue(\"\", \"text\", \"930SV0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.339678419817365 0 1.884958124629314 -88.84130537697112 -404.3366576816406 0 E 178.4571425827104 306.8763862732902 237 320
+0 2 2 "0s" 0 0 0 192 0 0  178.4571425827104 306.8763862732902 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930SV0257
+2 33
+"PRIMITIVE_TEXT17"
+""
+1 278.7885708175705 509.4715171666728 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 248;
+  setValue(\"\", \"text\", \"930SV0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.258545994426788 0 2.014944386416925 -303.3213554871924 -736.8924559288953 0 E 278.7885708175705 509.4715171666728 337 522
+0 2 2 "0s" 0 0 0 192 0 0  278.7885708175705 509.4715171666728 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930SV0250
+2 34
+"PRIMITIVE_TEXT18"
+""
+1 280.8017466066252 502.5267854803159 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 248;
+  setValue(\"\", \"text\", \"930UV\"+\"\\n\"+\"0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 2.30944683961728 0 3.401406083860547 -554.7579970509421 -1479.188954886265 0 E 252 502.5267854803159 310 516
+0 2 2 "0s" 0 0 0 193 0 0  280.8017466066252 502.5267854803159 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930UV0250
+2 35
+"PRIMITIVE_TEXT35"
+""
+1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 249;
+  setValue(\"\", \"text\", \"930PIT0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 -256.4490944689232 -632.8563514205665 0 E 182.4628986514007 328.7982270920354 240 342
+0 2 2 "0s" 0 0 0 192 0 0  182.4628986514007 328.7982270920354 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 10 930PIT0251
+2 36
+"PRIMITIVE_TEXT36"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 -80.9866689836238 -173.6782494779194 0 E 127.1987156164183 286.5885074854114 151 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 6 кПа
+1 116 4 "" 1
+0
+31 63
+"PIPE65"
+""
+1 497.1672031095914 435.4629920508766 E E E 1 E 1 E N {0,0,0} E N "STD_value_default" E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.8455537466579612 0 0.6326610040623776 -252.1066733365914 -72.945815919577 0 0 0 3 3 497.1672031095914 435.4629920508766
+517 435.4629920508766
+517 455
+6 81
+"RECTANGLE35"
+""
+1 240 80 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"Stage\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"Stage\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.3382214986631845 0 0.8240202043644713 5.922004775834672 -38.7786221377733 2  1 0  "pictures/Flame.png" 4294967295 E 240 80 290 130
+6 82
+"RECTANGLE36"
+""
+1 240 80 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+45 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"Stage\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"Stage\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.3382214986631845 0 0.8240202043644713 26.45688148038518 -38.7786221377733 2  1 0  "pictures/Flame.png" 4294967295 E 240 80 290 130
+6 83
+"RECTANGLE37"
+""
+1 240 80 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+46 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"Stage\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"Stage\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.3382214986631845 0 0.8240202043644713 46.99175818493575 -38.7786221377733 2  1 0  "pictures/Flame.png" 4294967295 E 240 80 290 130
+1 119 15 "" 1
+0
+31 99
+"PIPE24"
+""
+1 326.0928291412681 535.7181511819365 E E E 1 E 1 E N {0,0,0} E N "Blue" E E
+ E E
+48 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.8455537466579612 0 0.9702074707973352 -164.4032768152047 -227.0734045339651 0 0 0 3 2 326.0928291412681 535.7181511819365
+326.0928291412681 553
+1 125 18 "" 1
+0
+1 126 19 "" 1
+0
+1 127 20 "" 1
+0
+1 100 0 "" 2
+0
+1 128 21 "" 1
+0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 0 "PANEL_REF43" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/BurneStage.pnl" 550 440 T 0 0.8455537466579612 0 0.8240202043644713 -289.1762528077942 -108.8203395087534
+0
+3 2 "PANEL_REF51" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve1.pnl" 361.0149313962874 468.6787414597145 T 2 0.445688465160903 0 0.5081619201919674 -36.25794927453986 -11.13114568136567
+1
+"$dpe_flap""\"Stage\"+$num+\".UV\""
+3 3 "PANEL_REF53" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve.pnl" 257.1711936839057 538.0905740388325 T 3 0.4154010146455766 0 0.4457247147869389 48.9837127349071 -9.505926011217682
+0
+3 4 "PANEL_REF52" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve.pnl" 257.1711936839057 538.0905740388325 T 4 2.558042867977842e-17 -0.4071210934184787 0.4573725262681159 2.729276726323458e-17 -106.2764572945869 388.6310620443156
+0
+3 15 "PANEL_REF168" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Membrane.pnl" 314.170805486075 534.1894687174261 T 15 0.8455537466579612 0 0.8240202043644713 -73.82526602109348 -141.9372737345863
+1
+"$dpe""\"Stage\"+ $num + \".Break\""
+3 18 "PANEL_REF169" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Wind.pnl" 77.67878640769078 74.79028039337646 T 49 0.5530049772833563 0 0.5643537255867095 34.31268959697821 8.131990730597153
+1
+"$FlowON""\"Stage\"+$num+\".FlowNitro\""
+3 19 "PANEL_REF170" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Wind.pnl" 77.67878640769078 74.79028039337646 T 50 0.5530049772833563 0 0.5643537255867095 54.74178119499655 8.131990730597153
+1
+"$FlowON""\"Stage\"+$num+\".FlowNitro\""
+3 20 "PANEL_REF171" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Wind.pnl" 77.67878640769078 74.79028039337646 T 51 0.5530049772833563 0 0.5643537255867095 76.01642653967282 8.131990730597153
+1
+"$FlowON""\"Stage\"+$num+\".FlowNitro\""
+3 21 "PANEL_REF172" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 81.99999999999997 335 T 51 0.8455537466579612 0 0.8240202043644713 -23.01423437717183 -134.181646467784
+4
+"$b_Alarm""FALSE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""\"stage\"+$num+\".PGT\""
+3 22 "PANEL_REF199" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Error.pnl" 251.4073984804864 97.42541266272785 T 51 0.6126354780210921 0 0.5702170469173985 -30.61570954553912 210.5524808963478
+0
+3 23 "PANEL_REF200" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Error.pnl" 251.4073984804864 97.42541266272785 T 52 0.6126354780210921 0 0.5702170469173985 -4.169466009878863 139.1772063918291
+0
+0

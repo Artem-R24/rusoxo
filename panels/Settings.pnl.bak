@@ -1,0 +1,983 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 1023 768 N "_3DFace" 0
+E E "main()
+{
+  Inp_panelOff();
+}
+
+void Inp_panelOff()
+{
+  PanelOffPanel(\"Input_pnl\");
+}" 0
+ E E 1 -1 -1 0  360 710
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+2 7044
+"PRIMITIVE_TEXT162"
+""
+1 668.1249999999998 1.953207950720483 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+1128 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1 0 0.9992283950617283 -156 22.01388888888889 1 E 504 -12 832 16
+0 2 2 "0s" 0 0 0 201 0 0  668.1249999999998 1.953207950720483 1
+1
+LANG:10027 56 MS Shell Dlg 2,-1,24,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 39 НАСТРОЙКИ ПАРАМЕТРОВ
+1 8247 73 "" 1
+0
+2 8061
+"PRIMITIVE_TEXT163"
+""
+1 337.152950310559 140.965306122449 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1307 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 170 140.965306122449 337.152950310559 178
+0 0 0 "0s" 0 0 0 194 0 0  337.152950310559 140.965306122449 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 35 Максимальное время
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 38  включения зажигания
+2 8062
+"PRIMITIVE_TEXT164"
+""
+1 860 85.33061224489785 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1308 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 585 85.33061224489785 860 122
+0 0 0 "0s" 0 0 0 194 0 0  860 85.33061224489785 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 36 Максимальное время 
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 63 октрытия/закрытия пневмоклапанов 
+2 8064
+"PRIMITIVE_TEXT165"
+""
+1 860 140.965306122449 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1311 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 601 140.965306122449 860 178
+0 0 0 "0s" 0 0 0 194 0 0  860 140.965306122449 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 36 Максимальное время 
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 58 октрытия/закрытия клапанов КЭО 
+2 8066
+"PRIMITIVE_TEXT166"
+""
+1 337.152950310559 85.33061224489785 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1313 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 113 85.33061224489785 337.152950310559 122
+0 0 0 "0s" 0 0 0 194 0 0  337.152950310559 85.33061224489785 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 52 Время заполнения магистрали
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 52 топливного газа при розжиге 
+2 8068
+"PRIMITIVE_TEXT167"
+""
+1 337.152950310559 202 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1315 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 89 202 337.152950310559 220
+0 0 0 "0s" 0 0 0 194 0 0  337.152950310559 202 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 55 Время между попытками розжига
+2 8070
+"PRIMITIVE_TEXT168"
+""
+1 860 192.3091836734692 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1317 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 627 192.3091836734692 860 229
+0 0 0 "0s" 0 0 0 194 0 0  860 192.3091836734692 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 54 Время продувки тракта азотом 
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 42 после закрытия ступени
+2 8072
+"PRIMITIVE_TEXT169"
+""
+1 337.152950310559 300.4622448979591 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1319 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 71 300.4622448979591 337.152950310559 337
+0 0 0 "0s" 0 0 0 194 0 0  337.152950310559 300.4622448979591 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 48 Время определения наличия
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 61 пламени по градиенту температуры
+2 8074
+"PRIMITIVE_TEXT170"
+""
+1 337.152950310559 408.8795918367347 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1321 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 71 408.8795918367347 337.152950310559 446
+0 0 0 "0s" 0 0 0 194 0 0  337.152950310559 408.8795918367347 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 52 Время определения погасания
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 61 пламени по градиенту температуры
+1 8254 82 "" 3
+0
+1 8255 84 "0" 3
+0
+1 8257 85 "0" 3
+0
+1 8259 86 "0" 3
+0
+1 8261 87 "0" 3
+0
+1 8263 88 "0" 3
+0
+1 8265 89 "0" 3
+0
+1 8267 90 "0" 3
+0
+1 8269 91 "0" 3
+0
+2 8105
+"PRIMITIVE_TEXT171"
+""
+1 337.152950310559 246.5336734693877 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1333 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 78 246.5336734693877 337.152950310559 284
+0 0 0 "0s" 0 0 0 194 0 0  337.152950310559 246.5336734693877 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 57 Уставка градиента температуры 
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 59 для определения наличия пламени
+2 8106
+"PRIMITIVE_TEXT172"
+""
+1 424.1630434782614 257.3530612244897 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1334 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 424.1630434782614 257.3530612244897 473 275
+0 0 0 "0s" 0 0 0 192 0 0  424.1630434782614 257.3530612244897 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 10 °C/сек
+1 8271 92 "" 3
+0
+2 8108
+"PRIMITIVE_TEXT173"
+""
+1 337.152950310559 355.304081632653 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1336 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 65 355.304081632653 337.152950310559 392
+0 0 0 "0s" 0 0 0 194 0 0  337.152950310559 355.304081632653 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 57 Уставка градиента температуры 
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 63 для определения погасания пламени
+2 8109
+"PRIMITIVE_TEXT174"
+""
+1 423.0000000000002 365.9469387755101 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1337 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 423.0000000000002 365.9469387755101 472 384
+0 0 0 "0s" 0 0 0 192 0 0  423.0000000000002 365.9469387755101 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 10 °C/сек
+1 8272 93 "" 3
+0
+2 8111
+"PRIMITIVE_TEXT175"
+""
+1 860 354.8214285714286 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1339 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 611 354.8214285714286 860 392
+0 0 0 "0s" 0 0 0 194 0 0  860 354.8214285714286 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 58 Максимальная разница показаний
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 27 датчиков 930PIT0250
+2 8112
+"PRIMITIVE_TEXT176"
+""
+1 948.2958074534162 364.1428571428571 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1340 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 948.2958074534162 364.1428571428571 966 382
+0 0 0 "0s" 0 0 0 192 0 0  948.2958074534162 364.1428571428571 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 1 %
+2 8113
+"PRIMITIVE_TEXT177"
+""
+1 859.9999999999998 410.8795918367347 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1342 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 605 410.8795918367347 859.9999999999998 448
+0 0 0 "0s" 0 0 0 194 0 0  859.9999999999998 410.8795918367347 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 57 Время задержки на формирование
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 51 аварии по разнице показаний
+1 8273 94 "0" 3
+0
+2 8116
+"PRIMITIVE_TEXT178"
+""
+1 859.9999999999998 465.8836734693878 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1344 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 605 465.8836734693878 859.9999999999998 503
+0 0 0 "0s" 0 0 0 194 0 0  859.9999999999998 465.8836734693878 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 57 Время задержки на формирование
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 49 аварии по прорыву мембраны
+1 8275 95 "0" 3
+0
+2 8119
+"PRIMITIVE_TEXT179"
+""
+1 860 246.5336734693877 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1346 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 609 246.5336734693877 860 284
+0 0 0 "0s" 0 0 0 194 0 0  860 246.5336734693877 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 49 Время задержки на закрытие
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 57 ступени при понижении давления
+1 8277 96 "0" 3
+0
+2 8122
+"PRIMITIVE_TEXT180"
+""
+1 859.9999999999997 522.426530612245 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1348 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 605 522.426530612245 859.9999999999997 559
+0 0 0 "0s" 0 0 0 194 0 0  859.9999999999997 522.426530612245 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 57 Время задержки на формирование
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 55 аварии по уровню жидкости в СР
+1 8279 97 "0" 3
+0
+2 8125
+"PRIMITIVE_TEXT181"
+""
+1 859.9999999999998 574.8714285714286 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1350 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 585 574.8714285714286 859.9999999999998 612
+0 0 0 "0s" 0 0 0 194 0 0  859.9999999999998 574.8714285714286 2
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 57 Время задержки на формирование
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 64 сигнала о проверке датчика пламени
+1 8281 98 "0" 3
+0
+30 8128
+"FRAME1"
+""
+1 480 322 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+1351 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9869848156182214 0 1.518022793532998 -443.7527114967463 -436.3543599257886 0 E 480 322 941 631
+1
+LANG:10027 56 MS Shell Dlg 2,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 68 Настройки розжига и контроля пламени
+30 8129
+"FRAME2"
+""
+1 480 322 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+1352 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9869565217391303 0 0.8062174220337491 66.26086956521753 -206.9169758812619 0 E 480 322 941 631
+1
+LANG:10027 56 MS Shell Dlg 2,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 39 Настройки управления
+30 8130
+"FRAME3"
+""
+1 480 322 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+1353 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9869565217391306 0 1.074317519215478 66.26086956521715 -25.82003710575124 0 E 480 322 941 631
+1
+LANG:10027 56 MS Shell Dlg 2,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 60 Формирование аварийных сигналов
+20 8131
+"CHECK_BOX1"
+""
+1 66.88779879540758 608.3936224489796 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+1354 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+2
+"layoutAlignment" "AlignNone"
+"focusPolicy" "NoFocus"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0  64.88779879540758 606.3936224489796 446.2651515151514 640.3936224489796
+1
+T 
+1
+LANG:10027 77 Включить последовательный розжиг горелок
+
+0 
+1
+LANG:10027 0 
+E E
+0 0 0 0 0
+0
+"main()
+{
+ B_value();
+}
+
+B_value()
+{
+dyn_errClass err;
+  dpConnect(\"B_value_CB\",\"System1:STEP_IGNITION.:_online.._value\");
+   err = getLastError();
+   if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+B_value_CB(string dp1, bool bNewValue)
+{
+  setValue(\"\",\"state\",0,bNewValue);
+}
+
+" 0
+"main(int button, int state)
+{
+  bool checked;
+  if (getUserPermission(6))
+  {
+    dpSet(\"System1:CMD_STEP_IGN.:_original.._value\", true);
+  }
+  dpGet(\"System1:STEP_IGNITION.:_online.._value\",checked);
+  setValue(\"\",\"state\",0,checked);
+
+}" 0
+30 8132
+"FRAME4"
+""
+1 480 322 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+1355 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9869565217391303 0 0.338943813456119 -443.7076272845622 437.4653975226451 0 E 480 322 941 631
+1
+LANG:10027 56 MS Shell Dlg 2,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 41 Специальные настройки
+13 8172
+"PUSH_BUTTON7"
+""
+1 337 578 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+1359 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0  335 571 470.7472884904951 602
+
+T 
+1
+LANG:10027 15 Вкл/Откл
+"main(mapping event)
+{
+  bool ServiceMode;
+  if (getUserPermission(6))
+  {
+    dpGet(\"System1:SERVICE_MODE.:_online.._value\",ServiceMode);
+    if (!ServiceMode) dpSet(\"System1:CMD_SERVICE_MODE.:_original.._value\", true);
+      else dpSet(\"System1:CMD_SERVICE_OFF.:_original.._value\", true);
+  }
+  else dpSet(\"System1:CMD_SERVICE_OFF.:_original.._value\", true);
+
+}" 0
+ E E "main()
+{
+ B_value();
+}
+
+B_value()
+{
+  dpConnect(\"B_value_CB\",\"System1:SERVICE_MODE.:_online.._value\");
+}
+
+B_value_CB(string dp1, bool bNewValue)
+{
+  if (bNewValue)
+  {
+    setValue(\"\",\"text\",\"Отключить\");
+  }
+  else setValue(\"\",\"text\",\"Включить\");
+
+}
+
+" 0
+
+2 8209
+"PRIMITIVE_TEXT182"
+""
+1 66.57647515527947 578.7071428571428 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1360 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+ B_value();
+}
+
+B_value()
+{
+  dpConnect(\"B_value_CB\",\"System1:SERVICE_MODE.:_online.._value\");
+}
+
+B_value_CB(string dp1, bool bNewValue)
+{
+  if (bNewValue)
+  {
+    setValue(\"\", \"backCol\", \"Red\");
+    setValue(\"\", \"foreCol\", \"White\");
+    setValue(\"\",\"text\",\"СЕРВИСНЫЙ РЕЖИМ - ВКЛЮЧЕН\");
+  }
+  else
+  {
+    setValue(\"\", \"backCol\", \"{240,240,240}\");
+    setValue(\"\", \"foreCol\", \"Black\");
+    setValue(\"\",\"text\",\"СЕРВИСНЫЙ РЕЖИМ - ОТКЛЮЧЕН\");
+  }
+}
+
+" 0
+ E 0 1 3 2 1 E U  1 E 66.57647515527947 578.7071428571428 325 597
+0 2 2 "0s" 0 0 0 192 0 0  66.57647515527947 578.7071428571428 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 48 СЕРВИСНЫЙ РЕЖИМ - ОТКЛЮЧЕН
+2 8246
+"PRIMITIVE_TEXT183"
+""
+1 741 662.0000000000001 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1361 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 283 662.0000000000001 741 680
+0 2 2 "0s" 0 0 0 194 0 0  741 662.0000000000001 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 101 Для изменения настроек необходим уровень доступа "service"
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 73 "PANEL_REF97" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Navigator.pnl" 27.55037815036528 733 T 1306 1 0 1 -27.55037815036528 -8
+0
+3 82 "PANEL_REF107" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_SP.pnl" 291.4285714285716 498 T 1323 1 0 1 62.43866459627344 -240.9561224489797
+2
+"$dpe_set""System1:TE_Grad_On.Set"
+"$dpe_value""System1:TE_Grad_On.Current"
+3 84 "PANEL_REF109" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1325 1 0 1 -125.1327639751551 -48.46802721088451
+3
+"$coeff""1000"
+"$dpIntSP""System1:Ign_TimeOut"
+"$units""сек"
+3 85 "PANEL_REF110" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1326 1 0 1 395.4285714285716 -102.6989795918369
+3
+"$coeff""1000"
+"$dpIntSP""System1:UV_TimeOut"
+"$units""сек"
+3 86 "PANEL_REF111" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1327 1 0 1 395.4285714285716 -48.46802721088457
+3
+"$coeff""1000"
+"$dpIntSP""System1:SV_TimeOut"
+"$units""сек"
+3 87 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1328 1 0 1 -125.1327639751551 -102.6989795918369
+3
+"$coeff""1000"
+"$dpIntSP""System1:FG_TimeOut"
+"$units""сек"
+3 88 "PANEL_REF113" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1329 1 0 1 -125.1327639751551 5.762925170067888
+3
+"$coeff""1000"
+"$dpIntSP""System1:Try_TimeOut"
+"$units""сек"
+3 89 "PANEL_REF114" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1330 1 0 1 395.4285714285716 5.762925170067888
+3
+"$coeff""1000"
+"$dpIntSP""System1:Nitro_TimeOut"
+"$units""сек"
+3 90 "PANEL_REF115" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1331 1 0 1 -125.7142857142856 114.2248299319727
+3
+"$coeff""1000"
+"$dpIntSP""System1:FlameOn_TimeOut"
+"$units""сек"
+3 91 "PANEL_REF116" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1332 1 0 1 -125.1327639751553 222.6867346938776
+3
+"$coeff""1000"
+"$dpIntSP""System1:FlameOff_TimeOut"
+"$units""сек"
+3 92 "PANEL_REF117" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_SP.pnl" 291.4285714285716 498 T 1335 1 0 1 61.85714285714295 -132.4942176870748
+2
+"$dpe_set""System1:TE_Grad_Off.Set"
+"$dpe_value""System1:TE_Grad_Off.Current"
+3 93 "PANEL_REF118" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_SP.pnl" 291.4285714285716 498 T 1338 1 0 1 582.9999999999999 -132.4942176870748
+2
+"$dpe_set""System1:PGT250_Error.Set"
+"$dpe_value""System1:PGT250_Error.Current"
+3 94 "PANEL_REF119" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1341 1 0 1 395.4285714285714 222.6867346938776
+3
+"$coeff""1000"
+"$dpIntSP""System1:PGT_Err_TimeOut"
+"$units""сек"
+3 95 "PANEL_REF120" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1343 1 0 1 395.4285714285715 277.6908163265306
+3
+"$coeff""1000"
+"$dpIntSP""System1:BreakStage_TimeOut"
+"$units""сек"
+3 96 "PANEL_REF121" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1345 1 0 1 395.4285714285715 61.51530612244895
+3
+"$coeff""1000"
+"$dpIntSP""System1:StageClose_TimeOut"
+"$units""сек"
+3 97 "PANEL_REF122" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1347 1 0 1 395.4285714285714 333.3622448979592
+3
+"$coeff""1000"
+"$dpIntSP""System1:LevelAlm_TimeOut"
+"$units""сек"
+3 98 "PANEL_REF123" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/TimeOut_SP.pnl" 479 197.9285714285715 T 1349 1 0 1 395.4285714285714 387.6785714285714
+3
+"$coeff""1000"
+"$dpIntSP""System1:Alm_TE_BT_TimeOut"
+"$units""сек"
+0

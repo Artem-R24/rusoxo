@@ -1,0 +1,186 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 120 72 N "_3DFace" 3
+"$b_IBit"
+"$dpe_set"
+"$dpe_value"
+E E E E E 1 -1 -1 0  9.999999999999996 20
+""0  1
+E "int fwidth;
+int fheight;
+int cX;
+int cY;
+string sFont;
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+14 1
+"Back"
+""
+1 11.28571428571429 16.07142857142858 E E E 1 E 1 E N "Yellow" E N {0,0,0} E E
+ E E
+0 0 0 0 0 0
+"main()
+{
+  int w,h,x,y;
+  w = fwidth + 30;
+  h = fheight + 16;
+  x = cX -15;
+  y = cY-8;
+//    getValue(\"\", \"width\", \"Yellow\");
+//    setValue(\"\", \"height\", \"Black\");
+
+//    setValue(\"\", \"size\", w,h);
+//    setValue(\"\", \"position\",x,y);
+    setValue(\"\", \"font\",\"Tahoma,-1,27,5,75,0,0,0,0,0,Полужирный\");
+    setValue(\"\", \"editable\",true);
+        setValue(\"\", \"backCol\", \"Yellow\");
+    setValue(\"\", \"foreCol\", \"Black\");
+    setValue(\"\", \"scale\", 1.4,1.4);
+
+
+}" 0
+ "main()
+{
+  int w,h,x,y;
+  w = fwidth ;
+  h = fheight;
+  x = cX;
+  y = cY;
+//    getValue(\"\", \"width\", \"Yellow\");
+//    setValue(\"\", \"height\", \"Black\");
+
+//    setValue(\"\", \"size\", w,h);
+//    setValue(\"\", \"position\",x,y);
+    setValue(\"\", \"font\",sFont);
+setValue(\"\", \"backCol\", \"Black\");
+    setValue(\"\", \"foreCol\", \"Yellow\");
+    setValue(\"\", \"scale\", 1,1);
+
+}" 0
+ E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 48 Tahoma,-1,15,5,75,0,0,0,0,0,Полужирный
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+0  9.285714285714288 14.07142857142857 82.71428571428572 41
+2 "0.1f" 2 0 0 2 0 -1  E "string  msDP;
+bool    mbIBit;
+bool    mbDiag;
+bool    mbAlert;
+
+main()
+{
+ msDP=$dpe_value;
+ mbIBit=$b_IBit;
+ //setValue(\"\",\"fill\",\"[solid]\");
+//     getValue(\"\", \"width\", fwidth);
+    getValue(\"\", \"size\",fwidth, fheight);
+    getValue(\"\", \"position\", cX,cY);
+    getValue(\"\", \"font\", sFont);
+ ST_value();
+}
+ST_value()
+{
+int iType;
+dyn_errClass err;
+  if(msDP==\"\")
+   STD_showConnectError(\"DP\");
+  else
+  dpConnect(\"ST_work_value\",msDP+\":_online.._value\",
+                              msDP+\":_original.._invalid\");
+   err = getLastError();
+   if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+ST_work_value(string dp1, float fNewValue,
+           string dp2, bool bInvalid)
+{
+  string sFormat;
+  string sNewValue;
+  sFormat = dpGetFormat( dp1 );
+  if( strlen( sFormat ) <= 0 )
+  {
+    sprintf( sNewValue, \"%5.1f\", fNewValue );
+  }
+  else
+  {
+    sNewValue = dpValToString( dp1, fNewValue, FALSE );
+  }
+
+  if(bInvalid && mbIBit) setValue(\"Back\",\"backCol\",\"_invalid\");
+  setValue(\"\",\"text\",sNewValue);
+}
+
+" 0
+ "main()
+{
+ float value;
+if (this.editable)
+ {
+  getValue(\"\",\"text\",value);
+  dpSetWait($dpe_set+\":_original.._value\",value);
+  this.editable = false;
+      setValue(\"\", \"scale\", 1,1);
+          setValue(\"\", \"font\",sFont);
+
+
+ }else
+     {
+          this.editable = true;
+         setValue(\"\", \"font\",\"Tahoma,-1,27,5,75,0,0,0,0,0,Полужирный\");
+    setValue(\"\", \"editable\",true);
+        setValue(\"\", \"backCol\", \"Yellow\");
+    setValue(\"\", \"foreCol\", \"Black\");
+    setValue(\"\", \"scale\", 1.4,1.4);
+  }
+}" 0
+
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

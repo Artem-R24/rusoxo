@@ -1,0 +1,88 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 94 91 N "_3DFace" 0
+E E E E E 1 -1 -1 0  125 245
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+10 5
+"POLYGON3"
+""
+1 120 245 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.6666666666666666 0 0.5384615384615384 -34.83333333333333 -71.42307692307692 1 E 4 120 245
+110 180
+140 180
+130 245
+ 1
+7 6
+"ELLIPSE3"
+""
+1 125 245 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 -76.50000000000003 -184.5 1 E 125 245 5 5
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+1 2 "SHAPE_GROUP3" -1
+2 0 
+5 6 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

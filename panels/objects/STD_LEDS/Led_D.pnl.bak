@@ -1,0 +1,195 @@
+V 14
+3
+LANG:10027 4 LED1
+LANG:10000 4 LED1
+LANG:10001 4 LED1
+PANEL,-1 -1 116 49 N "STD_panel_back" 4
+"$ch_num"
+"$dpe_value"
+"$s_ColOff"
+"$s_ColOn"
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 3
+"CBRef" "0"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+1
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 6 Layer1
+0
+LAYER, 1 
+1
+LANG:10027 6 Layer2
+7 0
+"p1"
+""
+1 140 100 E E E 1 E 1 E N "STD_frame_light" E N "STD_grey_middle" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E 0.185485950039623 0 0.185485950039623 -0.9680330055471416 4.451404996037752 1 E 140 100 80 80
+7 1
+"c2"
+""
+1 140 100 E E E 1 E 1 E N "STD_device_indefinite" E N "STD_device_indefinite" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"string  msDPE;
+string  msColOn;
+string  msColOff;
+int num;
+
+main()
+{
+
+ msDPE=$dpe_value;
+ msColOn=$s_ColOn;
+ msColOff=$s_ColOff;
+ setValue(\"\",\"fill\",\"[solid]\");
+ if(dpConnect(\"LED_CB\",msDPE+\":_online.._value\")==-1)
+      setValue(\"\",\"color\",\"_dpdoesnotexist\");
+}
+
+//==================================================================
+
+
+LED_CB(string dp1, bit32 b32Value)
+{
+    bool bValue;
+    num = $ch_num;
+    bValue = getBit(b32Value, num -1);
+    setValue(\"\",\"color\",(bValue) ? msColOn : msColOff);
+}" 0
+ E 0 1 1 0 1 E 0.142921804883825 0 0.140578824475893 4.99094731626457 8.942117552410707 1 E 140 100 78 81
+7 2
+"b3"
+""
+1 103.58015 66.49552300000001 E E E 1 E 1 E N "STD_frame_light" E N "STD_frame_light" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 1 1 E 0.099498737021136 0.0743824801980754 -0.130169340346632 0.174122789786988 20.3495844313663 1.717065614420903 1 E 105 65 18 18
+7 3
+"c1"
+""
+1 109.31526 65.08222499999999 E E E 1 E 1 E N "STD_device_indefinite" E N "STD_device_indefinite" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"string  msDPE;
+string  msColOn;
+string  msColOff;
+int num;
+
+main()
+{
+
+ msDPE=$dpe_value;
+ msColOn=$s_ColOn;
+ msColOff=$s_ColOff;
+ setValue(\"\",\"fill\",\"[solid]\");
+ if(dpConnect(\"LED_CB\",msDPE+\":_online.._value\")==-1)
+      setValue(\"\",\"color\",\"_dpdoesnotexist\");
+}
+
+//==================================================================
+
+
+LED_CB(string dp1, bit32 b32Value)
+{
+    bool bValue;
+    num = $ch_num;
+    bValue = getBit(b32Value, num -1);
+    setValue(\"\",\"color\",(bValue) ? msColOn : msColOff);
+}" 0
+ E 0 1 1 1 1 E 0.099498737021136 0.0743824801980754 -0.162789939827438 0.217758178665786 23.49166989476838 0.2196499808643892 1 E 105 65 18 18
+7 4
+"p2"
+""
+1 140 100 E E E 1 E 1 E N "STD_frame_dark" E N "_Transparent" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E 0.142921804883825 0 0.140578824475893 4.990947316264499 8.942117552410707 0 E 140 100 78 81
+0
+LAYER, 2 
+1
+LANG:10027 6 Layer3
+0
+LAYER, 3 
+1
+LANG:10027 6 Layer4
+0
+LAYER, 4 
+1
+LANG:10027 6 Layer5
+0
+LAYER, 5 
+1
+LANG:10027 6 Layer6
+0
+LAYER, 6 
+1
+LANG:10027 6 Layer7
+0
+LAYER, 7 
+1
+LANG:10027 6 Layer8
+0
+0

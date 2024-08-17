@@ -1,0 +1,270 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 974 604 N "_3DFace" 0
+E E E E E 1 -1 -1 0  60 58.99999999999997
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+1 249 8 "7" 0
+0
+1 345 9 "7" 0
+0
+1 363 10 "7" 0
+0
+1 364 11 "7" 0
+0
+1 375 12 "7" 0
+0
+1 376 13 "7" 0
+0
+1 387 14 "7" 0
+0
+1 388 15 "7" 0
+0
+1 399 16 "7" 0
+0
+1 400 17 "7" 0
+0
+1 411 18 "7" 0
+0
+1 412 19 "7" 0
+0
+1 423 20 "7" 0
+0
+1 424 21 "7" 0
+0
+1 435 22 "7" 0
+0
+1 436 23 "7" 0
+0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+1 250 8 "" 0
+0
+1 346 9 "" 0
+0
+1 365 10 "" 0
+0
+1 370 11 "" 0
+0
+1 377 12 "" 0
+0
+1 382 13 "" 0
+0
+1 389 14 "" 0
+0
+1 394 15 "" 0
+0
+1 401 16 "" 0
+0
+1 406 17 "" 0
+0
+1 413 18 "" 0
+0
+1 418 19 "" 0
+0
+1 425 20 "" 0
+0
+1 430 21 "" 0
+0
+1 437 22 "" 0
+0
+1 442 23 "" 0
+0
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 8 "PANEL_REF37" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 8 1 0 1 176.8388760031698 -228
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401101.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 9 "PANEL_REF53" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 24 1 0 1 243.2583140047548 -228
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401101.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 10 "PANEL_REF56" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 27 1 0 1 176.8388760031698 -175
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401102.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 11 "PANEL_REF57" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 28 1 0 1 243.2583140047548 -175
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401102.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 12 "PANEL_REF58" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 29 1 0 1 176.8388760031698 -126
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401103.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 13 "PANEL_REF59" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 30 1 0 1 243.2583140047548 -126
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401103.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 14 "PANEL_REF60" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 31 1 0 1 176.8388760031698 -82
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401104.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 15 "PANEL_REF61" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 32 1 0 1 243.2583140047548 -82
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401104.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 16 "PANEL_REF62" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 33 1 0 1 176.8388760031698 -35
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401105.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 17 "PANEL_REF63" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 34 1 0 1 243.2583140047548 -35
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401105.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 18 "PANEL_REF64" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 35 1 0 1 176.8388760031698 11.41943800158487
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401106.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 19 "PANEL_REF65" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 36 1 0 1 243.2583140047548 11.41943800158487
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401106.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 20 "PANEL_REF66" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 37 1 0 1 176.8388760031698 55.41943800158487
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401107.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 21 "PANEL_REF67" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 38 1 0 1 243.2583140047548 55.41943800158487
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401107.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 22 "PANEL_REF68" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 39 1 0 1 176.8388760031698 100.4194380015849
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401108.OP.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+3 23 "PANEL_REF69" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 73.16112399683009 302 T 40 1 0 1 243.2583140047548 100.4194380015849
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""zx_401108.CL.SimValue"
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""STD_led_On"
+0

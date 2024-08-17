@@ -1,0 +1,2095 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 508 521 N "_3DFace" 1
+"$num"
+E E E E E 1 -1 -1 0  20.88230620814846 20.0151515151541
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+4 175
+"LINE68"
+""
+1 89.0623444651149 200.6153442309271 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+106 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  89.0623444651149 200.6153442309271 89.0623444651149 216.6741677603388
+4 174
+"LINE67"
+""
+1 203 214.0806426931654 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+105 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  203 214.0806426931654 88.91178455861287 214.0806426931654
+1 440 30 "" 1
+0
+4 223
+"LINE76"
+""
+1 199 306 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+137 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  199 306.0000000000001 122.8 306.0000000000001
+31 69
+"PIPE71"
+""
+1 270 120 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+49 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.55 0 0.2333333333333335 -156.0793996519127 31.99999999999997 0 0 0 4 10 270 120
+270 130
+270 140
+270 150
+270 160
+270 170
+270 180
+270 190
+270 200
+270 210
+31 73
+"PIPE72"
+""
+1 270 120 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+50 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.55 0 0.5703476306031253 -156.0793996519127 55.39311322856728 0 0 0 4 10 270 120
+270 130
+270 140
+270 150
+270 160
+270 170
+270 180
+270 190
+270 200
+270 210
+1 429 8 "" 5
+31 "transform" 0 0 1 0 -0.9999999999999999 3.979039320256561e-13 400.8139948021687
+0
+1 430 8 "" 6
+31 "transform" 0 0 1 0 -1 -1.70530256582424e-13 400.8139948021673
+0
+2 76
+"PRIMITIVE_TEXT100"
+""
+1 206.9944299938849 61.46313363197688 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+51 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 263;
+  setValue(\"\", \"text\", \"930SV0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.126851132926565 0 1.120552474988414 -59.42515988918842 -3.031810836821741 0 E 155 61.46313363197688 259 82
+0 1 1 "0s" 0 0 0 193 0 0  206.9944299938849 61.46313363197688 1
+1
+LANG:10027 41 Arial,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930SV0264
+2 77
+"PRIMITIVE_TEXT111"
+""
+1 102.6827594391956 22.28361141142934 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+52 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+ // int number = $num;
+ // number = number + 248;
+  setValue(\"\", \"text\", \"Горелка дежурная \" +  $num);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.00095401798711 0 1.28243812593789 35.95174970379995 -15.57484747336489 0 E 102.6827594391956 22.28361141142934 331 50
+0 0 0 "0s" 0 0 0 192 0 0  102.6827594391956 22.28361141142934 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,24,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 33 Горелка дежурная 1
+6 78
+"RECTANGLE29"
+""
+1 210 30 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+53 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"gd\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"gd\"+ $num + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.5238167915106137 0 1.129823099176683 139.3236543430923 180.185949717865 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
+1 431 10 "" 1
+0
+2 176
+"PRIMITIVE_TEXT115"
+""
+1 87.33736081920037 122.6986166806388 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+107 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.55 0 1.605882352941176 3.500000000000025 -16.57058823529393 0 E 87.33736081920037 122.6986166806388 116 144
+0 2 2 "0s" 0 0 0 192 0 0  87.33736081920037 122.6986166806388 1
+1
+LANG:10027 41 Arial,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4  °C
+2 177
+"PRIMITIVE_TEXT116"
+""
+1 18.19208053684773 204.613636363639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+108 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 249;
+  setValue(\"\", \"text\", \"930TE0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 0.9992081648673186 0 1.080460678273813 20.51094985196069 -51.98268314991657 0 E 18.19208053684773 204.613636363639 122 226
+0 2 2 "0s" 0 0 0 192 0 0  18.19208053684773 204.613636363639 1
+1
+LANG:10027 41 Arial,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930TE0250
+1 434 27 "" 1
+0
+13 203
+"PUSH_BUTTON1"
+""
+1 -372.9136178168285 765.9995236797296 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+124 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  349.4902323777816 220.863252579656 467.32 252.7774827439958
+
+T 
+1
+LANG:10027 7 ВКЛ.
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+main(mapping event)
+{
+   EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:GD\" + $num + \".CMD.TurnOnIgnition\", \"$msg:Включить зажигание?\"));
+}
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$cmd:GD + $num+.CMD.Start}
+// PanelPara2 {$msg:\"Начать розжиг?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  //EP_setVisible();
+}
+
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:SERVICE_MODE.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:SERVICE_MODE.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SERVICE_MODE.}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+
+13 204
+"PUSH_BUTTON2"
+""
+1 -105.7547830037847 616.2513797577428 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+125 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  275.7929081762202 72.75294117647076 377.1526330566822 105.6588235294119
+
+T 
+1
+LANG:10027 14 ОТКРЫТЬ
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+main(mapping event)
+{
+   EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:GD\" + $num + \".SV.CMD.Open\", \"$msg:Открыть клапан ТГ?\"));
+}
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$cmd:GD + $num+.CMD.Start}
+// PanelPara2 {$msg:\"Начать розжиг?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:SERVICE_MODE.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:SERVICE_MODE.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SERVICE_MODE.}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+
+13 205
+"PUSH_BUTTON3"
+""
+1 -348.7447838204175 630.1681384220675 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+126 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  275.5816968274819 108.6696578018845 378 139.3690349741831
+
+T 
+1
+LANG:10027 14 ЗАКРЫТЬ
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+main(mapping event)
+{
+   EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:GD\" + $num + \".SV.CMD.Close\", \"$msg:Закрыть клапан ТГ?\"));
+}
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$cmd:GD + $num+.CMD.Start}
+// PanelPara2 {$msg:\"Начать розжиг?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:SERVICE_MODE.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:SERVICE_MODE.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SERVICE_MODE.}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+
+13 206
+"PUSH_BUTTON4"
+""
+1 -628.1836127350051 543.7241001616671 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+127 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  9.999999999999986 13.54705882352964 114.5957545002019 44.69246649363588
+
+T 
+1
+LANG:10027 10 СТАРТ
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+main(mapping event)
+{
+   EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:GD\" + $num + \".CMD.Start\", \"$msg:Начать розжиг?\"));
+}
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$cmd:GD + $num+.CMD.Start}
+// PanelPara2 {$msg:\"Начать розжиг?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  //EP_setVisible();
+}
+
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:SERVICE_MODE.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:SERVICE_MODE.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+" 0
+
+13 207
+"PUSH_BUTTON5"
+""
+1 -342.2380097436007 1552.878416285664 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+128 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  389.5213514962202 13.54705882352964 494.1171059964218 44.84705882352962
+
+T 
+1
+LANG:10027 8 СТОП
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+main(mapping event)
+{
+   EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:GD\" + $num + \".CMD.Stop\", \"$msg:Остановить горелку?\"));
+}
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$cmd:GD + $num+.CMD.Start}
+// PanelPara2 {$msg:\"Начать розжиг?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:SERVICE_MODE.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:SERVICE_MODE.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SERVICE_MODE.}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+
+2 252
+"PRIMITIVE_TEXT1"
+""
+1 12 11.5 E E E 1 E 1 E N "white" E N "Red" E E
+ E E
+141 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  //EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"gd\"+$num+\".ES.Alarm:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"gd\"+$num+\".ES.Alarm:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.460533740896466 0 1.235294117647059 199.5033248902033 78.62110341074603 1 E -60 11.5 22 27
+1 2 2 "0s" 0 0 0 194 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 ОШИБКА УПР.
+6 253
+"RECTANGLE44"
+""
+1 10 10 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+142 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 9.920000000000002 0 10.2 -94.19999999999999 -96.4529411764704 0 E 10 10 60 60
+1 435 29 "" 1
+0
+1 445 34 "" 1
+0
+4 295
+"LINE34"
+""
+1 194.58029706062 322.6148600633444 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+156 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  194.5802970606199 322.6148600633444 233.6887772055777 322.6148600633444
+4 296
+"LINE35"
+""
+1 194.58029706062 289.7072096367127 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+157 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  194.5802970606199 289.707209636713 233.6887772055777 289.707209636713
+4 297
+"LINE38"
+""
+1 194.58029706062 322.6148600633444 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+158 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  194.58029706062 322.6148600633444 194.58029706062 289.7072096367127
+9 298
+"ARC1"
+""
+1 210 280 E E E 1 E 1 E N {0,0,0} E N "STD_led_On" E E
+ E E
+159 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\"+$num+\".BT_Flame\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            \"gd\"+$num+\".BT_Flame\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"STD_led_Off\");
+  else
+    setValue(\"\", \"backCol\", \"STD_led_On\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP { \"GD\" + $num+\".TE_Flame\"}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {STD_led_Off}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {STD_led_On}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 1 1 E 9.724464788371285e-17 -1.645382521331575 -1.138808914729138 -7.224598918177195e-17 513.4467931847789 651.6913643296589 1 E 210 280 10.944444 10.944444
+ 0 220.9444444444445 280 200 280 1
+4 299
+"LINE40"
+""
+1 277.7537754634698 320.2039061185575 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+160 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 0 1 E  277.7537754634697 320.2039061185575 260.9638683166129 305.5802081377183
+10 300
+"POLYGON22"
+""
+1 60 50 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+161 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -0.2677448808253466 0.1836917291266301 0.2974943120281625 0.2583164940843234 269.1828939537984 282.8267731675917 1 E 3 60 50
+70 10
+80 50
+ 1
+4 301
+"LINE43"
+""
+1 258.026857252742 322.6148600633447 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+162 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 0 1 E  258.0268572527423 322.6148600633444 241.2369501058847 307.9911620825056
+10 302
+"POLYGON24"
+""
+1 60 50 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+163 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -0.2677448808253466 0.1836917291266301 0.2974943120281625 0.2583164940843234 249.4559757430703 285.2377271123789 1 E 3 60 50
+70 10
+80 50
+ 1
+2 303
+"PRIMITIVE_TEXT124"
+""
+1 18.19208053684773 204.613636363639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+164 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 249;
+  setValue(\"\", \"text\", \"930BT0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 0.9992730948010428 0 1.241343383911078 19.56122886422028 9.129995415276326 0 E 18.19208053684773 204.613636363639 122 226
+0 2 2 "0s" 0 0 0 192 0 0  18.19208053684773 204.613636363639 1
+1
+LANG:10027 41 Arial,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930BT0250
+2 304
+"PRIMITIVE_TEXT125"
+""
+1 87.67237757361238 200.7953756849109 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+165 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.55 0 1.605882352941176 8.499999999999996 -42.57058823529393 0 E 87.67237757361238 200.7953756849109 111 222
+0 2 2 "0s" 0 0 0 192 0 0  87.67237757361238 200.7953756849109 1
+1
+LANG:10027 41 Arial,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2  %
+6 224
+"RECTANGLE43"
+""
+1 140 110 E E E 1 E 1 E N {0,0,0} E N "Red" E E
+ E E
+138 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\" + $num+\".AlarmBTError:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"gd\" + $num+\".AlarmBTError:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:GD1.AlarmBTError}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.306788617886179 0 2.087647058823529 -138.0122960743203 99.4934272287496 1 E 140 110 210 120
+2 226
+"PRIMITIVE_TEXT123"
+""
+1 71.62424946765177 128.1546847128383 E E E 1 E 1 E N "white" E N "_Window" E E
+ E E
+140 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\" + $num+\".AlarmBTError:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"gd\" + $num+\".AlarmBTError:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:GD1.AlarmBTError}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.518041237113402 0 1.605882352941176 -18.81187283198844 125.7420806016623 0 E 42.12424946765179 128.1546847128383 102.1242494676518 138.1546847128383
+0 2 2 "0s" 0 0 0 65 0 0  72.12424946765177 128.1546847128383 1
+1
+LANG:10027 56 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 15 DI "ОТКАЗ"
+10 173
+"POLYGON31"
+""
+1 110 120 E E E 1 E 1 E N {0,0,0} E N "STD_led_On" E E
+ E E
+104 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\"+$num+\".TE_Flame\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            \"gd\"+$num+\".TE_Flame\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"STD_led_Off\");
+  else
+    setValue(\"\", \"backCol\", \"STD_led_On\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP { \"GD\" + $num+\".TE_Flame\"}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {STD_led_Off}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {STD_led_On}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 5.293989113309239e-17 0.3066513162305052 0.5659539473684211 -1.106234259376855e-16 123.76875 173.8161250875613 1 E 5 110 120
+150 120
+150 180
+130 200
+110 180
+ 1
+10 332
+"POLYGON32"
+""
+1 240 160 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+169 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.5166666666666666 0 0.2408823529411764 168.6456003480866 180.3571132814007 1 E 3 240 160
+270 150
+270 170
+ 1
+4 333
+"LINE77"
+""
+1 308.1456003480866 218.8982897519889 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+170 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  308.1456003480866 218.8982897519889 394.02 218.8982897519889
+4 334
+"LINE78"
+""
+1 293.27 211.7117647058825 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+171 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  293.27 211.7117647058825 321.17 203.6823529411766
+4 335
+"LINE79"
+""
+1 321.17 203.6823529411766 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+172 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  321.17 203.6823529411766 392.47 203.6823529411766
+6 195
+"RECTANGLE42"
+""
+1 59.99999999999999 150 E E E 1 E 1 E N {0,0,0} E N "STD_led_Off" E E
+ E E
+116 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\"+$num+\".IgnitionOn\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            \"gd\"+$num+\".IgnitionOn\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"STD_led_Off\");
+  else
+    setValue(\"\", \"backCol\", \"STD_led_On\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {\"GD\"+ $num + \".IgnitionON\"}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {STD_led_Off}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {STD_led_On}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1.65058478164967 0 1.288279923954543 252.0477132750632 2.474868448407449 1 E 59.99999999999999 150 129.6893939393939 171.3181818181818
+2 196
+"PRIMITIVE_TEXT118"
+""
+1 18.19208053684773 204.613636363639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+117 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  int number = $num;
+  number = number + 249;
+  setValue(\"\", \"text\", \"930ES0\"+ number);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.055398864442072 0 1.093804280203567 389.5997471534622 -26.05476941690824 0 E -34 204.613636363639 70 226
+0 0 0 "0s" 0 0 0 193 0 0  18.19208053684773 204.613636363639 1
+1
+LANG:10027 41 Arial,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 9 930ES0250
+2 305
+"PRIMITIVE_TEXT126"
+""
+1 206.9944299938849 61.46313363197688 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+166 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.6275 0 1.605882352941176 71.72113350737652 74.58678199142065 0 E 160 61.46313363197688 254 82
+0 1 1 "0s" 0 0 0 193 0 0  206.9944299938849 61.46313363197688 1
+1
+LANG:10027 41 Arial,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 18 Зажигание
+2 336
+"PRIMITIVE_TEXT127"
+""
+1 12 11.5 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+173 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  this.visible(0);
+  //EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"GD\"+ $num + \".AlarmCheckTE:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"GD\"+ $num + \".AlarmCheckTE:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.8502906920141979 0 0.7436413155792624 177.576938109021 177.4456600258476 1 E 3 5 41 20
+1 2 2 "0s" 0 0 0 201 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 5 CHECK
+13 362
+"PUSH_BUTTON6"
+""
+1 -530.7297217113978 2011.911749618997 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+175 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  201.029639528423 472.5803921568628 305.6253940286247 503.8803921568627
+
+T 
+1
+LANG:10027 4 ОК
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_panelOff();
+}
+
+void EP_panelOff()
+{
+  PanelOff();
+}
+
+// SimpleCtrlScript {EP_panelOff}
+// Function {PanelOff}
+// Panel {}
+// Module {}
+// SimpleCtrlScriptEnd {EP_panelOff}
+" 0
+ E E E
+1 448 38 "" 1
+0
+2 365
+"PRIMITIVE_TEXT128"
+""
+1 12 11.5 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+179 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  this.visible(0);
+  //EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"GD\"+ $num + \".AlarmCheckBT:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"GD\"+ $num + \".AlarmCheckBT:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.8502906920141979 0 0.7436413155792624 160.576938109021 343.5967775699569 1 E 3 5 41 20
+1 2 2 "0s" 0 0 0 201 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 5 CHECK
+1 449 39 "" 1
+0
+6 367
+"RECTANGLE46"
+""
+1 10 10 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+180 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 3 3 2 1 E 10.09310067114095 0 10.37342205323194 -99.93100671140942 -102.8538283754565 0 E 10 10 60 60
+2 368
+"PRIMITIVE_TEXT129"
+""
+1 105.3952449938437 381.3333333333333 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+181 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"gd\"+ $num + \".IgnitionStart:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  if( !dpExists(\"gd\"+ $num + \".Work:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  if( !dpExists(\"gd\"+ $num + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  dpConnect(\"EP_textFieldInCB\",
+            \"gd\"+ $num + \".IgnitionStart:_online.._value\",
+            \"gd\"+ $num + \".Work:_online.._value\",
+            \"gd\"+ $num + \".Flame:_online.._value\"  );
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp1, bool bIStart,string dp2, bool bWork,string dp3, bool bFlame)
+{
+  if(bIStart)
+  setValue(\"\", \"text\",\"ИДЕТ РОЗЖИГ ГОРЕЛКИ\");
+  else if (!bWork) setValue(\"\", \"text\",\"ГОРЕЛКА ОСТАНОВЛЕНА\");
+       else if (bFlame) setValue(\"\", \"text\",\"ГОРЕЛКА ЗАПУЩЕНА - ПЛАМЯ ЕСТЬ\");
+             else setValue(\"\", \"text\",\"ГОРЕЛКА ЗАПУЩЕНА - ПЛАМЕНИ НЕТ\");
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:gd1.CountDown}
+// DPConfig {:_online.._value}
+// DPType {unsigned}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E 1.008057598356491 0 1 147.4814689510923 27.38362687584714 0 E -2 370 212 392
+0 2 2 "0s" 0 0 0 201 0 0  105.3952449938437 381.3333333333333 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 36 ИДЕТ РОЗЖИГ ГОРЕЛКИ
+2 395
+"PRIMITIVE_TEXT130"
+""
+1 12 11.5 E E E 1 E 1 E N "white" E N "Red" E E
+ E E
+182 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"gd\"+ $num + \".AlarmNoFlame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"gd\"+ $num + \".AlarmNoFlame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.460533740896466 0 1.235294117647059 456.6859130693873 276.1296623010084 1 E -111 11.5 22 27
+1 2 2 "0s" 0 0 0 194 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 33 ПОГАСАНИЕ ПЛАМЕНИ
+2 396
+"PRIMITIVE_TEXT131"
+""
+1 12 11.5 E E E 1 E 1 E N "white" E N "Red" E E
+ E E
+183 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\"+ $num + \".AlarmIgnitionFail:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"gd\"+ $num + \".AlarmIgnitionFail:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.529398256871549 0 1.235294117647059 455.2912138333424 302.6590740657142 1 E -105 11.5 22 27
+1 2 2 "0s" 0 0 0 194 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 31 НЕУДАЧНЫЙ РОЗЖИГ
+2 423
+"PRIMITIVE_TEXT132"
+""
+1 12 11.5 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+184 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\"+ $num + \".AlarmCheckTE:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"gd\"+ $num + \".AlarmCheckTE:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.242581908341116 0 1.295839896783732 146.9613675331465 103.0972269658572 1 E -99 11.5 22 27
+1 2 2 "0s" 0 0 0 194 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 31 ПРОВЕРИТЬ ДАТЧИК
+2 425
+"PRIMITIVE_TEXT134"
+""
+1 12 11.5 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+186 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"gd\"+ $num + \".AlarmCheckBT:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"gd\"+ $num + \".AlarmCheckBT:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:SV0276.Alarm}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.242581908341116 0 1.295839896783732 159.3174720654447 350.9984875448633 1 E -99 11.5 22 27
+1 2 2 "0s" 0 0 0 194 0 0  22 11.5 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 31 ПРОВЕРИТЬ ДАТЧИК
+2 428
+"PRIMITIVE_TEXT137"
+""
+1 105.3952449938437 381.3333333333333 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+189 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"gd\"+ $num + \".IgnitionStart:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  if( !dpExists(\"gd\"+ $num + \".IgnitionOn:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  if( !dpExists(\"gd\"+ $num + \".try_count:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  if( !dpExists(\"gd\"+ $num + \".countdown:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"gd\"+ $num + \".IgnitionStart:_online.._value\",
+            \"gd\"+ $num + \".IgnitionOn:_online.._value\",
+            \"gd\"+ $num + \".try_count:_online.._value\",
+            \"gd\"+ $num + \".countdown:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp1, bool bIgnStart,
+                      string dp2, bool bIgnOn,
+                      string dp3, unsigned uTry,
+                      string dp4, unsigned uCD)
+{
+
+ float CD_Sec;
+ string CD_str;
+ CD_Sec = uCD / 1000.0;
+ sprintf(CD_str,\"%3.1f\",CD_Sec);
+
+  if (!bIgnStart) setValue(\"\", \"text\", \"\");
+  else if (uTry == 0)  setValue(\"\", \"text\", \"ЗАПОЛНЕНИЕ МАГИСТРАЛИ ТГ ... \" + CD_str + \" сек\");
+       else if (!bIgnOn) setValue(\"\", \"text\", \"ПОПЫТКА \" + uTry + \" : \" +  \"ОЖИДАНИЕ ПЛАМЕНИ ... \" + CD_str + \" сек\");
+            else setValue(\"\", \"text\", \"ПОПЫТКА \" + uTry + \" : \" +  \"ЗАЖИГАНИЕ ... \" + CD_str + \" сек\");
+
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:gd1.CountDown}
+// DPConfig {:_online.._value}
+// DPType {unsigned}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E 0.9903077191742885 0 1 149.3452062652236 56.05029354251383 0 E 58 370 152 392
+0 2 2 "0s" 0 0 0 201 0 0  105.3952449938437 381.3333333333333 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 15 ПОПЫТКА 
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 8 "PANEL_REF117" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Burner.pnl" 995.0714285714288 439.5 T 45 0.9470273512395968 0 0.9728631759485216 -607.4916665762862 -27.29654659967144
+0
+3 10 "PANEL_REF146" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ignition.pnl" 77 133.7930954248944 T 47 1.55 0 1.605882352941176 196.4389755211433 53.3831884879994
+3
+"$dpe_fail""\"gd\"+ $num + \".AlarmIgnitionFail\""
+"$dpe_on""\"gd\"+ $num + \".IgnitionOn\""
+"$dpe_start""\"gd\"+ $num + \".IgnitionStart\""
+3 27 "PANEL_REF207" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/No_Fire2.pnl" 116.9301075268818 210.5 T 110 1.55 0 1.605882352941176 49.95393368141978 -114.3222984833052
+1
+"$dpe""\"gd\"+ $num + \".AlarmNoFlame\""
+3 29 "PANEL_REF208" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 56.10373145097401 77.66626688973069 T 143 1.55 0 1.605882352941176 -69.03969112946014 159.4333995299639
+4
+"$b_Alarm""TRUE"
+"$b_Diag""TRUE"
+"$b_IBit""FALSE"
+"$dp_value""\"gd\" + $num+ \".BT\""
+3 30 "PANEL_REF209" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 56.10373145097401 77.66626688973069 T 144 1.55037759438315 0 1.589685963863099 -68.19602946730167 68.99597375920416
+4
+"$b_Alarm""FALSE"
+"$b_Diag""TRUE"
+"$b_IBit""FALSE"
+"$dp_value""\"gd\" + $num+ \".TE\""
+3 34 "PANEL_REF211" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve.pnl" 257.1711936839057 538.0905740388325 T 154 4.593497194186435e-17 -0.7934132876451591 0.8213073527463457 5.318919739930687e-17 -129.0815288505369 310.8194854849489
+0
+1 36 "SHAPE_GROUP29" -1
+4 0 
+299 300 301 302 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 38 "PANEL_REF213" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/AttentionY.pnl" 190.35 357.9647058823529 T 177 1 0 1 16.43333333333331 -197.2881219097675
+1
+"$dpe""\"gd\"+ $num + \".AlarmCheckTE\""
+3 39 "PANEL_REF214" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/AttentionY.pnl" 190.35 357.9647058823529 T 178 1 0 1 -0.5666666666666913 -31.13700436565816
+1
+"$dpe""\"gd\"+ $num + \".AlarmCheckBT\""
+0

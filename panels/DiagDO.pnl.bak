@@ -1,0 +1,1128 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 1023 769 N "_3DFace" 0
+E E "main()
+{
+  Inp_panelOff();
+}
+
+void Inp_panelOff()
+{
+  PanelOffPanel(\"Input_pnl\");
+}" 0
+ E E 1 -1 -1 0  360 710
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+1 11134 82 "" 26
+0
+2 7044
+"PRIMITIVE_TEXT162"
+""
+1 668.1249999999998 1.953207950720483 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+1128 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1 0 0.9992283950617283 -156.5 13.089625310057 1 E 575 -12 761 16
+0 2 2 "0s" 0 0 0 201 0 0  668.1249999999998 1.953207950720483 1
+1
+LANG:10027 56 MS Shell Dlg 2,-1,24,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 22 ДИАГНОСТИКА
+1 10927 73 "" 1
+0
+30 8175
+"FRAME1"
+""
+1 390 151 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+1345 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 3.812499999999998 0 9.775831298097987 -1471.874999999999 -1422.907054283459 0 E 390 151 519 220
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 24 Модуль А7. М957O
+2 8357
+"PRIMITIVE_TEXT163"
+""
+1 668.1249999999998 1.953207950720483 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+1354 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033950617283951 0 0.9992283950617283 -179.1790123456793 32.94728689320878 1 E 596 -5 740 10
+0 2 2 "0s" 0 0 0 201 0 0  668.1249999999998 1.953207950720483 1
+1
+LANG:10027 56 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 33 ДИСКРЕТРЫЕ ВыХОДЫ
+30 8449
+"FRAME2"
+""
+1 390 151 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+1372 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 3.812499999999998 0 9.775831298097987 -965.2499999999993 -1422.957420626708 0 E 390 151 519 220
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 25 Модуль А13. М957O
+13 9310
+"PUSH_BUTTON8"
+""
+1 15 11.85185185185185 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+1427 1 0 0 37 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 56 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0,Полужирный
+0  13 3 226.9999999999999 44
+
+T 
+1
+LANG:10027 35 <<  ДИСКРЕТНЫЕ ВХОДЫ
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  RootPanelOn(\"DiagDI.pnl\",
+      \"\",
+      makeDynString(\"\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {RootPanelOn}
+// File {DiagDI.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
+13 9317
+"PUSH_BUTTON9"
+""
+1 799.6249999999995 11.85185185185185 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+1428 1 0 0 39 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 56 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0,Полужирный
+0  797.6249999999995 3 1011.624999999999 44
+
+T 
+1
+LANG:10027 35 АНАЛОГОВЫЕ ВХОДЫ  >>
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  RootPanelOn(\"DiagAI.pnl\",
+      \"\",
+      makeDynString(\"\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {RootPanelOn}
+// File {DiagAI.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
+1 10934 74 "" 26
+0
+1 10959 75 "" 26
+0
+1 10984 76 "" 26
+0
+1 11009 77 "" 26
+0
+1 11034 78 "" 26
+0
+1 11059 79 "" 26
+0
+1 11084 80 "" 26
+0
+1 11109 81 "" 26
+0
+1 11159 83 "" 26
+0
+1 11184 84 "" 26
+0
+1 11209 85 "" 26
+0
+1 11234 86 "" 26
+0
+1 11259 87 "" 26
+0
+1 11284 88 "" 26
+0
+1 11309 89 "" 26
+0
+1 11334 90 "" 26
+0
+1 11359 91 "" 26
+0
+1 11384 92 "" 26
+0
+1 11409 93 "" 26
+0
+1 11434 94 "" 26
+0
+1 11459 95 "" 26
+0
+1 11484 96 "" 26
+0
+1 11509 97 "" 26
+0
+1 11534 98 "" 26
+0
+1 11559 99 "" 26
+0
+1 11584 100 "" 26
+0
+1 11609 101 "" 26
+0
+1 11634 102 "" 26
+0
+1 11659 103 "" 26
+0
+1 11684 104 "" 26
+0
+1 11709 105 "" 26
+0
+1 12134 122 "" 26
+0
+1 12159 123 "" 26
+0
+1 11734 106 "" 26
+0
+1 12184 124 "" 26
+0
+1 11759 107 "" 26
+0
+1 12209 125 "" 26
+0
+1 11784 108 "" 26
+0
+1 12234 126 "" 26
+0
+1 11809 109 "" 26
+0
+1 11834 110 "" 26
+0
+1 12259 127 "" 26
+0
+1 11859 111 "" 26
+0
+1 12284 128 "" 26
+0
+1 11884 112 "" 26
+0
+1 12309 129 "" 26
+0
+1 11909 113 "" 26
+0
+1 12334 130 "" 26
+0
+1 11934 114 "" 26
+0
+1 12359 131 "" 26
+0
+1 11959 115 "" 26
+0
+1 12384 132 "" 26
+0
+1 11984 116 "" 26
+0
+1 12409 133 "" 26
+0
+1 12009 117 "" 26
+0
+1 12434 134 "" 26
+0
+1 12034 118 "" 26
+0
+1 12459 135 "" 26
+0
+1 12059 119 "" 26
+0
+1 12484 136 "" 26
+0
+1 12084 120 "" 26
+0
+1 12509 137 "" 26
+0
+1 12109 121 "" 26
+0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+1 11139 82 "0" 0
+0
+1 10939 74 "0" 0
+0
+1 10964 75 "0" 0
+0
+1 10989 76 "0" 0
+0
+1 11014 77 "0" 0
+0
+1 11039 78 "0" 0
+0
+1 11064 79 "0" 0
+0
+1 11089 80 "0" 0
+0
+1 11114 81 "0" 0
+0
+1 11164 83 "0" 0
+0
+1 11189 84 "0" 0
+0
+1 11214 85 "0" 0
+0
+1 11239 86 "0" 0
+0
+1 11264 87 "0" 0
+0
+1 11289 88 "0" 0
+0
+1 11314 89 "0" 0
+0
+1 11339 90 "0" 0
+0
+1 11364 91 "0" 0
+0
+1 11389 92 "0" 0
+0
+1 11414 93 "0" 0
+0
+1 11439 94 "0" 0
+0
+1 11464 95 "0" 0
+0
+1 11489 96 "0" 0
+0
+1 11514 97 "0" 0
+0
+1 11539 98 "0" 0
+0
+1 11564 99 "0" 0
+0
+1 11589 100 "0" 0
+0
+1 11614 101 "0" 0
+0
+1 11639 102 "0" 0
+0
+1 11664 103 "0" 0
+0
+1 11689 104 "0" 0
+0
+1 11714 105 "0" 0
+0
+1 12139 122 "0" 0
+0
+1 12164 123 "0" 0
+0
+1 11739 106 "0" 0
+0
+1 12189 124 "0" 0
+0
+1 11764 107 "0" 0
+0
+1 12214 125 "0" 0
+0
+1 11789 108 "0" 0
+0
+1 12239 126 "0" 0
+0
+1 11814 109 "0" 0
+0
+1 11839 110 "0" 0
+0
+1 12264 127 "0" 0
+0
+1 11864 111 "0" 0
+0
+1 12289 128 "0" 0
+0
+1 11889 112 "0" 0
+0
+1 12314 129 "0" 0
+0
+1 11914 113 "0" 0
+0
+1 12339 130 "0" 0
+0
+1 11939 114 "0" 0
+0
+1 12364 131 "0" 0
+0
+1 11964 115 "0" 0
+0
+1 12389 132 "0" 0
+0
+1 11989 116 "0" 0
+0
+1 12414 133 "0" 0
+0
+1 12014 117 "0" 0
+0
+1 12439 134 "0" 0
+0
+1 12039 118 "0" 0
+0
+1 12464 135 "0" 0
+0
+1 12064 119 "0" 0
+0
+1 12489 136 "0" 0
+0
+1 12089 120 "0" 0
+0
+1 12514 137 "0" 0
+0
+1 12114 121 "0" 0
+0
+0
+LAYER, 2 
+1
+LANG:10027 0 
+6 10925
+"RECTANGLE5"
+""
+1 10 10 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+1530 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_1.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_1.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E 1.012871287128713 0 1.00921052631579 -10.12871287128713 -10.09210526315825 3 1 10 3 E 10 10 1020 770
+2 10926
+"PRIMITIVE_TEXT58"
+""
+1 480 160 E E E 1 E 1 E N "Red" E N "_Window" E E
+ E E
+1531 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_1.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_1.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1 0 1.23284468453098 31.5000000000001 185.6284281327774 0 E 246 51 714 270
+0 2 2 "0s" 0 0 0 201 0 0  480 160 3
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 НЕТ СВЯЗИ С
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 21  ИСТОЧНИКОМ
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 13 ДАННЫХ 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 73 "PANEL_REF97" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Navigator.pnl" 27.55037815036528 733 T 1306 1 0 1 -27.55037815036528 -8
+0
+3 74 "PANEL_REF99" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1430 1 0 1 -1 -20
+3
+"$ch_name""\"Открыть 930SV0250-ПН.КЛ. 2 ст.\""
+"$ch_num""1"
+"$dpe""System1:A7"
+3 75 "PANEL_REF100" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1431 1 0 1 245.9876543209875 -20
+3
+"$ch_name""\"ПАЗ - Нет пламкни на ГД7\""
+"$ch_num""17"
+"$dpe""System1:A7"
+3 76 "PANEL_REF101" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1431 1 0 1 -1 19.59181920803024
+3
+"$ch_name""\"Открыть 930SV0251-ПН.КЛ. 3 ст.\""
+"$ch_num""2"
+"$dpe""System1:A7"
+3 77 "PANEL_REF102" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1432 1 0 1 245.9876543209875 19.59181920803024
+3
+"$ch_name""\"ПАЗ - Нет пламкни на ГД8\""
+"$ch_num""18"
+"$dpe""System1:A7"
+3 78 "PANEL_REF103" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1433 1 0 1 -1 59.18363841606049
+3
+"$ch_name""\"Открыть 930SV0252-ПН.КЛ. 4 ст.\""
+"$ch_num""3"
+"$dpe""System1:A7"
+3 79 "PANEL_REF104" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1434 1 0 1 245.9876543209875 59.18363841606049
+3
+"$ch_name""\"ПАЗ - Нет пламкни на ГД9\""
+"$ch_num""19"
+"$dpe""System1:A7"
+3 80 "PANEL_REF105" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1435 1 0 1 -1 98.77545762409073
+3
+"$ch_name""\"Открыть 930SV0253-ПН.КЛ. 5 ст.\""
+"$ch_num""4"
+"$dpe""System1:A7"
+3 81 "PANEL_REF106" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1436 1 0 1 245.9876543209875 98.77545762409073
+3
+"$ch_name""\"ПАЗ - розжиг ГД1\""
+"$ch_num""20"
+"$dpe""System1:A7"
+3 82 "PANEL_REF107" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1437 1 0 1 -1 138.367276832121
+3
+"$ch_name""\"Открыть 930SV0254-ПН.КЛ. 6 ст.\""
+"$ch_num""5"
+"$dpe""System1:A7"
+3 83 "PANEL_REF108" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1438 1 0 1 245.9876543209875 138.367276832121
+3
+"$ch_name""\"ПАЗ - розжиг ГД2\""
+"$ch_num""21"
+"$dpe""System1:A7"
+3 84 "PANEL_REF131" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1461 1 0 1 -1 177.9590960401513
+3
+"$ch_name""\"Открыть 930SV0255-ПН.КЛ. 7 ст.\""
+"$ch_num""6"
+"$dpe""System1:A7"
+3 85 "PANEL_REF132" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1462 1 0 1 245.9876543209875 177.9590960401513
+3
+"$ch_name""\"ПАЗ - розжиг ГД3\""
+"$ch_num""22"
+"$dpe""System1:A7"
+3 86 "PANEL_REF133" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1463 1 0 1 -1 217.5509152481816
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""7"
+"$dpe""System1:A7"
+3 87 "PANEL_REF134" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1464 1 0 1 245.9876543209875 217.5509152481816
+3
+"$ch_name""\"ПАЗ - розжиг ГД4\""
+"$ch_num""23"
+"$dpe""System1:A7"
+3 88 "PANEL_REF135" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1465 1 0 1 -1 257.1427344562118
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""8"
+"$dpe""System1:A7"
+3 89 "PANEL_REF136" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1466 1 0 1 245.9876543209875 257.1427344562118
+3
+"$ch_name""\"ПАЗ - розжиг ГД5\""
+"$ch_num""24"
+"$dpe""System1:A7"
+3 90 "PANEL_REF137" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1467 1 0 1 -1 296.734553664242
+3
+"$ch_name""\"ПАЗ - Выс. т. дымовых газов\""
+"$ch_num""9"
+"$dpe""System1:A7"
+3 91 "PANEL_REF138" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1468 1 0 1 245.9876543209875 296.734553664242
+3
+"$ch_name""\"ПАЗ - розжиг ГД6\""
+"$ch_num""25"
+"$dpe""System1:A7"
+3 92 "PANEL_REF139" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1469 1 0 1 -1 336.3263728722723
+3
+"$ch_name""\"ПАЗ - Выс. Т. стенок камеры\""
+"$ch_num""10"
+"$dpe""System1:A7"
+3 93 "PANEL_REF140" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1470 1 0 1 245.9876543209875 336.3263728722723
+3
+"$ch_name""\"ПАЗ - розжиг ГД7\""
+"$ch_num""26"
+"$dpe""System1:A7"
+3 94 "PANEL_REF157" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1487 1 0 1 -1 375.9181920803026
+3
+"$ch_name""\"ПАЗ - Нет пламени на ГД1\""
+"$ch_num""11"
+"$dpe""System1:A7"
+3 95 "PANEL_REF158" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1488 1 0 1 245.9876543209875 375.9181920803026
+3
+"$ch_name""\"ПАЗ - розжиг ГД8\""
+"$ch_num""27"
+"$dpe""System1:A7"
+3 96 "PANEL_REF159" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1489 1 0 1 -1 415.5100112883329
+3
+"$ch_name""\"ПАЗ - Нет пламени на ГД2\""
+"$ch_num""12"
+"$dpe""System1:A7"
+3 97 "PANEL_REF160" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1490 1 0 1 245.9876543209875 415.5100112883329
+3
+"$ch_name""\"ПАЗ - розжиг ГД9\""
+"$ch_num""28"
+"$dpe""System1:A7"
+3 98 "PANEL_REF161" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1491 1 0 1 -1 455.1018304963632
+3
+"$ch_name""\"ПАЗ - Нет пламени на ГД3\""
+"$ch_num""13"
+"$dpe""System1:A7"
+3 99 "PANEL_REF162" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1492 1 0 1 245.9876543209875 455.1018304963632
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""29"
+"$dpe""System1:A7"
+3 100 "PANEL_REF163" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1493 1 0 1 -1 494.6936497043934
+3
+"$ch_name""\"ПАЗ - Нет пламени на ГД4\""
+"$ch_num""14"
+"$dpe""System1:A7"
+3 101 "PANEL_REF164" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1494 1 0 1 245.9876543209875 494.6936497043934
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""30"
+"$dpe""System1:A7"
+3 102 "PANEL_REF165" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1495 1 0 1 -1 534.2854689124235
+3
+"$ch_name""\"ПАЗ - Нет пламени на ГД5\""
+"$ch_num""15"
+"$dpe""System1:A7"
+3 103 "PANEL_REF166" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1496 1 0 1 245.9876543209875 534.2854689124235
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""31"
+"$dpe""System1:A7"
+3 104 "PANEL_REF167" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1497 1 0 1 -1 573.877288120454
+3
+"$ch_name""\"ПАЗ - Нет пламени на ГД6\""
+"$ch_num""16"
+"$dpe""System1:A7"
+3 105 "PANEL_REF168" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1498 1 0 1 245.9876543209875 573.877288120454
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""32"
+"$dpe""System1:A7"
+3 106 "PANEL_REF169" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1498 1 0 1 755.8124999999998 -21.78131803388288
+3
+"$ch_name""\"Открыть 930SV0272 -т.газ ГД9\""
+"$ch_num""17"
+"$dpe""System1:A13"
+3 107 "PANEL_REF170" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1499 1 0 1 755.8124999999998 17.81050117414736
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""18"
+"$dpe""System1:A13"
+3 108 "PANEL_REF171" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1500 1 0 1 755.8124999999998 57.40232038217761
+3
+"$ch_name""\"Открыть 930SV0276 -возд. КС\""
+"$ch_num""19"
+"$dpe""System1:A13"
+3 109 "PANEL_REF172" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1501 1 0 1 755.8124999999998 96.99413959020785
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""20"
+"$dpe""System1:A13"
+3 110 "PANEL_REF173" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1502 1 0 1 755.8124999999998 136.5859587982381
+3
+"$ch_name""\"Вкл. 930ES0250 - розжиг ГД1\""
+"$ch_num""21"
+"$dpe""System1:A13"
+3 111 "PANEL_REF174" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1503 1 0 1 755.8124999999998 176.1777780062684
+3
+"$ch_name""\"Вкл. 930ES0251 - розжиг ГД2\""
+"$ch_num""22"
+"$dpe""System1:A13"
+3 112 "PANEL_REF175" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1504 1 0 1 755.8124999999998 215.7695972142987
+3
+"$ch_name""\"Вкл. 930ES0252 - розжиг ГД3\""
+"$ch_num""23"
+"$dpe""System1:A13"
+3 113 "PANEL_REF176" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1505 1 0 1 755.8124999999998 255.361416422329
+3
+"$ch_name""\"Вкл. 930ES0253 - розжиг ГД4\""
+"$ch_num""24"
+"$dpe""System1:A13"
+3 114 "PANEL_REF177" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1506 1 0 1 755.8124999999998 294.9532356303591
+3
+"$ch_name""\"Вкл. 930ES0254 - розжиг ГД5\""
+"$ch_num""25"
+"$dpe""System1:A13"
+3 115 "PANEL_REF178" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1507 1 0 1 755.8124999999998 334.5450548383894
+3
+"$ch_name""\"Вкл. 930ES0255 - розжиг ГД6\""
+"$ch_num""26"
+"$dpe""System1:A13"
+3 116 "PANEL_REF179" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1508 1 0 1 755.8124999999998 374.1368740464197
+3
+"$ch_name""\"Вкл. 930ES0257 - розжиг ГД7\""
+"$ch_num""27"
+"$dpe""System1:A13"
+3 117 "PANEL_REF180" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1509 1 0 1 755.8124999999998 413.72869325445
+3
+"$ch_name""\"Вкл. 930ES0257 - розжиг ГД8\""
+"$ch_num""28"
+"$dpe""System1:A13"
+3 118 "PANEL_REF181" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1510 1 0 1 755.8124999999998 453.3205124624803
+3
+"$ch_name""\"Вкл. 930ES0258 - розжиг ГД9\""
+"$ch_num""29"
+"$dpe""System1:A13"
+3 119 "PANEL_REF182" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1511 1 0 1 755.8124999999998 492.9123316705106
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""30"
+"$dpe""System1:A13"
+3 120 "PANEL_REF183" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1512 1 0 1 755.8124999999998 532.5041508785407
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""31"
+"$dpe""System1:A13"
+3 121 "PANEL_REF184" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1513 1 0 1 755.8124999999998 572.095970086571
+3
+"$ch_name""\"РЕЗЕРВ\""
+"$ch_num""32"
+"$dpe""System1:A13"
+3 122 "PANEL_REF185" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1514 1 0 1 508.8248456790122 136.5859587982381
+3
+"$ch_name""\"Открыть 930SV0260 - азот 5 ст.\""
+"$ch_num""5"
+"$dpe""System1:A13"
+3 123 "PANEL_REF186" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1515 1 0 1 508.8248456790122 -21.78131803388288
+3
+"$ch_name""\"Открыть 930SV0256 - азот 1 ст.\""
+"$ch_num""1"
+"$dpe""System1:A13"
+3 124 "PANEL_REF187" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1516 1 0 1 508.8248456790122 17.81050117414736
+3
+"$ch_name""\"Открыть 930SV0257 - азот 2 ст.\""
+"$ch_num""2"
+"$dpe""System1:A13"
+3 125 "PANEL_REF188" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1517 1 0 1 508.8248456790122 57.40232038217761
+3
+"$ch_name""\"Открыть 930SV0258 - азот 3 ст.\""
+"$ch_num""3"
+"$dpe""System1:A13"
+3 126 "PANEL_REF189" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1518 1 0 1 508.8248456790122 96.99413959020785
+3
+"$ch_name""\"Открыть 930SV0259 - азот 4 ст.\""
+"$ch_num""4"
+"$dpe""System1:A13"
+3 127 "PANEL_REF190" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1519 1 0 1 508.8248456790122 176.1777780062684
+3
+"$ch_name""\"Открыть 930SV0261 - азот 6 ст.\""
+"$ch_num""6"
+"$dpe""System1:A13"
+3 128 "PANEL_REF191" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1520 1 0 1 508.8248456790122 215.7695972142987
+3
+"$ch_name""\"Открыть 930SV0262 - азот 7 ст.\""
+"$ch_num""7"
+"$dpe""System1:A13"
+3 129 "PANEL_REF192" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1521 1 0 1 508.8248456790122 255.361416422329
+3
+"$ch_name""\"Открыть 930SV0273 - доенаж ср\""
+"$ch_num""8"
+"$dpe""System1:A13"
+3 130 "PANEL_REF193" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1522 1 0 1 508.8248456790122 294.9532356303591
+3
+"$ch_name""\"Открыть 930SV0264 -топ.газ ГД1\""
+"$ch_num""9"
+"$dpe""System1:A13"
+3 131 "PANEL_REF194" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1523 1 0 1 508.8248456790122 334.5450548383894
+3
+"$ch_name""\"Открыть 930SV0265 -топ.газ ГД2\""
+"$ch_num""10"
+"$dpe""System1:A13"
+3 132 "PANEL_REF195" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1524 1 0 1 508.8248456790122 374.1368740464197
+3
+"$ch_name""\"Открыть 930SV0266 -топ.газ ГД3\""
+"$ch_num""11"
+"$dpe""System1:A13"
+3 133 "PANEL_REF196" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1525 1 0 1 508.8248456790122 413.72869325445
+3
+"$ch_name""\"Открыть 930SV0267 -топ.газ ГД4\""
+"$ch_num""12"
+"$dpe""System1:A13"
+3 134 "PANEL_REF197" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1526 1 0 1 508.8248456790122 453.3205124624803
+3
+"$ch_name""\"Открыть 930SV0268 -топ.газ ГД5\""
+"$ch_num""13"
+"$dpe""System1:A13"
+3 135 "PANEL_REF198" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1527 1 0 1 508.8248456790122 492.9123316705106
+3
+"$ch_name""\"Открыть 930SV0269 -топ.газ ГД6\""
+"$ch_num""14"
+"$dpe""System1:A13"
+3 136 "PANEL_REF199" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1528 1 0 1 508.8248456790122 532.5041508785407
+3
+"$ch_name""\"Открыть 930SV0270 -топ.газ ГД7\""
+"$ch_num""15"
+"$dpe""System1:A13"
+3 137 "PANEL_REF200" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/DO_channel.pnl" 40 100 T 1529 1 0 1 508.8248456790122 572.095970086571
+3
+"$ch_name""\"Открыть 930SV0271 -топ.газ ГД8\""
+"$ch_num""16"
+"$dpe""System1:A13"
+0

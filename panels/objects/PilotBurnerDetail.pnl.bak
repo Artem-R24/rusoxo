@@ -1,0 +1,146 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 320 220 N "_3DFace" 1
+"$dp_value"
+E E E E E 1 -1 -1 0  32 50.99999999999994
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+2 4
+"PRIMITIVE_TEXT115"
+""
+1 136.6663038566189 32.71444487916439 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 136.6663038566189 32.71444487916439 160.5329705232856 50.01444487916436
+0 2 2 "0s" 0 0 0 192 0 0  136.6663038566189 32.71444487916439 1
+1
+LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4  °C
+1 10 2 "" 3
+0
+1 16 3 "" 3
+0
+2 21
+"PRIMITIVE_TEXT116"
+""
+1 136.7329705232856 66.86444487916438 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 136.7329705232856 66.86444487916438 188.6000000000001 84
+0 2 2 "0s" 0 0 0 192 0 0  136.7329705232856 66.86444487916438 1
+1
+LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 11  °C/сек
+2 22
+"PRIMITIVE_TEXT117"
+""
+1 136.6663038566189 151.85 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9091039285902297 0 1 11.56759388893516 -33.3333333333333 0 E 136.6663038566189 151.85 156 169
+0 2 2 "0s" 0 0 0 192 0 0  136.6663038566189 151.85 1
+1
+LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 2  %
+1 23 4 "" 3
+0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 2 "PANEL_REF206" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 89.87174804435836 259.7783044501263 T 1 1.5440586426904 0 1.499999999999998 -64.16177093727281 -322.6674566751889
+4
+"$b_Alarm""FALSE"
+"$b_Diag""FALSE"
+"$b_IBit""FALSE"
+"$dp_value""$dp_value"
+3 3 "PANEL_REF207" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 89.87174804435836 259.7783044501263 T 7 1.5440586426904 0 1.499999999999998 -64.23671962563209 -289.6530117960245
+4
+"$b_Alarm""FALSE"
+"$b_Diag""FALSE"
+"$b_IBit""FALSE"
+"$dp_value""$dp_value"
+3 4 "PANEL_REF208" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 89.87174804435836 259.7783044501263 T 9 1.5440586426904 0 1.499999999999998 -64.33481502017871 -237.0007900085222
+4
+"$b_Alarm""FALSE"
+"$b_Diag""FALSE"
+"$b_IBit""FALSE"
+"$dp_value""$dp_value"
+0

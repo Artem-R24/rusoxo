@@ -1,0 +1,185 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 116 34 N "_3DFace" 2
+"$dpe_set"
+"$dpe_value"
+E E E E E 1 -1 -1 0  10 9
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+14 3
+"Value_input"
+""
+1 7.285714285714285 8.500000000000014 E E E 1 E 1 E N "Yellow" E N {0,0,0} E E
+ E "// SimpleCtrlScriptStart {valid}
+main()
+{
+ if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+string val;
+getValue(\"\",\"text\",val);
+  ChildPanelOnRelativ(\"objects/value_sp_in.pnl\",
+      \"Input_pnl\",
+      makeDynString(\"$dpe_set:\"+$dpe_set, \"$val:\" + val),
+      -15, -8);
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativModal}
+// File {objects/value_sp_in.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {-10}
+// OffsetY {-5}
+// PanelPara1 {$dpe_set:ddd}
+// PanelPara2 {$val:vvvv}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+
+2 0 0 0 0 0
+"main()
+{
+    setValue(\"\", \"backCol\", \"Yellow\");
+    setValue(\"\", \"foreCol\", \"Black\");
+    this.select(0,0);
+}" 0
+ "main()
+{
+    setValue(\"\", \"backCol\", \"Black\");
+    setValue(\"\", \"foreCol\", \"Yellow\");
+}" 0
+ E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 48 Tahoma,-1,15,5,75,0,0,0,0,0,Полужирный
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+0  5.285714285714281 6.500000000000011 78.71428571428571 30.35714285714285
+2 "0.1f" 2 0 0 2 0 -1  "main(mapping event)
+{
+    PanelOffPanel(\"Input_pnl\");
+
+}" 0
+ "string  msDP;
+bool    mbIBit;
+
+main()
+{
+ msDP=$dpe_value;
+// mbIBit=$b_IBit;
+ mbIBit=false;
+ ST_value();
+}
+ST_value()
+{
+int iType;
+dyn_errClass err;
+  if(msDP==\"\")
+   STD_showConnectError(\"DP\");
+  else
+  dpConnect(\"ST_work_value\",msDP+\":_online.._value\",
+                              msDP+\":_original.._invalid\");
+   err = getLastError();
+   if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+ST_work_value(string dp1, float fNewValue,
+           string dp2, bool bInvalid)
+{
+  string sFormat;
+  string sNewValue;
+  sFormat = dpGetFormat( dp1 );
+  if( strlen( sFormat ) <= 0 )
+  {
+    sprintf( sNewValue, \"%5.1f\", fNewValue );
+  }
+  else
+  {
+    sNewValue = dpValToString( dp1, fNewValue, FALSE );
+  }
+
+  if(bInvalid && mbIBit) setValue(\"\",\"backCol\",\"_invalid\");
+  setValue(\"\",\"text\",sNewValue);
+}
+
+" 0
+ "// SimpleCtrlScriptStart {valid}
+main()
+{
+ if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+string val;
+getValue(\"\",\"text\",val);
+  ChildPanelOnRelativ(\"objects/value_sp_in.pnl\",
+      \"Input_pnl\",
+      makeDynString(\"$dpe_set:\"+$dpe_set, \"$val:\" + val),
+      -15, -8);
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativ}
+// File {objects/value_sp_in.pnl}
+// Panel {Input_pnl}
+// Parent {}
+// Module {}
+// OffsetX {-15}
+// OffsetY {-8}
+// PanelPara1 {$dpe_set:ddd}
+// PanelPara2 {$val:vvvv}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0
