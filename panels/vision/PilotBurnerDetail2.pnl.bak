@@ -1,7 +1,9 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 508 521 N "_3DFace" 1
+PANEL,-1 -1 508 521 N "_3DFace" 3
+"$Ctrl"
+"$State"
 "$num"
 E E E E E 1 -1 -1 0  20.88230620814846 20.0151515151541
 ""0  1
@@ -595,7 +597,7 @@ void EP_childPanelOn()
 {
   ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
       \"\",
-      makeDynString(\"$cmd:GD\" + $num + \".CMD.Start\", \"$msg:Начать розжиг?\"));
+      makeDynString(\"$cmd:gd\" + $num + \".CMD.Start\", \"$msg:Начать розжиг?\"));
 }
 // SimpleCtrlScript {EP_childPanelOn}
 // Function {ChildPanelOnCentralModal}
@@ -676,7 +678,7 @@ void EP_childPanelOn()
 {
   ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
       \"\",
-      makeDynString(\"$cmd:GD\" + $num + \".CMD.Stop\", \"$msg:Остановить горелку?\"));
+      makeDynString(\"$cmd:gd\" + $num + \".CMD.Stop\", \"$msg:Остановить горелку?\"));
 }
 // SimpleCtrlScript {EP_childPanelOn}
 // Function {ChildPanelOnCentralModal}
@@ -693,7 +695,7 @@ void EP_childPanelOn()
  E E "// SimpleCtrlScriptStart {valid}
 main()
 {
-  EP_setVisible();
+  //EP_setVisible();
 }
 
 
@@ -734,7 +736,7 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 2 252
 "PRIMITIVE_TEXT1"
 ""
-1 12 11.5 E E E 1 E 1 E N "white" E N "Red" E E
+1 12 11.5 E E E 1 E 0 E N "white" E N "Red" E E
  E E
 141 0 0 0 0 0
 E E E
@@ -2073,7 +2075,9 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 257.1711936839057 538.0905740388325 T 154 4.593497194186435e-17 -0.7934132876451591 0.8213073527463457 5.318919739930687e-17 -129.0815288505369 310.8194854849489
-0
+2
+"$Ctrl""$Ctrl"
+"$State""$State"
 1 36 "SHAPE_GROUP29" -1
 4 0 
 299 300 301 302 

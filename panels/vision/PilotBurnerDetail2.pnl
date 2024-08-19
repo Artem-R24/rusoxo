@@ -595,7 +595,7 @@ void EP_childPanelOn()
 {
   ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
       \"\",
-      makeDynString(\"$cmd:GD\" + $num + \".CMD.Start\", \"$msg:Начать розжиг?\"));
+      makeDynString(\"$cmd:gd\" + $num + \".CMD.Start\", \"$msg:Начать розжиг?\"));
 }
 // SimpleCtrlScript {EP_childPanelOn}
 // Function {ChildPanelOnCentralModal}
@@ -676,7 +676,7 @@ void EP_childPanelOn()
 {
   ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
       \"\",
-      makeDynString(\"$cmd:GD\" + $num + \".CMD.Stop\", \"$msg:Остановить горелку?\"));
+      makeDynString(\"$cmd:gd\" + $num + \".CMD.Stop\", \"$msg:Остановить горелку?\"));
 }
 // SimpleCtrlScript {EP_childPanelOn}
 // Function {ChildPanelOnCentralModal}
@@ -693,7 +693,7 @@ void EP_childPanelOn()
  E E "// SimpleCtrlScriptStart {valid}
 main()
 {
-  EP_setVisible();
+  //EP_setVisible();
 }
 
 
@@ -2073,7 +2073,9 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 257.1711936839057 538.0905740388325 T 154 4.593497194186435e-17 -0.7934132876451591 0.8213073527463457 5.318919739930687e-17 -129.0815288505369 310.8194854849489
-0
+2
+"$Ctrl""\"gd\"+$num+\".SV.control\""
+"$State""\"gd\"+$num+\".SV.state\""
 1 36 "SHAPE_GROUP29" -1
 4 0 
 299 300 301 302 
