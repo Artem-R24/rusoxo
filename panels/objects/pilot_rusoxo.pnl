@@ -1,0 +1,249 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 222 273 N "_3DFace" 2
+"$hh"
+"$te"
+E E E E E 1 -1 -1 0  2 35
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+31 6
+"PIPE120"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.016103506799958e-16 1.848484848484848 -0.8240202043644713 5.620533199270172e-17 520.6736458044087 -632.8787878787874 0 0 0 3 2 410 520
+443 520
+1 21 0 "" 1
+0
+10 8
+"POLYGON10"
+""
+1 110 120 E E E 1 E 1 E N {0,0,0} E N {230,230,230} E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"hh_\"+ $hh + \".Firing:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"hh_\"+ $hh + \".Firing:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", (boNewValue) ? \"green\" : \"STD_led_off\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:WALL_TEMP.}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {\\{230,230,230\\}}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {<\\{255,0,0\\},4,\\{230,230,230\\},4>}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 0.4835237718515457 0 0.5375 29.47143422226814 121.5 1 E 5 110 120
+150 120
+150 180
+130 200
+110 180
+ 1
+31 9
+"PIPE1"
+""
+1 270 120 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1.155555555555555 -132 -60.66666666666656 0 0 0 4 10 270 120
+270 130
+270 140
+270 150
+270 160
+270 170
+270 180
+270 190
+270 200
+270 210
+1 26 1 "" 5
+31 "transform" 0 0 1 0 -1 0 404
+0
+1 27 1 "" 6
+31 "transform" 0 0 1 0 -1 0 404
+0
+6 12
+"RECTANGLE29"
+""
+1 210 30 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"hh_\"+ $hh + \".Flame:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+           \"hh_\"+ $hh + \".Flame:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:test1.bVal}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E -1 1 3 2 1 E 0.3379463171036217 0 0.7035528456411583 58.03127340823944 201.8934146307652 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
+0
+LAYER, 1 
+1
+LANG:10027 0 
+6 20
+"RECTANGLE30"
+""
+1 15 49 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E -1 1 3 2 1 E 0.6631016042780749 0 1 28.05347593582887 1.888888888888914 1 E 15 49 202 265
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 0 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 2 35 T 0 1 0 1 42.14638502808536 72.11111111111106
+4
+"$b_Alarm""TRUE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""$te"
+3 1 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Burner.pnl" 231.8333333333333 289 T 5 1 0 1 -17.33333333333334 112.4999999999999
+0
+0

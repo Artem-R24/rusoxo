@@ -1,0 +1,273 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 1023 768 N "white" 0
+E E E E E 1 -1 -1 0  168.3154711605943 47.59968904555126
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+31 1
+"PIPE125"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "STD_value_bad" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -10.27396983420764 0 0.8240202043644713 4881.327632025133 -69.4905062695251 0 0 0 3 2 410 520
+443 520
+31 2
+"PIPE121"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.016103506799958e-16 1.18462852906275 -0.8240202043644713 3.602000839691683e-17 1045.490506269524 70.30230308427244 0 0 0 3 2 410 520
+443 520
+31 3
+"PIPE120"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.016103506799958e-16 1.18462852906275 -0.8240202043644713 3.602000839691683e-17 961.0690964668471 70.30230308427235 0 0 0 3 2 410 520
+443 520
+2 4
+"PRIMITIVE_TEXT37"
+""
+1 182.2951822532753 613.9440663883793 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 182.2951822532753 613.9440663883793 412 631
+0 2 2 "0s" 0 0 0 192 0 0  182.2951822532753 613.9440663883793 1
+1
+LANG:10027 56 MS Shell Dlg 2,-1,15,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 46 Коллектор склада ГЖ и ЛВЖ
+1 98 0 "" 1
+0
+1 103 1 "" 1
+0
+31 15
+"PIPE119"
+""
+1 310.3333333333336 524 E E E 1 E 1 E N {0,0,0} E N "STD_value_bad" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 9.91764705882345 0 -0.434782608695652 -2439.776470588214 756.8260869565217 0 0 0 3 3 310.3333333333336 524
+282 524
+282 547
+1 108 2 "" 6
+0
+31 38
+"PIPE122"
+""
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 7.752562879153896e-17 -0.8455537466579612 1.295302013422819 5.296984151975682e-17 -170.3557046979868 277.643699354573 0 0 0 6 2 240 350
+240 648
+1 120 4 "" 1
+0
+1 126 5 "" 1
+0
+1 162 6 "" 7
+0
+1 169 7 "" 7
+0
+10 95
+"POLYGON11"
+""
+1 614 381 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 -435.0000000000009 184.2122626567379 1 E 4 614 381
+614 398
+658 398
+614 381
+ 0
+31 96
+"PIPE118"
+""
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.140158032474183e-16 -0.8455537466579612 1.904981640400691 5.296984151975682e-17 -494.4281029796475 796.8769655862899 0 0 0 6 2 240 350
+240 648
+9 97
+"ARC1"
+""
+1 626 278 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 1 1 E 0.7071067811865476 0.7071067811865476 -0.7071067811865476 0.7071067811865476 493.9268401470814 -45.22453019263901 1 E 626 278 18.384776 18.384776
+ 0 639 291 599 251 1
+0
+LAYER, 1 
+1
+LANG:10027 0 
+1 119 2 "" 20
+0
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 0 "PANEL_REF10" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 81.99999999999997 335 T 0 0.8455537466579612 0 0.8240202043644713 422.4206250385125 276.2409688811637
+4
+"$b_Alarm""FALSE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""pit401104a"
+3 1 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 81.99999999999997 335 T 1 0.8455537466579612 0 0.8240202043644713 507.8420348411887 276.2409688811638
+4
+"$b_Alarm""FALSE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""pit401104b"
+3 2 "PANEL_REF12" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/pilot_rusoxo.pnl" 88.10553003198731 -18.28919984333766 T 2 1 0 1 146.5532782893619 50
+2
+"$hh""401101"
+"$te""te401110"
+3 4 "PANEL_REF16" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/first_stage_rusoxo.pnl" 56.59087031175326 267.1552446011067 T 4 1 0 1 152.9498031299058 18
+0
+3 5 "PANEL_REF17" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/stage_rusoxo_with_receiver.pnl" 146.704311941523 274.3181888961178 T 5 1 0 1 129.9999999999995 18
+4
+"$num""2"
+"$sens_num1""401110"
+"$sens_num2""401120"
+"$sens_num3""401124"
+3 6 "PANEL_REF18" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/to_eject.pnl" 96.54067344165962 275.1552446011067 T 6 1 0 1 172.4593265583399 7.844755398893312
+0
+3 7 "PANEL_REF19" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/to_eject.pnl" 96.54067344165962 275.1552446011067 T 7 1 0 1 340.9941334432595 7.875360708950268
+0
+0

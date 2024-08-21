@@ -1,0 +1,303 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 268 366 N "_3DFace" 4
+"$num"
+"$pit"
+"$sens_num1"
+"$sens_num2"
+E E E E E 1 -1 -1 0  51.15619956422279 -7.732122951535359
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+31 13
+"PIPE18"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "STD_value_bad" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.10958807246981 0 0.8240202043644713 -350.1811097126225 -146.8500515309426 0 0 0 3 2 410 520
+443 520
+31 1
+"PIPE19"
+""
+1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.65942295771713 0 0.8240202043644713 -594.6285669999991 -316.6166713094983 0 0 0 3 2 410 520
+443 520
+31 5
+"PIPE15"
+""
+1 310.3333333333336 524 E E E 1 E 1 E N {0,0,0} E N "STD_value_bad" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.66340589850249 0 -0.8240202043644713 -377.2102971686065 669.8816576862173 0 0 0 3 3 310.3333333333336 524
+282 524
+282 547
+31 8
+"PIPE14"
+""
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.8455537466579612 0 0.8650631603599747 -61.56649280640657 -237.3489844764197 0 0 0 6 2 240 350
+240 648
+2 9
+"PRIMITIVE_TEXT15"
+""
+1 280 360 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+ // int number = $num;
+//  number = number + 249;
+  setValue(\"\", \"text\", $num +\"-я ступень\");
+}
+
+" 0
+ E 0 1 3 2 1 E 1.181167154535129 0 1.116639599380769 -268.9225635621867 -335.5941200459926 0 E 280 360 353 375
+0 0 0 "0s" 0 0 0 192 0 0  280 360 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 19 #-я ступень
+2 17
+"PRIMITIVE_TEXT35"
+""
+1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  setValue(\"\", \"text\", $pit);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 -230.8579795865384 -669.5599011115918 0 E 176 323 188 336
+0 2 2 "0s" 0 0 0 201 0 0  182.4628986514007 328.7982270920354 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 3 pit
+2 18
+"PRIMITIVE_TEXT36"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 -114.2459968297473 -214.0847498457837 0 E 127.1987156164183 286.5885074854114 151 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 6 кПа
+31 32
+"PIPE24"
+""
+1 326.0928291412681 535.7181511819365 E E E 1 E 1 E N {0,0,0} E N "Blue" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.8455537466579612 0 0.9702074707973352 -183.6088472295981 -342.9386547419048 0 0 0 3 2 326.0928291412681 535.7181511819365
+326.0928291412681 553
+1 69 9 "" 2
+0
+1 81 10 "" 1
+0
+1 86 11 "" 1
+0
+1 89 12 "" 2
+0
+31 60
+"PIPE108"
+""
+1 310.3333333333336 524 E E E 1 E 1 E N {0,0,0} E N "STD_value_bad" E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.4283279080280851 0 0.8240202043644713 -39.78847006391999 -193.6915164877487 0 0 0 3 3 310.3333333333336 524
+282 524
+282 547
+31 63
+"PIPE111"
+""
+1 326.0928291412681 535.7181511819365 E E E 1 E 1 E N {0,0,0} E N "Blue" E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -1.553257034027586e-16 -0.8455537466579612 0.9702074707973352 -1.782242210431208e-16 -457.3312606407565 557.1194681772763 0 0 0 3 2 326.0928291412681 535.7181511819365
+326.0928291412681 553
+1 90 13 "" 1
+0
+1 93 14 "" 2
+0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 9 "PANEL_REF43" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/BurneStage.pnl" 550 440 T 9 0.8455537466579612 0 0.8240202043644713 -284.5851379254094 -154.5238891997787
+0
+3 10 "PANEL_REF172" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 81.99999999999997 335 T 10 0.8455537466579612 0 0.8240202043644713 -27.62050340327947 -175.5995891121871
+4
+"$b_Alarm""FALSE"
+"$b_Diag""TRUE"
+"$b_IBit""TRUE"
+"$dp_value""$pit"
+3 11 "PANEL_REF173" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXZ.pnl" 303.0392936439353 271.045319940483 T 28 1 0 1 -222.1691274348398 -75.90271404163155
+1
+"$sens_num""$sens_num2"
+3 12 "PANEL_REF174" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXY.pnl" 63.53947581079341 372 T 28 1 0 1 22.33069039830215 -207.514235556787
+1
+"$sens_num""$sens_num2"
+3 13 "PANEL_REF175" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXZ.pnl" 303.0392936439353 271.045319940483 T 32 -1.83697019872103e-16 -1 1 -1.83697019872103e-16 -190.2953199404834 595.6797483825178
+1
+"$sens_num""$sens_num1"
+3 14 "PANEL_REF176" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/ValveXY.pnl" 63.53947581079341 372 T 33 -1.83697019872103e-16 -1 1 -1.83697019872103e-16 -321.9068414556387 351.179930549376
+1
+"$sens_num""$sens_num1"
+0

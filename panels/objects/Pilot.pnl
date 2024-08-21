@@ -414,7 +414,7 @@ LANG:10027 0
 3 2 "PANEL_REF145" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/No_Fire2.pnl" 116.9301075268818 210.5 T 2 1 0 1 -96.4564233163555 -76.44374668036889
+"objects/No_Fire2.pnl" 116.9301075268818 210.5 T 2 1 0 1 -49.02093944538773 -70.50826280940115
 1
 "$dpe""\"gd\"+ $num + \".AlarmNoFlame\""
 3 3 "PANEL_REF146" -1
