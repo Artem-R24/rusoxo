@@ -14,7 +14,7 @@ DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
 1
 LANG:10027 0 
-1 1787 16 "" 1
+1 2381 16 "" 1
 0
 31 694
 "PIPE121"
@@ -50,17 +50,17 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E 1.016103506799958e-16 1.18462852906275 -0.8240202043644713 3.602000839691683e-17 1520.313064202383 35.01456574101078 0 0 0 3 2 410 520
 443 520
-1 1517 2 "" 13
+1 2083 2 "" 13
 0
-1 1552 3 "" 13
+1 2125 3 "" 13
 0
-1 1587 4 "" 13
+1 2167 4 "" 13
 0
-1 1622 5 "" 13
+1 2209 5 "" 13
 0
-1 1657 7 "" 1
+1 2251 7 "" 1
 0
-1 1693 8 "" 1
+1 2287 8 "" 1
 0
 2 225
 "PRIMITIVE_TEXT37"
@@ -84,9 +84,9 @@ E E 0 1 3 2 1 E U  0 E 23.31579593364523 567 266 584
 LANG:10027 56 MS Shell Dlg 2,-1,15,5,75,0,0,0,0,0,Полужирный
 0 1
 LANG:10027 52 Коллектор высокого давления
-1 1729 10 "" 1
+1 2323 10 "" 1
 0
-1 1734 11 "" 1
+1 2328 11 "" 1
 0
 31 469
 "PIPE118"
@@ -123,13 +123,13 @@ LANG:10027 0
 E E 0 1 3 2 1 E 37.15516615364182 0 -0.434782608695652 -10308.48656301352 720.8260869565217 0 0 0 3 3 310.3333333333336 524
 282 524
 282 547
-1 1739 12 "" 6
+1 2333 12 "" 6
 0
-1 1751 13 "" 6
+1 2345 13 "" 6
 0
-1 1763 14 "" 6
+1 2357 14 "" 6
 0
-1 1775 15 "" 6
+1 2369 15 "" 6
 0
 31 962
 "PIPE122"
@@ -146,7 +146,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 2 1 E 2.281593528963499e-16 -0.8455537466579612 3.812097673951969 5.296984151975682e-17 -1250.239292720875 252.643699354573 0 0 0 6 2 240 350
+E E 0 1 3 2 1 E 1.849769536710037e-16 -0.8455537466579612 3.09060402684564 5.296984151975682e-17 -782.7114093959738 252.643699354573 0 0 0 6 2 240 350
 240 648
 10 1239
 "POLYGON11"
@@ -185,17 +185,202 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 1 1 E 0.7071067811865476 0.7071067811865476 -0.7071067811865476 0.7071067811865476 965.8381034290522 -80.80000487916266 1 E 626 278 18.384776 18.384776
  0 639 291 599 251 1
+13 1793
+"PUSH_BUTTON1"
+""
+1 14.65769117293969 69.24080763690554 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+32 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  12.65769117293969 60.68444906343214 136.6576911729396 93.53242678671475
+
+T 
+1
+LANG:10027 8 ПУСК
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnRelativModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:System1:CMD_START.\", \"$msg:Начать розжиг горелок?\"),
+      130, -40);
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {130}
+// OffsetY {-40}
+// PanelPara1 {$cmd:System1:CMD_START.}
+// PanelPara2 {$msg:\"Начать розжиг горелок?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
+13 1794
+"PUSH_BUTTON2"
+""
+1 14.65769117293969 103.1887853601881 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+33 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  12.65769117293969 94.63242678671455 136.6576911729396 127.4804045099975
+
+T 
+1
+LANG:10027 8 СТОП
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnRelativModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:System1:CMD_STOP.\", \"$msg:Остановить факел?\"),
+      130, -40);
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {130}
+// OffsetY {-40}
+// PanelPara1 {$cmd:System1:CMD_START.}
+// PanelPara2 {$msg:\"Начать розжиг горелок?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
+13 1795
+"PUSH_BUTTON3"
+""
+1 14.65769117293969 137.1367630834706 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+34 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  12.65769117293969 128.5804045099974 136.6576911729396 161.42838223328
+
+T 
+1
+LANG:10027 23 СБРОС АВАРИЙ
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnRelativModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:System1:CMD_RESET.\", \"$msg:Сбросить аварии?\"),
+      130, -40);
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {130}
+// OffsetY {-40}
+// PanelPara1 {$cmd:System1:CMD_START.}
+// PanelPara2 {$msg:\"Начать розжиг горелок?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
+13 2082
+"PUSH_BUTTON7"
+""
+1 1127.572813322004 645.2272727272726 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+39 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  1125.572813322004 632.9999999999999 1216.915122149065 681.9999999999999
+
+T 
+1
+LANG:10027 2 >>
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  RootPanelOn(\"Collector2.pnl\",
+      \"\",
+      makeDynString(\"\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {RootPanelOn}
+// File {Collector2.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
 0
 LAYER, 1 
 1
 LANG:10027 0 
-1 1750 12 "" 20
+1 2344 12 "" 20
 0
-1 1762 13 "" 20
+1 2356 13 "" 20
 0
-1 1774 14 "" 20
+1 2368 14 "" 20
 0
-1 1786 15 "" 20
+1 2380 15 "" 20
 0
 0
 LAYER, 2 
@@ -226,7 +411,8 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/stage_rusoxo.pnl" 132 110.6274223098821 T 2 1 0 1 418.7888217872724 116.3725776901179
-4
+5
+"$crash""CRASH_PSE_401101."
 "$num""4"
 "$pit""pit401105"
 "$sens_num1""401103"
@@ -235,7 +421,8 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/stage_rusoxo.pnl" 132 110.6274223098821 T 3 1 0 1 547.6832326809085 116.3725776901179
-4
+5
+"$crash""CRASH_PSE_401102."
 "$num""5"
 "$pit""pit401106"
 "$sens_num1""401104"
@@ -244,7 +431,8 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/stage_rusoxo.pnl" 132 110.6274223098821 T 4 1 0 1 676.5776435745447 116.3725776901179
-4
+5
+"$crash""CRASH_PSE_401103."
 "$num""6"
 "$pit""pit401107"
 "$sens_num1""401105"
@@ -253,7 +441,8 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/stage_rusoxo.pnl" 132 110.6274223098821 T 5 1 0 1 805.4720544681809 116.3725776901179
-4
+5
+"$crash""CRASH_PSE_401104."
 "$num""7"
 "$pit""pit401108"
 "$sens_num1""401106"
@@ -318,7 +507,7 @@ LANG:10027 0
 3 15 "PANEL_REF15" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/pilot_rusoxo.pnl" 88.10553003198731 -18.28919984333766 T 28 1 0 1 801.8774325516143 25
+"objects/pilot_rusoxo.pnl" 88.10553003198731 -18.28919984333766 T 28 1 0 1 795.8774325516143 25
 2
 "$hh""401104"
 "$te""te401104"
