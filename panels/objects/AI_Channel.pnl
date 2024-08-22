@@ -31,9 +31,9 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "0"
 E E 0 1 3 2 1 E 0.9649122807017544 0 1 2.017543859649114 0 1 E 29 10 371 70
-1 28 0 "" 2
+1 42 0 "" 2
 0
-1 30 1 "" 3
+1 44 1 "" 3
 0
 2 8
 "PRIMITIVE_TEXT1"
@@ -83,27 +83,6 @@ LANG:10027 0
 LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 6 sensor
-13 18
-"PUSH_BUTTON1"
-""
-1 204.4787915167242 44.41628882486709 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-5 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  202.4787915167242 37.41628882486709 275.4787915167242 63.41628882486709
-
-T 
-1
-LANG:10027 15 Вкл. сим.
-E E E E
 13 19
 "PUSH_BUTTON2"
 ""
@@ -148,10 +127,36 @@ void EP_childPanelOn()
 // SimpleCtrlScriptEnd {EP_childPanelOn}
 " 0
  E E E
+1 49 2 "7" 0
+0
+2 41
+"PRIMITIVE_TEXT152"
+""
+1 116.0506947334579 13.45883315263603 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.032782777770929 0 1 117.2777597769873 -0.7294165763180391 0 E 100 13.45883315263603 132 30
+0 2 2 "0s" 0 0 0 193 0 0  116.0506947334579 13.45883315263603 1
+1
+LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 7 сим.
 0
 LAYER, 1 
 1
 LANG:10027 0 
+1 50 2 "" 0
+0
 0
 LAYER, 2 
 1
@@ -193,4 +198,14 @@ LANG:10027 0
 "$b_Diag""TRUE"
 "$b_IBit""false"
 "$dp_value""$dp_value"
+3 2 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 202.5 21.34683251182775 T 8 1 0 1 8 0
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""$dp_value+\".Alms.SimOn\""
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""green"
 0

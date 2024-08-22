@@ -4847,3 +4847,37 @@ WCCILpmon    (1), 2024.08.21 14:07:23.157, SYS,  INFO,        1, Manager Start, 
 WCCILpmon    (1), 2024.08.21 14:07:25.895, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOAmod.exe -PROJ RUSOXO -pmonIndex 13 -num 3
 WCCILpmon    (1), 2024.08.21 14:07:26.113, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
 WCCILpmon    (1), 2024.08.21 14:07:26.438, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2024.08.21 16:24:36.445, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2024.08.21 16:24:36.445, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM
+WCCILpmon    (1), 2024.08.21 16:24:36.446, SYS,  INFO,       17/pmon, Stopping Manager WCCOAmod(3) with signal SIGTERM
+WCCILpmon    (1), 2024.08.21 16:24:36.447, SYS,  INFO,       17/pmon, Stopping Manager WCCOAui(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.21 16:24:36.447, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.21 16:24:36.448, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.21 16:24:36.881, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.21 16:24:36.991, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.21 16:24:38.992, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2024.08.21 16:24:38.992, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2024.08.22 07:49:10.487, SYS,  INFO,        1, Manager Start, WAIT_MODE
+WCCILpmon    (1), 2024.08.22 07:49:12.111, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2024.08.22 07:49:12.114, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILdata.exe -PROJ RUSOXO -pmonIndex 1 
+WCCILpmon    (1), 2024.08.22 07:49:13.502, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILevent.exe -PROJ RUSOXO -pmonIndex 8 
+WCCILpmon    (1), 2024.08.22 07:49:13.945, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 10 -f pvss_scripts.lst
+WCCILpmon    (1), 2024.08.22 07:49:14.167, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILsim.exe -PROJ RUSOXO -pmonIndex 11 
+WCCILpmon    (1), 2024.08.22 07:49:14.388, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOAui.exe -PROJ RUSOXO -pmonIndex 12 -m gedi
+WCCILpmon    (1), 2024.08.22 07:49:23.371, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOAmod.exe -PROJ RUSOXO -pmonIndex 13 -num 3
+WCCILpmon    (1), 2024.08.22 07:49:23.545, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
+WCCILpmon    (1), 2024.08.22 07:49:23.763, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2024.08.22 09:57:03.316, SYS,  INFO,       25/pmon, Got STOP command (SIGTERM) from ::1, stopping the manager WCCOActrl(2) at index 14
+WCCILpmon    (1), 2024.08.22 09:57:03.317, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 09:58:14.757, SYS,  INFO,       24/pmon, Got START command from ::1, starting the manager WCCOActrl(2) at index 14
+WCCILpmon    (1), 2024.08.22 09:58:14.762, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
+WCCILpmon    (1), 2024.08.22 09:59:43.963, SYS,  INFO,       25/pmon, Got STOP command (SIGTERM) from ::1, stopping the manager WCCOActrl(2) at index 14
+WCCILpmon    (1), 2024.08.22 09:59:43.964, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 09:59:47.967, SYS,  INFO,       24/pmon, Got START command from ::1, starting the manager WCCOActrl(2) at index 14
+WCCILpmon    (1), 2024.08.22 09:59:47.971, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
+WCCILpmon    (1), 2024.08.22 11:53:08.885, SYS,  INFO,       25/pmon, Got STOP command (SIGTERM) from ::1, stopping the manager WCCOActrl(2) at index 14
+WCCILpmon    (1), 2024.08.22 11:53:08.886, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 11:53:10.974, SYS,  INFO,       24/pmon, Got START command from ::1, starting the manager WCCOActrl(2) at index 14
+WCCILpmon    (1), 2024.08.22 11:53:10.977, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
+WCCILpmon    (1), 2024.08.22 13:24:50.915, SYS,  INFO,       25/pmon, Got STOP command (SIGTERM) from ::1, stopping the manager WCCOActrl(2) at index 14
+WCCILpmon    (1), 2024.08.22 13:24:50.916, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM

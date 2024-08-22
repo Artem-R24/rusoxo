@@ -98,6 +98,35 @@ LANG:10027 4 test
   this.visible(1);
 }" 0
 
+13 3
+"PUSH_BUTTON9"
+""
+1 55 105 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+2 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  53 98 177 124
+
+T 
+1
+LANG:10027 34 обнулить все ворды
+"main(mapping event)
+{
+  for(int i=0;i<=69;++i)
+  {
+    dpSet(\"byte\"+i+\".\",0);
+    //dpSet(\"byte_write\"+i+\".\",0);
+  }
+}" 0
+ E E E
 0
 LAYER, 1 
 1

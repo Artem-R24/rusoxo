@@ -1,8 +1,8 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 222 273 N "_3DFace" 2
-"$hh"
+PANEL,-1 -1 222 319 N "_3DFace" 2
+"$num"
 "$te"
 E E E E E 1 -1 -1 0  2 35
 ""0  1
@@ -31,9 +31,9 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 2 1 E 1.016103506799958e-16 1.848484848484848 -0.8240202043644713 5.620533199270172e-17 520.6736458044087 -632.8787878787874 0 0 0 3 2 410 520
+E E 0 1 3 2 1 E 1.016103506799958e-16 1.848484848484848 -0.8240202043644713 5.620533199270172e-17 520.6736458044087 -613.8787878787874 0 0 0 3 2 410 520
 443 520
-1 21 0 "" 1
+1 30 0 "" 1
 0
 10 8
 "POLYGON10"
@@ -60,14 +60,14 @@ void EP_setVisible()
 {
   dyn_errClass err;
 
-  if( !dpExists(\"hh_\"+ $hh + \".Firing:_online.._value\"))
+  if( !dpExists(\"hh_4011\"+ $num + \".Firing:_online.._value\"))
   {
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
     return;
   }
 
   dpConnect(\"EP_setVisibleCB\",
-           \"hh_\"+ $hh + \".Firing:_online.._value\");
+           \"hh_4011\"+ $num + \".Firing:_online.._value\");
   err = getLastError();
   if (dynlen(err) > 0)
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
@@ -95,7 +95,7 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // Color2 {<\\{255,0,0\\},4,\\{230,230,230\\},4>}
 // SimpleCtrlScriptEnd {EP_setBackColor}
 " 0
- E 0 1 3 2 1 E 0.4835237718515457 0 0.5375 29.47143422226814 121.5 1 E 5 110 120
+ E 0 1 3 2 1 E 0.4835237718515457 0 0.5375 29.47143422226814 140.5 1 E 5 110 120
 150 120
 150 180
 130 200
@@ -126,10 +126,10 @@ E E 0 1 3 2 1 E 1 0 1.155555555555555 -132 -60.66666666666656 0 0 0 4 10 270 120
 270 190
 270 200
 270 210
-1 26 1 "" 5
+1 35 1 "" 5
 31 "transform" 0 0 1 0 -1 0 404
 0
-1 27 1 "" 6
+1 36 1 "" 6
 31 "transform" 0 0 1 0 -1 0 404
 0
 6 12
@@ -157,14 +157,14 @@ void EP_setVisible()
 {
   dyn_errClass err;
 
-  if( !dpExists(\"hh_\"+ $hh + \".Flame:_online.._value\"))
+  if( !dpExists(\"hh_4011\"+ $num + \".Flame:_online.._value\"))
   {
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
     return;
   }
 
   dpConnect(\"EP_setVisibleCB\",
-           \"hh_\"+ $hh + \".Flame:_online.._value\");
+           \"hh_4011\"+ $num + \".Flame:_online.._value\");
   err = getLastError();
   if (dynlen(err) > 0)
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
@@ -187,26 +187,60 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
  E -1 1 3 2 1 E 0.3379463171036217 0 0.7035528456411583 58.03127340823944 201.8934146307652 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
+13 29
+"PUSH_BUTTON2"
+""
+1 53.406192548165 99.00000000000004 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+9 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  51.406192548165 91.6891879060714 129.9119057037113 119.0567611193568
+
+T 
+1
+LANG:10027 8 СТОП
+"// SimpleCtrlScriptStart {valid}
+main(mapping event)
+{
+   EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
+      \"\",
+      makeDynString(\"$cmd:CMD_STOP_GD\" + $num + \".\", \"$msg:Остановить горелку?\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativModal}
+// File {vision/Confirm.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {130}
+// OffsetY {-40}
+// PanelPara1 {$cmd:System1:CMD_START.}
+// PanelPara2 {$msg:\"Начать розжиг горелок?\"}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
+1 37 2 "7" 0
+0
 0
 LAYER, 1 
 1
 LANG:10027 0 
-6 20
-"RECTANGLE30"
-""
-1 15 49 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
- E E
-7 0 0 0 0 0
-E E E
+1 38 2 "" 0
 0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-E E -1 1 3 2 1 E 0.6631016042780749 0 1 28.05347593582887 1.888888888888914 1 E 15 49 202 265
 0
 LAYER, 2 
 1
@@ -235,7 +269,7 @@ LANG:10027 0
 3 0 "PANEL_REF1" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/value_ind.pnl" 2 35 T 0 1 0 1 42.14638502808536 72.11111111111106
+"objects/value_ind.pnl" 2 35 T 0 1 0 1 42.14638502808536 91.11111111111106
 4
 "$b_Alarm""TRUE"
 "$b_Diag""TRUE"
@@ -246,4 +280,14 @@ LANG:10027 0
 "" ""
 "objects/Burner.pnl" 231.8333333333333 289 T 5 1 0 1 -17.33333333333334 112.4999999999999
 0
+3 2 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_LEDS/Led_1.pnl" 138 158.8888888888889 T 10 0.6757339664723139 0 0.6629438907677174 54.88249600462554 71.9293267232086
+5
+"$b_IBit""TRUE"
+"$b_ShowAlert""TRUE"
+"$dpe_value""\"es4011\"+$num+\".ProgUse\""
+"$s_ColOff""STD_led_Off"
+"$s_ColOn""green"
 0

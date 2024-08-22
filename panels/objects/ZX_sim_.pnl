@@ -245,7 +245,7 @@ LANG:10027 0
 "$b_ShowAlert""FALSE"
 "$dpe_value""\"zx_4011\"+$sens_num+\".OP.SimOn\""
 "$s_ColOff""STD_led_Off"
-"$s_ColOn""STD_led_On"
+"$s_ColOn""green"
 3 1 "PANEL_REF2" -1
 "layoutAlignment" "AlignNone"
 "initCB" "main()
@@ -265,7 +265,7 @@ set_visible(string dpe, bool nval)
 "$b_ShowAlert""FALSE"
 "$dpe_value""\"zx_4011\"+$sens_num+\".OP.SimValue\""
 "$s_ColOff""STD_led_Off"
-"$s_ColOn""STD_led_On"
+"$s_ColOn""green"
 3 2 "PANEL_REF3" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -275,7 +275,7 @@ set_visible(string dpe, bool nval)
 "$b_ShowAlert""FALSE"
 "$dpe_value""\"zx_4011\"+$sens_num+\".CL.SimOn\""
 "$s_ColOff""STD_led_Off"
-"$s_ColOn""STD_led_On"
+"$s_ColOn""green"
 3 3 "PANEL_REF4" -1
 "layoutAlignment" "AlignNone"
 "initCB" "main()
@@ -295,5 +295,5 @@ set_visible(string dpe, bool nval)
 "$b_ShowAlert""FALSE"
 "$dpe_value""\"zx_4011\"+$sens_num+\".CL.SimValue\""
 "$s_ColOff""STD_led_Off"
-"$s_ColOn""STD_led_On"
+"$s_ColOn""green"
 0

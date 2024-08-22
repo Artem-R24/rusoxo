@@ -17,7 +17,7 @@ LANG:10027 0
 13 1
 "PUSH_BUTTON1"
 ""
-1 20 39.97727272727272 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 179 51.93808109504133 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 0 0 0 0 0 0
 E E E
@@ -29,11 +29,11 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 32.97727272727272 142 58.97727272727272
+0  177 26.97869318181816 325 132
 
 T 
 1
-LANG:10027 5 bytes
+LANG:10027 7 bytes_r
 "main(mapping event)
 {
   for(int i=0;i<=69;i++)
@@ -145,7 +145,7 @@ LANG:10027 12 gdpackedbits
 13 6
 "PUSH_BUTTON6"
 ""
-1 200 58.16425619834709 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 20.00000000000001 35.32877066115701 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 5 0 0 0 0 0
 E E E
@@ -157,7 +157,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  198 32.97727272727272 384.0000000000001 139
+0  18.00000000000001 26.95738636363635 78 58.99147727272727
 
 T 
 1
@@ -808,6 +808,36 @@ LANG:10027 15 stagepackedbits
     dpSetWait(\"gd\"+i+\".packed_bits:_address.._active\", 1);
   }
 
+  DebugN(\"success\");
+}" 0
+ E E E
+13 16
+"PUSH_BUTTON16"
+""
+1 179 176.9354177427686 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+15 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  177 151.9760298295455 325 256.9973366477274
+
+T 
+1
+LANG:10027 7 bytes_w
+"main(mapping event)
+{
+  for(int i=0;i<=69;i++)
+  {
+    dpSetWait(\"byte_write\"+i+\".:_address.._reference\", \"M.3.16.\"+(i+4000));
+    dpSetWait(\"byte_write\"+i+\".:_address.._active\", 1);
+  }
   DebugN(\"success\");
 }" 0
  E E E
