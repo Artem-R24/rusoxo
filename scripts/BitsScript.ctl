@@ -40,20 +40,10 @@ InitDyns()
 {
   int bit, word;
 
-  for(int i=0; i<63; ++i)
+  for(int i=0; i<70; ++i)
   {
     DPL_FROMUNPACK[i+1]="byte"+i+".";
   }
-  for(int i=1;i<=9;++i)
-  {
-    DPL_FROMUNPACK[i+63]="gd"+i+".packed_bits";
-  }
-  for(int i=1;i<=7;++i)
-  {
-    DPL_FROMUNPACK[i+72]="stage"+i+".packed_bits";
-  }
-  DPL_FROMUNPACK[80]="adddata1.";
-
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -101,6 +91,17 @@ InitDyns()
     DPL_TOUNPACK[33][2*i-1]="zx_4011"+(i+16>20 ? i+20 : i+16)+".OP.In";
     DPL_TOUNPACK[33][2*i]="zx_4011"+(i+16>20 ? i+20 : i+16)+".CL.In";
   }
+  for(int i=1; i<=4; ++i)
+  {
+    DPL_TOUNPACK[4][i]="G"+i+"_2.SimOn";
+    DPL_TOUNPACK[14][i]="G"+i+"_2.SimValue";
+    DPL_TOUNPACK[24][i]="G"+i+"_2.ProgUse";
+    DPL_TOUNPACK[34][i]="G"+i+"_2.In";
+  }
+  DPL_TOUNPACK[4][5]="ALARM_BTN_SimOn.";
+  DPL_TOUNPACK[14][5]="ALARM_BTN_SimValue.";
+  DPL_TOUNPACK[24][5]="ALARM_BTN_ProgUse.";
+  DPL_TOUNPACK[34][5]="ALARM_BTN_in.";
 
   bit=1; word=41;
   for(int i=1; i<=4; ++i)
@@ -168,27 +169,62 @@ InitDyns()
     DPL_TOUNPACK[28][i]="es4011"+(i<10 ? "0" : "")+i+".ProgUse";
     DPL_TOUNPACK[38][i]="es4011"+(i<10 ? "0" : "")+i+".Out";
   }
-  //for(int )
+  DPL_TOUNPACK[61][1]="CMD_START.";
+  DPL_TOUNPACK[61][2]="CMD_STOP.";
+  DPL_TOUNPACK[61][3]="CMD_ACK.";
+  for(int i=4; i<=13; ++i)
+  {
+    DPL_TOUNPACK[61][i]="CMD_STOP_GD"+(i-3)+".";
+  }
+  DPL_TOUNPACK[61][14]="CMD_STOP_LOCK.";
+  DPL_TOUNPACK[61][15]="valve_not_move_all_ack.";
+  for(int i=1; i<=16; ++i)
+  {
+    DPL_TOUNPACK[62][i]="valve_not_move_cl_4011"+(i<10 ? "0" : "")+i+".";
+    DPL_TOUNPACK[65][i]="valve_not_move_op_4011"+(i<10 ? "0" : "")+i+".";
+
+    if (i>8) continue;
+
+    DPL_TOUNPACK[64][i]="valve_not_move_cl_4011"+(i>20 ? i+20 : i+16)+".";
+    DPL_TOUNPACK[66][i]="valve_not_move_op_4011"+(i>20 ? i+20 : i+16)+".";
+  }
+  for(int i=1; i<=16; ++i)
+  {
+    DPL_TOUNPACK[67][i]= (i<11) ? "hh_4011"+(i<10 ? "0" : "")+i+".Firing" : "CRASH_PSE_40110" + (i-10) + ".";
+  }
+  for(int i=1; i<=4; ++i)
+  {
+    DPL_TOUNPACK[68][i]="CHECK_pit40110"+i+"ab.";
+  }
+  DPL_TOUNPACK[68][5]="BUF_START.";
+  DPL_TOUNPACK[68][6]="BUF_STOP.";
+  DPL_TOUNPACK[68][7]="STOP_LOCK.";
+  DPL_TOUNPACK[68][8]="SL_USE.";
+  for(int i=1; i<=10; ++i)
+  {
+    DPL_TOUNPACK[69][i]="ignition_fall_"+i+".";
+    DPL_TOUNPACK[70][i]="flame_out_"+i+".";
+  }
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-  DPL_TOPACK[1]="buttons_off_pnl1.";
-  DPL_TOPACK[2]="buttons_off_pnl2.";
-  DPL_TOPACK[3]="buttons_off_pnl3.";
-  DPL_TOPACK[4]="buttons_on_pnl1.";
-  DPL_TOPACK[5]="buttons_on_pnl2.";
-  DPL_TOPACK[6]="buttons_on_pnl3.";
-  DPL_TOPACK[7]="buf.mb_word_commands";
-
-  for(int i=0;i<16;++i)
-  {
-    DPL_FROMPACK[1][i+1]="btn_off_"+i+".";
-    DPL_FROMPACK[2][i+1]="btn_off_"+(i+16)+".";
-    DPL_FROMPACK[3][i+1]="btn_off_"+(i+32)+".";
-    DPL_FROMPACK[4][i+1]="btn_on_"+i+".";
-    DPL_FROMPACK[5][i+1]="btn_on_"+(i+16)+".";
-    DPL_FROMPACK[6][i+1]="btn_on_"+(i+32)+".";
-  }
+//   DPL_TOPACK[1]="buttons_off_pnl1.";
+//   DPL_TOPACK[2]="buttons_off_pnl2.";
+//   DPL_TOPACK[3]="buttons_off_pnl3.";
+//   DPL_TOPACK[4]="buttons_on_pnl1.";
+//   DPL_TOPACK[5]="buttons_on_pnl2.";
+//   DPL_TOPACK[6]="buttons_on_pnl3.";
+//   DPL_TOPACK[7]="buf.mb_word_commands";
+//
+//   for(int i=0;i<16;++i)
+//   {
+//     DPL_FROMPACK[1][i+1]="btn_off_"+i+".";
+//     DPL_FROMPACK[2][i+1]="btn_off_"+(i+16)+".";
+//     DPL_FROMPACK[3][i+1]="btn_off_"+(i+32)+".";
+//     DPL_FROMPACK[4][i+1]="btn_on_"+i+".";
+//     DPL_FROMPACK[5][i+1]="btn_on_"+(i+16)+".";
+//     DPL_FROMPACK[6][i+1]="btn_on_"+(i+32)+".";
+//   }
 
 }
 
@@ -277,7 +313,7 @@ PackBits_CB(string dp, bool bVal)
     }
   }
   t2=getCurrentTime();
-  DebugN(t2-t1);
+  //DebugN(t2-t1);
   dpSetWait(DPL_TOPACK[word],VAL_TOPACK[word]);
 }
 
@@ -334,5 +370,5 @@ UnpackBits_CB(string dp, uint nVal)
   }
   VAL_FROMUNPACK[index]=nVal;
   end=getCurrentTime();
-  DebugN((end-start));
+  //DebugN((end-start));
 }
