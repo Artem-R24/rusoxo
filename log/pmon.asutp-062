@@ -4881,3 +4881,50 @@ WCCILpmon    (1), 2024.08.22 11:53:10.974, SYS,  INFO,       24/pmon, Got START 
 WCCILpmon    (1), 2024.08.22 11:53:10.977, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
 WCCILpmon    (1), 2024.08.22 13:24:50.915, SYS,  INFO,       25/pmon, Got STOP command (SIGTERM) from ::1, stopping the manager WCCOActrl(2) at index 14
 WCCILpmon    (1), 2024.08.22 13:24:50.916, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 16:16:34.565, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2024.08.22 16:16:34.565, SYS,  INFO,       17/pmon, Stopping Manager WCCOAmod(3) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 16:16:34.566, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 16:16:34.567, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 16:16:34.673, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 16:16:34.781, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.22 16:16:36.805, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2024.08.22 16:16:36.805, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2024.08.23 07:56:42.926, SYS,  INFO,        1, Manager Start, WAIT_MODE
+WCCILpmon    (1), 2024.08.23 07:56:44.683, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2024.08.23 07:56:44.686, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILdata.exe -PROJ RUSOXO -pmonIndex 1 
+WCCILpmon    (1), 2024.08.23 07:56:45.958, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILevent.exe -PROJ RUSOXO -pmonIndex 8 
+WCCILpmon    (1), 2024.08.23 07:56:46.287, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 10 -f pvss_scripts.lst
+WCCILpmon    (1), 2024.08.23 07:56:46.618, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILsim.exe -PROJ RUSOXO -pmonIndex 11 
+WCCILpmon    (1), 2024.08.23 07:56:46.840, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOAui.exe -PROJ RUSOXO -pmonIndex 12 -m gedi
+WCCILpmon    (1), 2024.08.23 07:56:49.300, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOAmod.exe -PROJ RUSOXO -pmonIndex 13 -num 3
+WCCILpmon    (1), 2024.08.23 07:56:49.516, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
+WCCILpmon    (1), 2024.08.23 07:56:49.837, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2024.08.23 12:35:16.352, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2024.08.23 12:35:16.353, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 12:35:16.353, SYS,  INFO,       17/pmon, Stopping Manager WCCOAmod(3) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 12:35:16.354, SYS,  INFO,       17/pmon, Stopping Manager WCCOAui(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 12:35:16.355, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 12:35:16.356, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 12:35:16.957, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 12:35:17.065, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 12:35:19.088, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2024.08.23 12:35:19.088, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2024.08.23 13:57:43.365, SYS,  INFO,        1, Manager Start, WAIT_MODE
+WCCILpmon    (1), 2024.08.23 13:57:58.755, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2024.08.23 13:57:59.767, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILdata.exe -PROJ RUSOXO -pmonIndex 1 
+WCCILpmon    (1), 2024.08.23 13:58:01.049, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILevent.exe -PROJ RUSOXO -pmonIndex 8 
+WCCILpmon    (1), 2024.08.23 13:58:01.383, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 10 -f pvss_scripts.lst
+WCCILpmon    (1), 2024.08.23 13:58:01.605, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCILsim.exe -PROJ RUSOXO -pmonIndex 11 
+WCCILpmon    (1), 2024.08.23 13:58:01.829, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOAui.exe -PROJ RUSOXO -pmonIndex 12 -m gedi
+WCCILpmon    (1), 2024.08.23 13:58:07.639, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOAmod.exe -PROJ RUSOXO -pmonIndex 13 -num 3
+WCCILpmon    (1), 2024.08.23 13:58:07.862, SYS,  INFO,        1, Manager Start, C:\Siemens\Automation\WinCC_OA\3.16\bin\WCCOActrl.exe -PROJ RUSOXO -pmonIndex 14 BitsScript.ctl
+WCCILpmon    (1), 2024.08.23 13:58:08.082, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2024.08.23 15:20:39.353, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2024.08.23 15:20:39.353, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(2) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 15:20:39.354, SYS,  INFO,       17/pmon, Stopping Manager WCCOAmod(3) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 15:20:39.355, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 15:20:39.355, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 15:20:39.947, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 15:20:40.056, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2024.08.23 15:20:42.073, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2024.08.23 15:20:42.073, SYS,  INFO,        2, Manager Stop
