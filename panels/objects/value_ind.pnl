@@ -86,14 +86,14 @@ dyn_errClass err;
    STD_showConnectError(\"DP\");
   else
   dpConnect(\"ST_work_value\",msDP+\".Value:_online.._value\",
-                              msDP+\".Value:_original.._invalid\",msDP+\".Status:_online.._value\");
+                              msDP+\".Value:_original.._invalid\",msDP+\".Status:_online.._value\", msDP+\".block_mask:_online.._value\");
    err = getLastError();
    if (dynlen(err) > 0)
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
 }
 
 ST_work_value(string dp1, float fNewValue,
-           string dp2, bool bInvalid, string dp3, uint iStatus)
+           string dp2, bool bInvalid, string dp3, uint iStatus, string dp4, uint block)
 {
   string sFormat;
   string sNewValue;
@@ -109,11 +109,11 @@ ST_work_value(string dp1, float fNewValue,
 
   if (mbDiag)
   {
-   if (iStatus & 1) sNewValue = \"ОТКАЗ\";
-   if (iStatus & 2) sNewValue = \"К.З.\";
-   if (iStatus & 4) sNewValue = \"ОБРЫВ\";
+   if ((iStatus & 1) && !getBit(block,0)) sNewValue = \"ОТКАЗ\";
+   if ((iStatus & 2) && !getBit(block,1)) sNewValue = \"К.З.\";
+   if ((iStatus & 4) && !getBit(block,2)) sNewValue = \"ОБРЫВ\";
   }
-  if (mbDiag && (iStatus & 7)) // Обрывы - отказы
+  if (mbDiag && (iStatus & block & 7)) // Обрывы - отказы
   {
     setValue(\"Frame\",\"backCol\",\"<{255,0,0},4,{255,0,0,0},4>\");
     setValue(\"Hi\",\"visible\",false);
@@ -122,14 +122,14 @@ ST_work_value(string dp1, float fNewValue,
   else if (mbAlert && (iStatus & 24))// Высокое  - низкое
   {
     setValue(\"Frame\",\"backCol\",\"{255,255,0}\");
-    setValue(\"Hi\",\"visible\",(iStatus & 16));
-    setValue(\"Lo\",\"visible\",(iStatus & 8));
+    setValue(\"Hi\",\"visible\",(iStatus & 16) && !getBit(block, 4));
+    setValue(\"Lo\",\"visible\",(iStatus & 8) && !getBit(block, 3));
   }
   else if (mbAlert && (iStatus & 96)) // Аварийно высокое - низкое
         {
           setValue(\"Frame\",\"backCol\",\"{255,0,0}\");
-          setValue(\"Hi\",\"visible\",(iStatus & 64));
-          setValue(\"Lo\",\"visible\",(iStatus & 32));
+          setValue(\"Hi\",\"visible\",(iStatus & 64) && !getBit(block, 6));
+          setValue(\"Lo\",\"visible\",(iStatus & 32) && !getBit(block, 5));
         }
         else
           {
@@ -151,7 +151,7 @@ ST_work_value(string dp1, float fNewValue,
 }
 
 " 0
- E 0 1 3 2 1 E U  0 E 25.99999999999999 17.92753623188409 81.39130434782609 35.00000000000003
+ E 0 1 3 2 1 E U  0 E 26 17.92753623188409 81.39130434782609 35
 0 0 0 "0s" 0 0 0 194 0 0  81.39130434782609 17.92753623188409 1
 1
 LANG:10027 48 Tahoma,-1,15,5,75,0,0,0,0,0,Полужирный

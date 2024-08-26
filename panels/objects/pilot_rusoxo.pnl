@@ -33,7 +33,7 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E 1.016103506799958e-16 1.848484848484848 -0.8240202043644713 5.620533199270172e-17 520.6736458044087 -613.8787878787874 0 0 0 3 2 410 520
 443 520
-1 30 0 "" 1
+1 58 0 "" 1
 0
 10 8
 "POLYGON10"
@@ -126,10 +126,10 @@ E E 0 1 3 2 1 E 1 0 1.155555555555555 -132 -60.66666666666656 0 0 0 4 10 270 120
 270 190
 270 200
 270 210
-1 35 1 "" 5
+1 63 1 "" 5
 31 "transform" 0 0 1 0 -1 0 404
 0
-1 36 1 "" 6
+1 64 1 "" 6
 31 "transform" 0 0 1 0 -1 0 404
 0
 6 12
@@ -190,7 +190,7 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 13 29
 "PUSH_BUTTON2"
 ""
-1 53.406192548165 99.00000000000004 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 53.406192548165 89.00000000000004 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 9 0 0 0 0 0
 E E E
@@ -202,7 +202,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  51.406192548165 91.6891879060714 129.9119057037113 119.0567611193568
+0  51.406192548165 81.6891879060714 129.9119057037113 109.0567611193568
 
 T 
 1
@@ -233,13 +233,71 @@ void EP_childPanelOn()
 // SimpleCtrlScriptEnd {EP_childPanelOn}
 " 0
  E E E
-1 37 2 "7" 0
+1 65 2 "7" 0
 0
+2 43
+"PRIMITIVE_TEXT38"
+""
+1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  setValue(\"\", \"text\", $te);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 -221.539487340977 -646.2224060804383 0 E 165 323 199 336
+0 2 2 "0s" 0 0 0 201 0 0  182.4628986514007 328.7982270920354 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 6 te####
+2 57
+"PRIMITIVE_TEXT39"
+""
+1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  setValue(\"\", \"text\", \"es4011\"+$num);
+}
+
+" 0
+ E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 -160.0250978970819 -550.3940418703039 0 E 182.4628986514007 323 220 336
+0 2 2 "0s" 0 0 0 200 0 0  182.4628986514007 328.7982270920354 1
+1
+LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 6 es####
 0
 LAYER, 1 
 1
 LANG:10027 0 
-1 38 2 "" 0
+1 66 2 "" 0
 0
 0
 LAYER, 2 
