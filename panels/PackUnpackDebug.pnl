@@ -14,63 +14,10 @@ DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
 1
 LANG:10027 0 
-13 1
-"PUSH_BUTTON1"
-""
-1 23 43 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-0 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  21 36 145 62
-
-T 
-1
-LANG:10027 20 display packing bits
-"main(mapping event)
-{
-  /*for(int i=1; i<=8; ++i)
-  {
-    DebugN(5+(i-1)/4+((i-1)%4)*10);
-  }*/
-  dyn_dyn_string DPL_TOPACK;
-
-  for(int i=1;i<=16;++i)
-  {
-    DPL_TOPACK[1][i]=\"xy_4011\"+(i<10 ? \"0\" : \"\")+i+\".SimOn\";
-    DPL_TOPACK[2][i]=\"xy_4011\"+(i<10 ? \"0\" : \"\")+i+\".SimValue\";
-    DPL_TOPACK[3][i]=\"xy_4011\"+(i<10 ? \"0\" : \"\")+i+\".ProgUse\";
-    DPL_TOPACK[4][i]=\"xy_4011\"+(i<10 ? \"0\" : \"\")+i+\".Out\";
-
-    if(i>12) continue;
-
-    DPL_TOPACK[5][i]=\"xy_4011\"+(i+16)+\".SimOn\";
-    DPL_TOPACK[6][i]=\"xy_4011\"+(i+16)+\".SimValue\";
-    DPL_TOPACK[7][i]=\"xy_4011\"+(i+16)+\".ProgUse\";
-    DPL_TOPACK[8][i]=\"xy_4011\"+(i+16)+\".Out\";
-  }
-
-  for(int i=1;i<=dynlen(DPL_TOPACK);++i)
-  {
-    for(int j=1;j<=dynlen(DPL_TOPACK[i]);++j)
-    {
-      Debug(DPL_TOPACK[i][j]);
-    }
-    DebugN(\"\");
-  }
-}" 0
- E E E
 13 2
 "PUSH_BUTTON8"
 ""
-1 263 43 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
+1 217 38 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
  E E
 1 0 0 0 0 0
 E E E
@@ -82,7 +29,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  261 36 385 62
+0  215 31 339 57
 
 T 
 1
@@ -101,7 +48,7 @@ LANG:10027 4 test
 13 3
 "PUSH_BUTTON9"
 ""
-1 55 105 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 97 38 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 2 0 0 0 0 0
 E E E
@@ -112,8 +59,8 @@ LANG:10027 0
 1
 "layoutAlignment" "AlignNone"
 1
-LANG:10027 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
-0  53 98 177 124
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  95 31 219 57
 
 T 
 1

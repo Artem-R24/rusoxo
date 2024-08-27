@@ -1,7 +1,7 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 405 98 N "_3DFace" 1
+PANEL,-1 -1 311 98 N "_3DFace" 1
 "$dp_value"
 E E E E E 1 -1 -1 0  40 50
 ""0  1
@@ -30,7 +30,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "0"
-E E 0 1 3 2 1 E 0.9649122807017544 0 1 2.017543859649114 0 1 E 29 10 371 70
+E E 0 1 3 2 1 E 0.7046783625730995 0 1 9.564327485380106 0 1 E 29 10 371 70
 1 42 0 "" 2
 0
 1 44 1 "" 3
@@ -83,50 +83,6 @@ LANG:10027 0
 LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 6 sensor
-13 19
-"PUSH_BUTTON2"
-""
-1 278.4753088819931 44.37141702999529 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-6 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  276.4753088819931 37.37141702999529 349.4753088819931 63.37141702999529
-
-T 
-1
-LANG:10027 20 Блок. маска
-"// SimpleCtrlScriptStart {valid}
-main()
-{
-  EP_childPanelOn();
-}
-
-void EP_childPanelOn()
-{
-  ChildPanelOnCentralModal(\"vision/BlockMask.pnl\",
-      \"\",
-      makeDynString(\"$dp_value:\"+$dp_value));
-}
-
-// SimpleCtrlScript {EP_childPanelOn}
-// Function {ChildPanelOnCentralModal}
-// File {vision/BlockMask.pnl}
-// Panel {}
-// Parent {}
-// Module {}
-// OffsetX {0}
-// OffsetY {0}
-// SimpleCtrlScriptEnd {EP_childPanelOn}
-" 0
- E E E
 1 49 2 "7" 0
 0
 2 41

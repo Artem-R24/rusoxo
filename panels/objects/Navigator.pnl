@@ -7,7 +7,7 @@ E E E E E 1 -1 -1 0  0.4999999999999911 -0.2613636363634555
 E E 3
 "CBRef" "1"
 "EClose" E
-"dpi" "120"
+"dpi" "96"
 0 0 0
 ""
 DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
@@ -104,7 +104,7 @@ main()
 
 void EP_childPanelOn()
 {
-  RootPanelOn(\"main.pnl\",
+  RootPanelOn(\"Collector1.pnl\",
       \"\",
       makeDynString(\"\"));
 }
@@ -140,7 +140,7 @@ LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
 
 T 
 1
-LANG:10027 22 Диагностика
+LANG:10027 18 Симуляция
 "// SimpleCtrlScriptStart {valid}
 main()
 {
@@ -149,7 +149,7 @@ main()
 
 void EP_childPanelOn()
 {
-  RootPanelOn(\"DiagAI.pnl\",
+  RootPanelOn(\"SimInfoPanel.pnl\",
       \"\",
       makeDynString(\"\"));
 }
@@ -239,7 +239,7 @@ main()
 
 void EP_childPanelOn()
 {
-  RootPanelOn(\"Scale_SP.pnl\",
+  RootPanelOn(\"Ust.pnl\",
       \"\",
       makeDynString(\"\"));
 }

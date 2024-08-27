@@ -62,6 +62,8 @@ LANG:10027 0
 0
 1 714 55 "" 1
 0
+1 745 56 "" 1
+0
 0
 LAYER, 1 
 1
@@ -142,145 +144,150 @@ LANG:10027 0
 3 28 "PANEL_REF29" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 27 1 0 1 96 -162.6611239968303
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 27 1 0 1 96 -169.6611239968303
 1
 "$sens_num""01"
 3 29 "PANEL_REF30" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 28 1 0 1 198 -162.6611239968303
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 28 1 0 1 198 -169.6611239968303
 1
 "$sens_num""02"
 3 30 "PANEL_REF31" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 29 1 0 1 300 -162.6611239968303
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 29 1 0 1 300 -169.6611239968303
 1
 "$sens_num""03"
 3 31 "PANEL_REF32" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 30 1 0 1 402 -162.6611239968303
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 30 1 0 1 402 -169.6611239968303
 1
 "$sens_num""04"
 3 32 "PANEL_REF33" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 31 1 0 1 504 -162.6611239968303
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 31 1 0 1 504 -169.6611239968303
 1
 "$sens_num""05"
 3 33 "PANEL_REF34" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 32 1 0 1 606 -162.6611239968303
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 32 1 0 1 606 -169.6611239968303
 1
 "$sens_num""06"
 3 34 "PANEL_REF35" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 33 1 0 1 708 -162.6611239968303
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 33 1 0 1 708 -169.6611239968303
 1
 "$sens_num""07"
 3 35 "PANEL_REF36" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 34 1 0 1 96 13.33887600316967
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 34 1 0 1 96 6.33887600316967
 1
 "$sens_num""08"
 3 36 "PANEL_REF37" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 35 1 0 1 198 13.33887600316967
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 35 1 0 1 198 6.33887600316967
 1
 "$sens_num""09"
 3 37 "PANEL_REF38" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 36 1 0 1 300 13.33887600316967
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 36 1 0 1 300 6.33887600316967
 1
 "$sens_num""10"
 3 38 "PANEL_REF39" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 37 1 0 1 402 13.33887600316967
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 37 1 0 1 402 6.33887600316967
 1
 "$sens_num""11"
 3 39 "PANEL_REF40" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 38 1 0 1 504 13.33887600316967
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 38 1 0 1 504 6.33887600316967
 1
 "$sens_num""12"
 3 40 "PANEL_REF41" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 39 1 0 1 606 13.33887600316967
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 39 1 0 1 606 6.33887600316967
 1
 "$sens_num""13"
 3 41 "PANEL_REF42" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 40 1 0 1 708 13.33887600316967
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 40 1 0 1 708 6.33887600316967
 1
 "$sens_num""14"
 3 42 "PANEL_REF43" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 41 1 0 1 96 189.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 41 1 0 1 96 182.3388760031697
 1
 "$sens_num""15"
 3 43 "PANEL_REF44" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 42 1 0 1 198 189.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 42 1 0 1 198 182.3388760031697
 1
 "$sens_num""16"
 3 44 "PANEL_REF45" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 43 1 0 1 300 189.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 43 1 0 1 300 182.3388760031697
 1
 "$sens_num""17"
 3 45 "PANEL_REF46" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 44 1 0 1 402 189.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 44 1 0 1 402 182.3388760031697
 1
 "$sens_num""18"
 3 46 "PANEL_REF47" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 45 1 0 1 504 189.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 45 1 0 1 504 182.3388760031697
 1
 "$sens_num""19"
 3 47 "PANEL_REF48" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 46 1 0 1 606 189.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 46 1 0 1 606 182.3388760031697
 1
 "$sens_num""20"
 3 52 "PANEL_REF53" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 51 1 0 1 708 189.3388760031698
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 51 1 0 1 708 182.3388760031698
 1
 "$sens_num""25"
 3 53 "PANEL_REF54" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 52 1 0 1 96.00000000000006 365.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 52 1 0 1 96.00000000000006 358.3388760031697
 1
 "$sens_num""26"
 3 54 "PANEL_REF55" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 53 1 0 1 198.0000000000001 365.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 53 1 0 1 198.0000000000001 358.3388760031697
 1
 "$sens_num""27"
 3 55 "PANEL_REF56" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/ZX_sim_.pnl" 107 230.6611239968303 T 54 1 0 1 300.0000000000001 365.3388760031697
+"objects/ZX_sim_.pnl" 107 230.6611239968303 T 54 1 0 1 300.0000000000001 358.3388760031697
 1
 "$sens_num""28"
+3 56 "PANEL_REF146" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Navigator.pnl" 0.5000000000001137 720 T 54 1 0 1 -1.13686837721616e-13 3
+0
 0

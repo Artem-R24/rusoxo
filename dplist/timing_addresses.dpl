@@ -1,0 +1,69 @@
+# ascii dump of database
+
+# DpType
+TypeName
+BUF.BUF	1#1
+	mode	20#2
+	fit401101	22#30
+	HighLevel	1#31
+		cmd_start	23#32
+		cmd_stop	23#33
+		ack	23#34
+	Panel	1#35
+		cmd_start	23#36
+		cmd_stop	23#37
+		ack	23#38
+		stop_lock	23#43
+	SP_USTS	1#45
+		sp_time_azot_on	20#46
+		sp_time_valve_move	20#47
+		sp_time_ignition_on	20#48
+		sp_time_grad_flame_on	20#49
+		sp_time_grad_flame_off	20#50
+		sp_grad_flame_on	22#51
+		sp_grad_flame_off	22#52
+	USTS	1#53
+		time_azot_on	20#54
+		time_valve_move	20#55
+		time_ignition_on	20#56
+		time_grad_flame_on	20#57
+		time_grad_flame_off	20#58
+		grad_flame_on	22#59
+		grad_flame_off	22#60
+
+# Datapoint/DpId
+DpName	TypeName	ID
+buf	BUF	706
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	buf.fit401101	BUF	0	0x8300000000100101	26.08.2024 13:23:59.041
+
+# PeriphAddrMain
+Manager/User	StampSec	StampMSec	ElementName	TypeName	_address.._type	_address.._reference	_address.._poll_group	_address.._connection	_address.._offset	_address.._subindex	_address.._direction	_address.._internal	_address.._lowlevel	_address.._active	_address.._start	_address.._interval	_address.._reply	_address.._datatype	_address.._drv_ident
+UI (1)/0	1722425531	234	buf.mode	BUF	16	"M.3.3.0"	_Poll1000	 	0	0	\4	0	0	1	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738415	868	buf.SP_USTS.sp_time_azot_on	BUF	16	"M.3.16.0"	 	 	0	0	\1	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738390	651	buf.SP_USTS.sp_time_valve_move	BUF	16	"M.3.16.0"	 	 	0	0	\1	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738436	73	buf.SP_USTS.sp_time_ignition_on	BUF	16	"M.3.16.0"	 	 	0	0	\1	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	561	"MODBUS"
+UI (1)/0	1724738451	893	buf.SP_USTS.sp_time_grad_flame_on	BUF	16	"M.3.16.0"	 	 	0	0	\1	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738468	831	buf.SP_USTS.sp_time_grad_flame_off	BUF	16	"M.3.16.0"	 	 	0	0	\1	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738485	320	buf.SP_USTS.sp_grad_flame_on	BUF	16	"M.3.16.0"	 	 	0	0	\1	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738499	174	buf.SP_USTS.sp_grad_flame_off	BUF	16	"M.3.16.0"	 	 	0	0	\1	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738531	240	buf.USTS.time_azot_on	BUF	16	"M.3.3.0"	_Poll1000	 	0	0	\4	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	563	"MODBUS"
+UI (1)/0	1724738586	760	buf.USTS.time_valve_move	BUF	16	""	 	 	0	0	\0	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	""
+UI (1)/0	1724738589	726	buf.USTS.time_ignition_on	BUF	16	""	 	 	0	0	\0	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	""
+UI (1)/0	1724738592	151	buf.USTS.time_grad_flame_on	BUF	16	""	 	 	0	0	\0	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	""
+UI (1)/0	1724738594	211	buf.USTS.time_grad_flame_off	BUF	16	""	 	 	0	0	\0	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	""
+UI (1)/0	1724738596	223	buf.USTS.grad_flame_on	BUF	16	""	 	 	0	0	\0	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	""
+UI (1)/0	1724738598	854	buf.USTS.grad_flame_off	BUF	16	""	 	 	0	0	\0	0	0	0	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	""
+# ascii dump of database
+
+# Datapoint/DpId
+DpName	TypeName	ID
+_ds_BUF	_DynamicDptSettings	1237
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	_ds_BUF.symbols	_DynamicDptSettings		0x8300000000000101	29.07.2024 08:07:43.417
+UI (1)/0	_ds_BUF.symboldefault	_DynamicDptSettings	""	0x8300000000000101	29.07.2024 08:07:43.418
+UI (1)/0	_ds_BUF.trendElements	_DynamicDptSettings		0x8300000000000101	29.07.2024 08:07:43.418
