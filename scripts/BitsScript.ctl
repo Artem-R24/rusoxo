@@ -174,7 +174,7 @@ InitDyns()
   DPL_TOUNPACK[61][3]="CMD_ACK.";
   for(int i=4; i<=13; ++i)
   {
-    DPL_TOUNPACK[61][i]="CMD_STOP_GD"+(i-3)+".";
+    DPL_TOUNPACK[61][i]="CMD_STOP_GD"+(i<13 ? "0" : "")+(i-3)+".";
   }
   DPL_TOUNPACK[61][14]="CMD_STOP_LOCK.";
   DPL_TOUNPACK[61][15]="valve_not_move_all_ack.";
@@ -185,8 +185,8 @@ InitDyns()
 
     if (i>8) continue;
 
-    DPL_TOUNPACK[64][i]="valve_not_move_cl_4011"+(i>20 ? i+20 : i+16)+".";
-    DPL_TOUNPACK[66][i]="valve_not_move_op_4011"+(i>20 ? i+20 : i+16)+".";
+    DPL_TOUNPACK[64][i]="valve_not_move_cl_4011"+(i+16 > 20 ? i+20 : i+16)+".";
+    DPL_TOUNPACK[66][i]="valve_not_move_op_4011"+(i+16 > 20 ? i+20 : i+16)+".";
   }
   for(int i=1; i<=16; ++i)
   {
