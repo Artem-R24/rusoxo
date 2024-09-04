@@ -1,0 +1,255 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 158 125 N "_3DFace" 6
+"$DPattr"
+"$DPname"
+"$DebugCheck"
+"$base"
+"$inv"
+"$type"
+"main()
+{
+  if($type == 0){
+    setValue(\"TRIANGLE_1\", \"backCol\", \"Grey\");
+    setValue(\"TRIANGLE_2\", \"backCol\", \"Grey\");
+    setValue(\"ELLIPSE\", \"backCol\", \"Grey\");
+    setValue(\"TRIANGLE_3\", \"visible\",  \"FALSE\");
+    return;
+  } else if($type == 1) {
+    setValue(\"TRIANGLE_1\", \"backCol\", \"Grey\");
+    setValue(\"TRIANGLE_2\", \"backCol\", \"Grey\");
+    setValue(\"TRIANGLE_3\", \"backCol\", \"Grey\");
+    setValue(\"ELLIPSE\", \"backCol\", \"Grey\");
+    return;
+  }
+  else if($type == 2){
+    setValue(\"TRIANGLE_3\", \"visible\",  \"FALSE\");
+  } else if($type == 3) {
+    setValue(\"TRIANGLE_\"+$base, \"backCol\",  \"_3DFace\");
+  }
+
+  EP_connect();
+}
+
+void EP_connect()
+{
+  //string err_str = \"\";
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:\"+$DPname+$DPattr))
+  {
+    err_code = 1;
+    error_check();
+    return;
+  }
+
+  dpConnect(\"EP_setColors\",
+            \"System1:\"+$DPname+$DPattr);
+
+  err = getLastError();
+  if (dynlen(err) > 0){
+    err_code = 2;
+    error_check();
+  }
+}
+
+void error_check(){
+  if($type == 2){
+      setValue(\"TRIANGLE_1\", \"color\", \"_dpdoesnotexist\");
+      setValue(\"TRIANGLE_2\", \"color\", \"_dpdoesnotexist\");
+      setValue(\"TRIANGLE_3\", \"color\", \"_dpdoesnotexist\");
+      setValue(\"ELLIPSE\", \"color\", \"_dpdoesnotexist\");
+    } else if($type == 3){
+      if($base != 1)
+        setValue(\"TRIANGLE_1\", \"color\", \"_dpdoesnotexist\");
+      if($base != 2)
+        setValue(\"TRIANGLE_2\", \"color\", \"_dpdoesnotexist\");
+      if($base != 3)
+        setValue(\"TRIANGLE_3\", \"color\", \"_dpdoesnotexist\");
+      //setValue(\"ELLIPSE\", \"color\", \"_dpdoesnotexist\");
+    }
+
+    if ($DebugCheck != 0){
+     if (err_code == 1)
+      Debug(this.name + \" error: dp doesn't exist\");
+    else if (err_code == 2)
+      Debug(this.name + \" error: couldn't register callback function\");
+  }
+}
+
+void paint(string color1, string color2){
+  if($type == 2){
+        setValue(\"TRIANGLE_1\", \"backCol\", color1);
+        setValue(\"TRIANGLE_2\", \"backCol\", color1);
+        setValue(\"ELLIPSE\", \"backCol\", color1);
+    } else if($type == 3){
+        if($base == 1){
+          setValue(\"ELLIPSE\", \"backCol\", \"_3DFace\");
+          setValue(\"TRIANGLE_1\", \"backCol\", \"_3DFace\");
+          setValue(\"TRIANGLE_2\", \"backCol\", color1);
+          setValue(\"TRIANGLE_3\", \"backCol\", color2);
+        }
+        if($base == 2){
+          setValue(\"ELLIPSE\", \"backCol\", \"_3DFace\");
+          setValue(\"TRIANGLE_2\", \"backCol\", \"_3DFace\");
+          setValue(\"TRIANGLE_3\", \"backCol\", color1);
+          setValue(\"TRIANGLE_1\", \"backCol\", color2);
+        }
+        if($base == 3){
+          setValue(\"ELLIPSE\", \"backCol\", \"_3DFace\");
+          setValue(\"TRIANGLE_3\", \"backCol\", \"_3DFace\");
+          setValue(\"TRIANGLE_2\", \"backCol\", color1);
+          setValue(\"TRIANGLE_1\", \"backCol\", color2);
+        }
+        //setValue(\"ELLIPSE\", \"backCol\", \"Green\");
+    }
+}
+
+void EP_setColors(string dpSource, int iNewValue)
+{
+  string color1, color2;
+  if($inv){
+    color1 = \"Red\";
+    color2 = \"Green\";
+  }
+  else {
+     color1 = \"Green\";
+    color2 = \"Red\";
+   }
+
+  if(iNewValue == 1){
+    paint(color1, color2);
+  } else if(iNewValue == 0){
+    paint(color2, color1);
+  }
+  else {
+    setValue(\"TRIANGLE_1\", \"backCol\", \"<_3DFace,2,Black,2>\");
+    setValue(\"TRIANGLE_2\", \"backCol\", \"<_3DFace,2,Black,2>\");
+    setValue(\"TRIANGLE_3\", \"backCol\", \"<_3DFace,2,Black,2>\");
+    setValue(\"ELLIPSE\", \"backCol\", \"<_3DFace,2,Black,2>\");
+  }
+
+
+  /*if($state == 0)
+    setValue(\"TRIANGLE_\"+$inv, \"backCol\",  \"Red\");
+  else
+    setValue(\"TRIANGLE_\"+$inv, \"backCol\",  \"Green\");*/
+}
+" 0
+ E E E E 1 -1 -1 0  40 30
+""0  1
+E "int err_code = 0;" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+10 4
+"TRIANGLE_1"
+""
+1 30 30 E E E 1 E 1 E N {0,0,0} E N "_3DFace" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 0.8125 0 5.624999999999979 1 E 3 30 30
+30 70
+70 50
+ 1
+10 7
+"TRIANGLE_3"
+""
+1 30 30 E E E 1 E 1 E N {0,0,0} E N "_3DFace" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -1.83697019872103e-16 -1 0.8125 -1.492538286460837e-16 29.37500000000001 116.25 1 E 3 30 30
+30 70
+70 50
+ 1
+10 8
+"TRIANGLE_2"
+""
+1 30 30 E E E 1 E 1 E N {0,0,0} E N "_3DFace" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -1 1.224646799147353e-16 -9.950255243072244e-17 -0.8125 140 86.87499999999997 1 E 3 30 30
+30 70
+70 50
+ 1
+7 9
+"ELLIPSE"
+""
+1 70 20 E E E 1 E 1 E N {0,0,0} E N "_3DFace" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 0 26.24999999999998 1 E 70 20 10 10
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

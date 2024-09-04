@@ -1,7 +1,7 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 170 163 N "_3DFace" 1
+PANEL,-1 -1 117 126 N "_3DFace" 1
 "$sens_num"
 E E E E E 1 -1 -1 0  52 72
 ""0  1
@@ -15,59 +15,6 @@ DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
 1
 LANG:10027 0 
-2 3
-"PRIMITIVE_TEXT2"
-""
-1 59.75 67.15521074940565 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
- E E
-4 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-4
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-E E 0 1 3 2 1 E 1 0 0.9155501465621073 -1.75 34.01603695597245 0 E 44 67.15521074940565 76 85
-0 2 2 "0s" 0 0 0 193 0 0  59.75 67.15521074940565 1
-1
-LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 7 сим.
-2 4
-"PRIMITIVE_TEXT3"
-""
-1 102.25 96.08038944752818 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
- E E
-5 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-4
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-"main()
-{
-  dpConnect(\"set_visible\",\"xy_4011\"+$sens_num+\".SimOn\");
-}
-
-set_visible(string dpe, bool nval)
-{
-  this.visible(nval);
-}" 0
- E 0 1 3 2 1 E U  0 E 83 96.08038944752818 121 114
-0 2 2 "0s" 0 0 0 193 0 0  102.25 96.08038944752818 1
-1
-LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 9 знач.
 30 205
 "FRAME1"
 ""
@@ -87,19 +34,84 @@ LANG:10027 0
 {
   this.text(\"XY-4011\"+$sens_num);
 }" 0
- E 0 1 3 2 1 E 1.386138613861386 0 2.431749212160858 -229.9603960396039 -441.9833093429277 0 E 176 183 278 243
+ E 0 1 3 2 1 E 0.9702970297029712 0 1.64406779661017 -159.772277227723 -289.8644067796611 0 E 176 183 278 243
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
 0 1
-LANG:10027 11 Frame Title
+LANG:10027 6 SENSOR
+1 241 7 "" 6
+0
 0
 LAYER, 1 
 1
 LANG:10027 0 
-1 206 5 "" 0
+2 240
+"PRIMITIVE_TEXT154"
+""
+1 15.50000000000006 22.14019153330516 E E E 0 E 1 E N "_WindowText" E N {187,187,187} E E
+ E E
+19 0 0 0 0 0
+E E E
 0
-1 220 6 "" 0
-0
+1
+LANG:10027 0 
+
+5
+"hoverfclr" "N {0,0,0}"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  this.enabled(1);
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"xy_4011\" + $sens_num + \".SimOn:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+             \"xy_4011\" + $sens_num + \".SimOn:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:pit401101a.Alms.SimOn}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.4733355278382862 0 2.225342240713661 5.654194680975885 -23.64375170881397 1 E 15.50000000000006 22.14019153330516 210.5000000000001 57.14019153330516
+0 2 2 "0s" 0 0 0 73 0 0  15.50000000000006 22.14019153330516 2
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 1
+LANG:10027 18 Симуляция
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 1
+LANG:10027 18 отключена
 0
 LAYER, 2 
 1
@@ -125,33 +137,10 @@ LAYER, 7
 1
 LANG:10027 0 
 0
-3 5 "PANEL_REF9" -1
+3 7 "PANEL_REF11" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/STD_SWITCHES/switch_1.pnl" 164 153 T 13 1 0 1 -132.75 -120.4732035174906
-5
-"$b_IBit""TRUE"
-"$b_Toggle""TRUE"
-"$dpe_value_Off""\"xy_4011\"+$sens_num+\".SimOn\""
-"$dpe_value_On""\"xy_4011\"+$sens_num+\".SimOn\""
-"$dpe_value_Rm""\"xy_4011\"+$sens_num+\".SimOn\""
-3 6 "PANEL_REF10" -1
-"layoutAlignment" "AlignNone"
-"initCB" "main()
-{
-  dpConnect(\"set_visible\",\"xy_4011\"+$sens_num+\".SimOn\");
-}
-
-set_visible(string dpe, bool nval)
-{
-  this.visible(nval);
-}"
-"" ""
-"objects/STD_SWITCHES/switch_1.pnl" 202.2499999999999 194.5535929650188 T 15 1 0 1 -126.9999999999999 -162.4732035174906
-5
-"$b_IBit""TRUE"
-"$b_Toggle""TRUE"
-"$dpe_value_Off""\"xy_4011\"+$sens_num+\".SimValue\""
-"$dpe_value_On""\"xy_4011\"+$sens_num+\".SimValue\""
-"$dpe_value_Rm""\"xy_4011\"+$sens_num+\".SimValue\""
+"objects/Valve.pnl" 70.25 300.0905740388325 T 18 1 0 1 -25.25 -173.0905740388325
+1
+"$State""\"xy_4011\"+$sens_num+\".SimValue\""
 0

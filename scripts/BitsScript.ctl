@@ -169,15 +169,15 @@ InitDyns()
     DPL_TOUNPACK[28][i]="es4011"+(i<10 ? "0" : "")+i+".ProgUse";
     DPL_TOUNPACK[38][i]="es4011"+(i<10 ? "0" : "")+i+".Out";
   }
-  DPL_TOUNPACK[61][1]="CMD_START.";
-  DPL_TOUNPACK[61][2]="CMD_STOP.";
-  DPL_TOUNPACK[61][3]="CMD_ACK.";
+  DPL_TOUNPACK[61][1]="BUF_START.";
+  DPL_TOUNPACK[61][2]="BUF_STOP.";
+  DPL_TOUNPACK[61][3]="BUF_ACK.";
   for(int i=4; i<=13; ++i)
   {
-    DPL_TOUNPACK[61][i]="CMD_STOP_GD"+(i<13 ? "0" : "")+(i-3)+".";
+    DPL_TOUNPACK[61][i]="STOP_GD"+(i<13 ? "0" : "")+(i-3)+".";
   }
-  DPL_TOUNPACK[61][14]="CMD_STOP_LOCK.";
-  DPL_TOUNPACK[61][15]="valve_not_move_all_ack.";
+  DPL_TOUNPACK[61][14]="STOP_LOCK.";
+  DPL_TOUNPACK[61][15]="NOT_MOVE_ACK.";
   for(int i=1; i<=16; ++i)
   {
     DPL_TOUNPACK[62][i]="valve_not_move_cl_4011"+(i<10 ? "0" : "")+i+".";
@@ -202,29 +202,23 @@ InitDyns()
   DPL_TOUNPACK[68][8]="SL_USE.";
   for(int i=1; i<=10; ++i)
   {
-    DPL_TOUNPACK[69][i]="ignition_fall_"+i+".";
-    DPL_TOUNPACK[70][i]="flame_out_"+i+".";
+    DPL_TOUNPACK[69][i]="ignition_fall_"+(i<10 ? "0" : "")+i+".";
+    DPL_TOUNPACK[70][i]="flame_out_"+(i<10 ? "0" : "")+i+".";
   }
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-//   DPL_TOPACK[1]="buttons_off_pnl1.";
-//   DPL_TOPACK[2]="buttons_off_pnl2.";
-//   DPL_TOPACK[3]="buttons_off_pnl3.";
-//   DPL_TOPACK[4]="buttons_on_pnl1.";
-//   DPL_TOPACK[5]="buttons_on_pnl2.";
-//   DPL_TOPACK[6]="buttons_on_pnl3.";
-//   DPL_TOPACK[7]="buf.mb_word_commands";
-//
-//   for(int i=0;i<16;++i)
-//   {
-//     DPL_FROMPACK[1][i+1]="btn_off_"+i+".";
-//     DPL_FROMPACK[2][i+1]="btn_off_"+(i+16)+".";
-//     DPL_FROMPACK[3][i+1]="btn_off_"+(i+32)+".";
-//     DPL_FROMPACK[4][i+1]="btn_on_"+i+".";
-//     DPL_FROMPACK[5][i+1]="btn_on_"+(i+16)+".";
-//     DPL_FROMPACK[6][i+1]="btn_on_"+(i+32)+".";
-//   }
+  DPL_TOPACK[1]="commands.";
+
+  DPL_FROMPACK[1][1]="CMD_START.";
+  DPL_FROMPACK[1][2]="CMD_STOP.";
+  DPL_FROMPACK[1][3]="CMD_ACK.";
+  for(int i=4;i<=13;++i)
+  {
+    DPL_FROMPACK[1][i]="CMD_STOP_GD"+(i<13 ? "0" : "")+(i-3)+".";
+  }
+  DPL_FROMPACK[1][14]="CMD_STOP_LOCK.";
+  DPL_FROMPACK[1][15]="CMD_NOT_MOVE_ACK.";
 
 }
 
@@ -285,7 +279,7 @@ PackBits()
   for(int i=1; i<=dynlen(DPL_FROMPACK); ++i)
   {
     for(int j=1; j<=dynlen(DPL_FROMPACK[i]); ++j)
-      dpConnect("PackBits_CB",false,DPL_FROMPACK[i][j]);
+      dpConnect("PackBits_CB",DPL_FROMPACK[i][j]);
   }
 }
 
@@ -337,7 +331,7 @@ UnpackBits()
 //   }
   for(int i=1;i<=dynlen(DPL_FROMUNPACK);++i)
   {
-    dpConnect("UnpackBits_CB",false,DPL_FROMUNPACK[i]);
+    dpConnect("UnpackBits_CB",DPL_FROMUNPACK[i]);
   }
 }
 

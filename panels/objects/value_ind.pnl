@@ -109,11 +109,11 @@ ST_work_value(string dp1, float fNewValue,
 
   if (mbDiag)
   {
-   if ((iStatus & 1) && !getBit(block,0)) sNewValue = \"ОТКАЗ\";
-   if ((iStatus & 2) && !getBit(block,1)) sNewValue = \"К.З.\";
-   if ((iStatus & 4) && !getBit(block,2)) sNewValue = \"ОБРЫВ\";
+   if ((iStatus & 1)) sNewValue = \"ОТКАЗ\";
+   if ((iStatus & 2)) sNewValue = \"К.З.\";
+   if ((iStatus & 4)) sNewValue = \"ОБРЫВ\";
   }
-  if (mbDiag && (iStatus & block & 7)) // Обрывы - отказы
+  if (mbDiag && (iStatus & 7)) // Обрывы - отказы
   {
     setValue(\"Frame\",\"backCol\",\"<{255,0,0},4,{255,0,0,0},4>\");
     setValue(\"Hi\",\"visible\",false);
@@ -122,14 +122,14 @@ ST_work_value(string dp1, float fNewValue,
   else if (mbAlert && (iStatus & 24))// Высокое  - низкое
   {
     setValue(\"Frame\",\"backCol\",\"{255,255,0}\");
-    setValue(\"Hi\",\"visible\",(iStatus & 16) && !getBit(block, 4));
-    setValue(\"Lo\",\"visible\",(iStatus & 8) && !getBit(block, 3));
+    setValue(\"Hi\",\"visible\",(iStatus & 16));
+    setValue(\"Lo\",\"visible\",(iStatus & 8));
   }
   else if (mbAlert && (iStatus & 96)) // Аварийно высокое - низкое
         {
           setValue(\"Frame\",\"backCol\",\"{255,0,0}\");
-          setValue(\"Hi\",\"visible\",(iStatus & 64) && !getBit(block, 6));
-          setValue(\"Lo\",\"visible\",(iStatus & 32) && !getBit(block, 5));
+          setValue(\"Hi\",\"visible\",(iStatus & 64));
+          setValue(\"Lo\",\"visible\",(iStatus & 32));
         }
         else
           {

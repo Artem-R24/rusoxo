@@ -9,7 +9,7 @@ E E E E E 1 -1 -1 0  10 9
 E E 3
 "CBRef" "1"
 "EClose" E
-"dpi" "120"
+"dpi" "96"
 0 0 0
 ""
 DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
@@ -89,6 +89,7 @@ main()
 // mbIBit=$b_IBit;
  mbIBit=false;
  ST_value();
+ EP_setVisible();
 }
 ST_value()
 {
@@ -123,7 +124,30 @@ ST_work_value(string dp1, float fNewValue,
   setValue(\"\",\"text\",sNewValue);
 }
 
-" 0
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue == 1));
+}" 0
  "// SimpleCtrlScriptStart {valid}
 main()
 {

@@ -1,7 +1,8 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 1023 769 N "White" 0
+PANEL,-1 -1 1023 769 N "White" 1
+"$unit"
 E E E E E 1 -1 -1 0  32.00000000000004 45.21428571428578
 ""0  1
 E E 3
@@ -14,71 +15,71 @@ DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
 1
 LANG:10027 0 
-1 461 21 "0" 3
+1 661 21 "0" 3
 0
-1 335 0 "0" 3
+1 535 0 "0" 3
 0
-1 341 1 "0" 3
+1 541 1 "0" 3
 0
-1 347 2 "0" 3
+1 547 2 "0" 3
 0
-1 353 3 "0" 3
+1 553 3 "0" 3
 0
-1 359 4 "0" 3
+1 559 4 "0" 3
 0
-1 365 5 "0" 3
+1 565 5 "0" 3
 0
-1 371 6 "0" 3
+1 571 6 "0" 3
 0
-1 377 7 "0" 3
+1 577 7 "0" 3
 0
-1 383 8 "0" 3
+1 583 8 "0" 3
 0
-1 389 9 "0" 3
+1 589 9 "0" 3
 0
-1 395 10 "0" 3
+1 595 10 "0" 3
 0
-1 401 11 "0" 3
+1 601 11 "0" 3
 0
-1 407 12 "0" 3
+1 607 12 "0" 3
 0
-1 413 13 "0" 3
+1 613 13 "0" 3
 0
-1 419 14 "0" 3
+1 619 14 "0" 3
 0
-1 425 15 "0" 3
+1 625 15 "0" 3
 0
-1 431 16 "0" 3
+1 631 16 "0" 3
 0
-1 437 17 "0" 3
+1 637 17 "0" 3
 0
-1 443 18 "0" 3
+1 643 18 "0" 3
 0
-1 449 19 "0" 3
+1 649 19 "0" 3
 0
-1 455 20 "0" 3
+1 655 20 "0" 3
 0
-1 467 22 "0" 3
+1 667 22 "0" 3
 0
-1 473 23 "0" 3
+1 673 23 "0" 3
 0
-1 479 24 "0" 3
+1 679 24 "0" 3
 0
-1 485 25 "0" 3
+1 685 25 "0" 3
 0
-1 491 26 "0" 3
+1 691 26 "0" 3
 0
-1 497 27 "0" 3
+1 697 27 "0" 3
 0
-1 503 28 "0" 3
+1 703 28 "0" 3
 0
-1 509 29 "0" 3
+1 709 29 "0" 3
 0
-1 515 30 "0" 3
+1 715 30 "0" 3
 0
-1 521 31 "0" 3
+1 721 31 "0" 3
 0
-1 527 32 "0" 3
+1 727 32 "0" 3
 0
 6 259
 "RECTANGLE106"
@@ -1400,6 +1401,132 @@ LANG:10027 5 Ед.
 LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 7 изм.
+6 533
+"RECTANGLE5"
+""
+1 10 10 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+119 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E 1.012871287128713 0 1.00921052631579 -10.74128334986676 -10.62015029996161 3 1 10 3 E 10 10 1020 770
+2 534
+"PRIMITIVE_TEXT58"
+""
+1 480 160 E E E 1 E 1 E N "Red" E N "_Window" E E
+ E E
+120 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1 0 1.23284468453098 30.88742952142047 185.1003830959741 0 E 255 51 705 270
+0 2 2 "0s" 0 0 0 201 0 0  480 160 3
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 НЕТ СВЯЗИ С
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 ИСТОЧНИКОМ
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 13 ДАННЫХ 
 0
 LAYER, 1 
 1
@@ -1437,7 +1564,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401101b"
-"$tips""\"Давление в СР (резервный)\""
+"$unit""$unit"
 3 1 "PANEL_REF37" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1446,7 +1573,7 @@ LANG:10027 0
 "$bHigh""TRUE"
 "$bLow""TRUE"
 "$sens_dp""pit401102b"
-"$tips""\"Давление 3-й ступени\""
+"$unit""$unit"
 3 2 "PANEL_REF38" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1455,7 +1582,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401103b"
-"$tips""\"Давление 5-й ступени\""
+"$unit""$unit"
 3 3 "PANEL_REF39" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1464,7 +1591,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401104a"
-"$tips""\"Давление 6-й ступени\""
+"$unit""$unit"
 3 4 "PANEL_REF40" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1473,7 +1600,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401105"
-"$tips""\"Уровень жидкости в СР\""
+"$unit""$unit"
 3 5 "PANEL_REF41" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1482,7 +1609,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401107"
-"$tips""\"Давление природного газа на выходе БПГ \""
+"$unit""$unit"
 3 6 "PANEL_REF42" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1491,7 +1618,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401108"
-"$tips""\"Давление азота на входе в БПГ\""
+"$unit""$unit"
 3 7 "PANEL_REF43" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1500,7 +1627,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401109"
-"$tips""\"Давление азота на выходе БПГ\""
+"$unit""$unit"
 3 8 "PANEL_REF44" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1509,7 +1636,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401110"
-"$tips""\"Давление воздуха на входе в БПГ\""
+"$unit""$unit"
 3 9 "PANEL_REF45" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1518,7 +1645,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401111"
-"$tips""\"Давление воздуха на выходе БПГ (кислый сброс)\""
+"$unit""$unit"
 3 10 "PANEL_REF46" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1527,7 +1654,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""true"
 "$sens_dp""pit401112"
-"$tips""\"Давление воздуха на выходе БПГ (обдув фотодатчиков)\""
+"$unit""$unit"
 3 11 "PANEL_REF47" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1536,7 +1663,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401114"
-"$tips""\"Перепад давления на фильтре\""
+"$unit""$unit"
 3 12 "PANEL_REF48" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1545,7 +1672,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401115"
-"$tips""\"Перепад давления на фильтре\""
+"$unit""$unit"
 3 13 "PANEL_REF49" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1554,7 +1681,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401116"
-"$tips""\"Перепад давления на фильтре\""
+"$unit""$unit"
 3 14 "PANEL_REF50" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1563,7 +1690,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401118"
-"$tips""\"Температура стенки камеры сгорания\""
+"$unit""$unit"
 3 15 "PANEL_REF51" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1572,7 +1699,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401119"
-"$tips""\"Температура стенки камеры сгорания\""
+"$unit""$unit"
 3 16 "PANEL_REF52" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1581,7 +1708,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401120"
-"$tips""\"Температура стенки камеры сгорания\""
+"$unit""$unit"
 3 17 "PANEL_REF53" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1590,7 +1717,7 @@ LANG:10027 0
 "$bHigh""TRUE"
 "$bLow""TRUE"
 "$sens_dp""pit401101a"
-"$tips""\"Давление в СР (основной)\""
+"$unit""$unit"
 3 18 "PANEL_REF54" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1599,7 +1726,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401103a"
-"$tips""\"Давление 4-й ступени\""
+"$unit""$unit"
 3 19 "PANEL_REF55" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1608,7 +1735,7 @@ LANG:10027 0
 "$bHigh""TRUE"
 "$bLow""TRUE"
 "$sens_dp""pit401102a"
-"$tips""\"Давление 2-й ступени\""
+"$unit""$unit"
 3 20 "PANEL_REF56" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1617,7 +1744,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""pit401104b"
-"$tips""\"Давление 7-й ступени\""
+"$unit""$unit"
 3 21 "PANEL_REF57" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1626,7 +1753,7 @@ LANG:10027 0
 "$bHigh""TRUE"
 "$bLow""TRUE"
 "$sens_dp""pit401106"
-"$tips""\"Давление природного газа на входе в БПГ\""
+"$unit""$unit"
 3 22 "PANEL_REF58" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1635,7 +1762,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401101"
-"$tips""\"Температура дымовых газов\""
+"$unit""$unit"
 3 23 "PANEL_REF59" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1644,7 +1771,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401103"
-"$tips""\"Оптическоий датчик ГД1\""
+"$unit""$unit"
 3 24 "PANEL_REF75" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1653,7 +1780,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""tt401112"
-"$tips""\"Температура дымовых газов\""
+"$unit""$unit"
 3 25 "PANEL_REF76" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1662,7 +1789,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401104"
-"$tips""\"Оптическоий датчик ГД2\""
+"$unit""$unit"
 3 26 "PANEL_REF77" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1671,7 +1798,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401102"
-"$tips""\"Температура дымовых газов\""
+"$unit""$unit"
 3 27 "PANEL_REF80" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1680,7 +1807,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401105"
-"$tips""\"Оптическоий датчик ГД3\""
+"$unit""$unit"
 3 28 "PANEL_REF81" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1689,7 +1816,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401106"
-"$tips""\"Оптическоий датчик ГД4\""
+"$unit""$unit"
 3 29 "PANEL_REF82" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1698,7 +1825,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401107"
-"$tips""\"Оптическоий датчик ГД5\""
+"$unit""$unit"
 3 30 "PANEL_REF83" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1707,7 +1834,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401108"
-"$tips""\"Оптическоий датчик ГД6\""
+"$unit""$unit"
 3 31 "PANEL_REF84" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1716,7 +1843,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401109"
-"$tips""\"Оптическоий датчик ГД7\""
+"$unit""$unit"
 3 32 "PANEL_REF85" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1725,7 +1852,7 @@ LANG:10027 0
 "$bHigh""true"
 "$bLow""1"
 "$sens_dp""te401110"
-"$tips""\"Оптическоий датчик ГД8\""
+"$unit""$unit"
 1 43 "SHAPE_GROUP1" -1
 38 0 
 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 

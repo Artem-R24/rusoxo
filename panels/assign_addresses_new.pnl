@@ -1,7 +1,7 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 400 400 N "_3DFace" 0
+PANEL,-1 -1 239 263 N "_3DFace" 0
 E E E E E 1 -1 -1 0  158 101
 ""0  1
 E E 3
@@ -17,7 +17,7 @@ LANG:10027 0
 13 1
 "PUSH_BUTTON1"
 ""
-1 179 51.93808109504133 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 55.99999999999999 104.6472455489734 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 0 0 0 0 0 0
 E E E
@@ -29,7 +29,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  177 26.97869318181816 325 132
+0  53.99999999999999 89.68513375274408 191 150.7184256561532
 
 T 
 1
@@ -38,783 +38,16 @@ LANG:10027 7 bytes_r
 {
   for(int i=0;i<=69;i++)
   {
-    dpSetWait(\"byte\"+i+\".:_address.._reference\", \"M.3.3.\"+(i+4000));
+    dpSetWait(\"byte\"+i+\".:_address.._reference\", \"M.3.3.\"+(i+3999));
     dpSetWait(\"byte\"+i+\".:_address.._active\", 1);
   }
-  DebugN(\"success\");
-}" 0
- E E E
-13 3
-"PUSH_BUTTON3"
-""
-1 20 61.98295454545455 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-2 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 54.98295454545455 142 80.98295454545458
-
-T 
-1
-LANG:10027 5 words
-"main(mapping event)
-{
-  for(int i=1;i<=3;i++)
-  {
-    dpSetWait(\"buttons_off_pnl\"+i+\".:_address.._reference\", \"M.3.16.\"+(i+3703));
-    dpSetWait(\"buttons_off_pnl\"+i+\".:_address.._active\", 1);
-
-    dpSetWait(\"buttons_on_pnl\"+i+\".:_address.._reference\", \"M.3.16.\"+(i+3700));
-    dpSetWait(\"buttons_on_pnl\"+i+\".:_address.._active\", 1);
-  }
-  DebugN(\"success\");
-}" 0
- E E E
-13 4
-"PUSH_BUTTON4"
-""
-1 20 83.98295454545458 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-3 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 76.98295454545455 142 102.9829545454546
-
-T 
-1
-LANG:10027 6 mbword
-"main(mapping event)
-{
-  for(int i=1;i<=12;i++)
-  {
-    dpSetWait(\"mb_status\"+i+\".:_address.._reference\", \"M.3.3.\"+(i+199));
-    dpSetWait(\"mb_status\"+i+\".:_address.._active\", 1);
-  }
-
-//   dpSetWait(\"commands.:_address.._reference\", \"M.3.16.220\");
-//   dpSetWait(\"commands.:_address.._active\", 1);
-
-  DebugN(\"success\");
-}" 0
- E E E
-13 5
-"PUSH_BUTTON5"
-""
-1 20 105.9886363636364 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-4 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 98.98863636363637 142 124.9886363636364
-
-T 
-1
-LANG:10027 12 gdpackedbits
-"main(mapping event)
-{
-  for(int i=1;i<=9;i++)
-  {
-    dpSetWait(\"gd\"+i+\".packed_bits:_address.._reference\", \"M.3.3.\"+(i+3594));
-    dpSetWait(\"gd\"+i+\".packed_bits:_address.._active\", 1);
-  }
-
-  DebugN(\"success\");
-}" 0
- E E E
-13 6
-"PUSH_BUTTON6"
-""
-1 20.00000000000001 35.32877066115701 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-5 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18.00000000000001 26.95738636363635 78 58.99147727272727
-
-T 
-1
-LANG:10027 29 IT'S THE FINAL COUNTDOWN!!!!!
-"main(mapping event)
-{
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".countdown:_address.._reference\", \"M.3.3.\"+(i*2+3565));
-    dpSetWait(\"gd\"+(i+1)+\".countdown:_address.._active\", 1);
-  }
-  DebugN(\"success\");
-}" 0
- E E E
-13 7
-"PUSH_BUTTON7"
-""
-1 20 149.9914772727273 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-6 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 142.9914772727273 142 168.9914772727273
-
-T 
-1
-LANG:10027 8 trycount
-"main(mapping event)
-{
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".try_count:_address.._reference\", \"M.3.3.\"+(i*2+3564));
-    dpSetWait(\"gd\"+(i+1)+\".try_count:_address.._active\", 1);
-  }
-  DebugN(\"success\");
-}" 0
- E E E
-13 8
-"PUSH_BUTTON8"
-""
-1 20 171.9928977272727 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-7 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 164.9928977272727 142 190.9928977272727
-
-T 
-1
-LANG:10027 3 pgt
-"main(mapping event)
-{
-  int start;
-
-  start=3091;
-  for(int i=0;i<6;i++)
-  {
-    dpSetWait(\"stage\"+(i+2)+\".PGT.raw_value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.raw_value:_address.._active\", 1);
-  }
-
-  start=3005;
-  for(int i=0;i<6;i++)
-  {
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Value:_address.._active\", 1);
-  }
-
-  start=3457;
-  for(int i=0;i<6;i++)
-  {
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.zero:_address.._reference\", \"M.3.3.\"+(i*6+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.zero:_address.._active\", 1);
-
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.span:_address.._reference\", \"M.3.3.\"+(i*6+start+2));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.span:_address.._active\", 1);
-
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.set_zero:_address.._reference\", \"M.3.16.\"+(i*6+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.set_zero:_address.._active\", 1);
-
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.set_span:_address.._reference\", \"M.3.16.\"+(i*6+start+2));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Scale.set_span:_address.._active\", 1);
-  }
-
-  start=3461;
-  for(int i=0;i<6;i++)
-  {
-    dpSetWait(\"stage\"+(i+2)+\".PGT.SP.high:_address.._reference\", \"M.3.3.\"+(i*6+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.SP.high:_address.._active\", 1);
-
-    dpSetWait(\"stage\"+(i+2)+\".PGT.SP.set_high:_address.._reference\", \"M.3.16.\"+(i*6+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.SP.set_high:_address.._active\", 1);
-  }
-
-  start=3558;
-  for(int i=0;i<6;i++)
-  {
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Status:_address.._reference\", \"M.3.3.\"+(i+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.Status:_address.._active\", 1);
-  }
-
-
-
-  DebugN(\"success\");
-}
-
-assign_addresses(int start, string param, bool is_get=true)
-{
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"stage\"+(i+2)+\".PGT.\"+param+\":_address.._reference\", \"M.3.\"+(is_get ? 3 : 16)+\".\"+(i*2+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.\"+param+\":_address.._active\", 1);
-  }
-}" 0
- E E E
-13 9
-"PUSH_BUTTON9"
-""
-1 20 193.9928977272727 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-8 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 186.9928977272727 142 212.9928977272727
-
-T 
-1
-LANG:10027 5 pgtAB
-"main(mapping event)
-{
-
-  dpSetWait(\"pgt0250a.raw_value:_address.._reference\", \"M.3.3.3087\");
-  dpSetWait(\"pgt0250a.raw_value:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.Value:_address.._reference\", \"M.3.3.3001\");
-  dpSetWait(\"pgt0250a.Value:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.Scale.zero:_address.._reference\", \"M.3.3.3387\");
-  dpSetWait(\"pgt0250a.Scale.zero:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.Scale.span:_address.._reference\", \"M.3.3.3389\");
-  dpSetWait(\"pgt0250a.Scale.span:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.Scale.set_zero:_address.._reference\", \"M.3.16.3387\");
-  dpSetWait(\"pgt0250a.Scale.set_zero:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.Scale.set_span:_address.._reference\", \"M.3.16.3389\");
-  dpSetWait(\"pgt0250a.Scale.set_span:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.SP.low:_address.._reference\", \"M.3.3.3391\");
-  dpSetWait(\"pgt0250a.SP.low:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.SP.high:_address.._reference\", \"M.3.3.3393\");
-  dpSetWait(\"pgt0250a.SP.high:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.SP.set_low:_address.._reference\", \"M.3.16.3391\");
-  dpSetWait(\"pgt0250a.SP.set_low:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.SP.set_high:_address.._reference\", \"M.3.16.3393\");
-  dpSetWait(\"pgt0250a.SP.set_high:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250a.Status:_address.._reference\", \"M.3.3.3547\");
-  dpSetWait(\"pgt0250a.Status:_address.._active\", 1);
-
-  ///////
-
-  dpSetWait(\"pgt0250b.raw_value:_address.._reference\", \"M.3.3.3089\");
-  dpSetWait(\"pgt0250b.raw_value:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.Value:_address.._reference\", \"M.3.3.3003\");
-  dpSetWait(\"pgt0250b.Value:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.Scale.zero:_address.._reference\", \"M.3.3.3395\");
-  dpSetWait(\"pgt0250b.Scale.zero:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.Scale.span:_address.._reference\", \"M.3.3.3397\");
-  dpSetWait(\"pgt0250b.Scale.span:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.Scale.set_zero:_address.._reference\", \"M.3.16.3395\");
-  dpSetWait(\"pgt0250b.Scale.set_zero:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.Scale.set_span:_address.._reference\", \"M.3.16.3397\");
-  dpSetWait(\"pgt0250b.Scale.set_span:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.SP.low:_address.._reference\", \"M.3.3.3399\");
-  dpSetWait(\"pgt0250b.SP.low:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.SP.high:_address.._reference\", \"M.3.3.3401\");
-  dpSetWait(\"pgt0250b.SP.high:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.SP.set_low:_address.._reference\", \"M.3.16.3399\");
-  dpSetWait(\"pgt0250b.SP.set_low:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.SP.set_high:_address.._reference\", \"M.3.16.3401\");
-  dpSetWait(\"pgt0250b.SP.set_high:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.Status:_address.._reference\", \"M.3.3.3548\");
-  dpSetWait(\"pgt0250b.Status:_address.._active\", 1);
-
-  DebugN(\"success\");
-}
-" 0
- E E E
-13 10
-"PUSH_BUTTON10"
-""
-1 20 215.9928977272727 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-9 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 208.9928977272727 142 234.9928977272727
-
-T 
-1
-LANG:10027 7 pgt270+
-"main(mapping event)
-{
-  int start; string d;
-
-  start=3105;
-  for(int i=0;i<=9;i++)
-  {
-    d=(i>6) ? \"d\" : \"\";
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".raw_value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".raw_value:_address.._active\", 1);
-  }
-
-  start=3019;
-  for(int i=0;i<=9;i++)
-  {
-    d=(i>6) ? \"d\" : \"\";
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Value:_address.._active\", 1);
-  }
-
-  start=3331;
-  for(int i=0;i<=9;i++)
-  {
-    d=(i>6) ? \"d\" : \"\";
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.zero:_address.._reference\", \"M.3.3.\"+(i*8+start));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.zero:_address.._active\", 1);
-
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.span:_address.._reference\", \"M.3.3.\"+(i*8+start+2));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.span:_address.._active\", 1);
-
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.low:_address.._reference\", \"M.3.3.\"+(i*8+start+4));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.low:_address.._active\", 1);
-
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.high:_address.._reference\", \"M.3.3.\"+(i*8+start+6));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.high:_address.._active\", 1);
-
-    /////////
-
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.set_zero:_address.._reference\", \"M.3.16.\"+(i*8+start));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.set_zero:_address.._active\", 1);
-
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.set_span:_address.._reference\", \"M.3.16.\"+(i*8+start+2));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Scale.set_span:_address.._active\", 1);
-
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.set_low:_address.._reference\", \"M.3.16.\"+(i*8+start+4));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.set_low:_address.._active\", 1);
-
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.set_high:_address.._reference\", \"M.3.16.\"+(i*8+start+6));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".SP.set_high:_address.._active\", 1);
-  }
-
-
-  start=3540;
-  for(int i=0;i<=9;i++)
-  {
-    d=(i>6) ? \"d\" : \"\";
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Status:_address.._reference\", \"M.3.3.\"+(i+start));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".Status:_address.._active\", 1);
-  }
-
-
-
-  DebugN(\"success\");
-}
-" 0
- E E E
-13 11
-"PUSH_BUTTON11"
-""
-1 20 237.9964488636364 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-10 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 230.9964488636364 142 256.9964488636364
-
-T 
-1
-LANG:10027 6 tgtABC
-"main(mapping event)
-{
-  int start;
-
-  start=3125;
-  for(int i=0;i<=1;i++)
-  {
-    for(char j='a';j!='d';j++)
-    {
-      dpSetWait(\"tgt026\"+i+(string)j+\".raw_value:_address.._reference\", \"M.3.3.\"+((i*3+j-97)*2+start));
-      dpSetWait(\"tgt026\"+i+(string)j+\".raw_value:_address.._active\", 1);
-    }
-  }
-
-  start=3039;
-  for(int i=0;i<=1;i++)
-  {
-    for(char j='a';j!='d';j++)
-    {
-      dpSetWait(\"tgt026\"+i+(string)j+\".Value:_address.._reference\", \"M.3.3.\"+((i*3+j-97)*2+start));
-      dpSetWait(\"tgt026\"+i+(string)j+\".Value:_address.._active\", 1);
-    }
-  }
-
-  start=3421;
-  for(int i=0;i<=1;i++)
-  {
-    for(char j='a';j!='d';j++)
-    {
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.zero:_address.._reference\", \"M.3.3.\"+((i*3+j-97)*6+start));
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.zero:_address.._active\", 1);
-
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.span:_address.._reference\", \"M.3.3.\"+((i*3+j-97)*6+start+2));
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.span:_address.._active\", 1);
-
-      //dpSetWait(\"tgt026\"+i+(string)j+\".SP.low:_address.._reference\", \"M.3.3.\"+((i*3+j-97)*8+start+4));
-      //dpSetWait(\"tgt026\"+i+(string)j+\".SP.low:_address.._active\", 1);
-
-      dpSetWait(\"tgt026\"+i+(string)j+\".SP.high:_address.._reference\", \"M.3.3.\"+((i*3+j-97)*6+start+4));
-      dpSetWait(\"tgt026\"+i+(string)j+\".SP.high:_address.._active\", 1);
-
-      /////////
-
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.set_zero:_address.._reference\", \"M.3.16.\"+((i*3+j-97)*6+start));
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.set_zero:_address.._active\", 1);
-
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.set_span:_address.._reference\", \"M.3.16.\"+((i*3+j-97)*6+start+2));
-      dpSetWait(\"tgt026\"+i+(string)j+\".Scale.set_span:_address.._active\", 1);
-
-      //dpSetWait(\"tgt026\"+i+(string)j+\".SP.set_low:_address.._reference\", \"M.3.16.\"+((i*3+j-97)*8+start+4));
-      //dpSetWait(\"tgt026\"+i+(string)j+\".SP.set_low:_address.._active\", 1);
-
-      dpSetWait(\"tgt026\"+i+(string)j+\".SP.set_high:_address.._reference\", \"M.3.16.\"+((i*3+j-97)*6+start+4));
-      dpSetWait(\"tgt026\"+i+(string)j+\".SP.set_high:_address.._active\", 1);
-    }
-
-  }
-
-
-  start=3552;
-  for(int i=0;i<=1;i++)
-  {
-    for(char j='a';j!='d';j++)
-    {
-      dpSetWait(\"tgt026\"+i+(string)j+\".Status:_address.._reference\", \"M.3.3.\"+(i*3+j-97+start));
-      dpSetWait(\"tgt026\"+i+(string)j+\".Status:_address.._active\", 1);
-    }
-
-  }
-
-  DebugN(\"success\");
-}
-" 0
- E E E
-13 12
-"PUSH_BUTTON12"
-""
-1 20 259.9946732954546 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-11 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 252.9946732954546 142 278.9946732954546
-
-T 
-1
-LANG:10027 2 bt
-"main(mapping event)
-{
-  int start;
-
-  start=3155;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".BT.raw_value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".BT.raw_value:_address.._active\", 1);
-  }
-
-  start=3069;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".BT.Value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".BT.Value:_address.._active\", 1);
-  }
-
-  start=3269;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.zero:_address.._reference\", \"M.3.3.\"+(i*4+start));
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.zero:_address.._active\", 1);
-
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.span:_address.._reference\", \"M.3.3.\"+(i*4+start+2));
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.span:_address.._active\", 1);
-
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.set_zero:_address.._reference\", \"M.3.16.\"+(i*4+start));
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.set_zero:_address.._active\", 1);
-
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.set_span:_address.._reference\", \"M.3.16.\"+(i*4+start+2));
-    dpSetWait(\"gd\"+(i+1)+\".BT.Scale.set_span:_address.._active\", 1);
-  }
-
-  start=3305;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".BT.SP.high:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".BT.SP.high:_address.._active\", 1);
-
-    dpSetWait(\"gd\"+(i+1)+\".BT.SP.set_high:_address.._reference\", \"M.3.16.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".BT.SP.set_high:_address.._active\", 1);
-  }
-
-  start=3530;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".BT.Status:_address.._reference\", \"M.3.3.\"+(i+start));
-    dpSetWait(\"gd\"+(i+1)+\".BT.Status:_address.._active\", 1);
-  }
-
-
-
-  DebugN(\"success\");
-}
-" 0
- E E E
-13 13
-"PUSH_BUTTON13"
-""
-1 20 281.9946732954546 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-12 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 274.9946732954546 142 300.9946732954546
-
-T 
-1
-LANG:10027 2 te
-"main(mapping event)
-{
-  int start;
-
-  start=3137;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".TE.raw_value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".TE.raw_value:_address.._active\", 1);
-  }
-
-  start=3051;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".TE.Value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".TE.Value:_address.._active\", 1);
-  }
-
-  start=3233;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.zero:_address.._reference\", \"M.3.3.\"+(i*4+start));
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.zero:_address.._active\", 1);
-
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.span:_address.._reference\", \"M.3.3.\"+(i*4+start+2));
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.span:_address.._active\", 1);
-
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.set_zero:_address.._reference\", \"M.3.16.\"+(i*4+start));
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.set_zero:_address.._active\", 1);
-
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.set_span:_address.._reference\", \"M.3.16.\"+(i*4+start+2));
-    dpSetWait(\"gd\"+(i+1)+\".TE.Scale.set_span:_address.._active\", 1);
-  }
-
-
-  start=3521;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".TE.Status:_address.._reference\", \"M.3.3.\"+(i+start));
-    dpSetWait(\"gd\"+(i+1)+\".TE.Status:_address.._active\", 1);
-  }
-
-  start=3215;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".dT:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".dT:_address.._active\", 1);
-  }
-
-  DebugN(\"success\");
-}
-" 0
- E E E
-13 14
-"PUSH_BUTTON14"
-""
-1 20 303.9942294034091 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-13 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 296.9942294034091 142 322.9942294034091
-
-T 
-1
-LANG:10027 8 mbvalues
-"main(mapping event)
-{
-  int start; string d;
-
-  dpSetWait(\"pgt0250a.mb_value:_address.._reference\", \"M.3.3.100\");
-  dpSetWait(\"pgt0250a.mb_value:_address.._active\", 1);
-
-  dpSetWait(\"pgt0250b.mb_value:_address.._reference\", \"M.3.3.102\");
-  dpSetWait(\"pgt0250b.mb_value:_address.._active\", 1);
-
-  dpSetWait(\"lt0250.mb_value:_address.._reference\", \"M.3.3.116\");
-  dpSetWait(\"lt0250.mb_value:_address.._active\", 1);
-
-  start=104;
-  for(int i=0;i<6;i++)
-  {
-    dpSetWait(\"stage\"+(i+2)+\".PGT.mb_value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"stage\"+(i+2)+\".PGT.mb_value:_address.._active\", 1);
-  }
-
-  start=118;
-  for(int i=0;i<=9;i++)
-  {
-    d=(i>6)? \"d\" : \"\";
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".mb_value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"p\"+d+\"gt027\"+i+\".mb_value:_address.._active\", 1);
-  }
-
-  start=150;
-  for(int i=0;i<9;i++)
-  {
-    dpSetWait(\"gd\"+(i+1)+\".TE.mb_value:_address.._reference\", \"M.3.3.\"+(i*2+start));
-    dpSetWait(\"gd\"+(i+1)+\".TE.mb_value:_address.._active\", 1);
-  }
-
-  start=138;
-  for(int i=0;i<=1;i++)
-  {
-    for(char j='a';j!='d';j++)
-    {
-      dpSetWait(\"tgt026\"+i+(string)j+\".mb_value:_address.._reference\", \"M.3.3.\"+((i*3+j-97)*2+start));
-      dpSetWait(\"tgt026\"+i+(string)j+\".mb_value:_address.._active\", 1);
-    }
-  }
-
-  DebugN(\"success\");
-}" 0
- E E E
-13 15
-"PUSH_BUTTON15"
-""
-1 20 127.9900568181819 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-14 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  18 120.9900568181818 142 146.9900568181819
-
-T 
-1
-LANG:10027 15 stagepackedbits
-"main(mapping event)
-{
-  for(int i=1;i<=7;i++)
-  {
-    dpSetWait(\"gd\"+i+\".packed_bits:_address.._reference\", \"M.3.3.\"+(i+3603));
-    dpSetWait(\"gd\"+i+\".packed_bits:_address.._active\", 1);
-  }
-
   DebugN(\"success\");
 }" 0
  E E E
 13 16
 "PUSH_BUTTON16"
 ""
-1 179 176.9354177427686 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 56 160.0491575130747 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 15 0 0 0 0 0
 E E E
@@ -826,7 +59,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  177 151.9760298295455 325 256.9973366477274
+0  54 146.2255279288805 191 202.249498099335
 
 T 
 1
@@ -835,9 +68,207 @@ LANG:10027 7 bytes_w
 {
   for(int i=0;i<=69;i++)
   {
-    dpSetWait(\"byte_write\"+i+\".:_address.._reference\", \"M.3.16.\"+(i+4000));
+    dpSetWait(\"byte_write\"+i+\".:_address.._reference\", \"M.3.16.\"+(i+3999));
     dpSetWait(\"byte_write\"+i+\".:_address.._active\", 1);
   }
+  DebugN(\"success\");
+}" 0
+ E E E
+13 17
+"PUSH_BUTTON17"
+""
+1 56.00000000000005 51.59885095242358 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+16 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  54.00000000000005 37.80876777585864 191 93.68513375274406
+
+T 
+1
+LANG:10027 17 ALL ADDRESSES DEV
+"main(mapping event)
+{
+   int sh1,sh2;
+
+  sh1=4115;
+  sh2=4315;
+
+  for(uint i=401105; i<=401120; ++i)
+  {
+    if(i==401113||i==401117)
+      continue;
+
+    dpSetWait(\"pit\"+i+\".block_mask:_address.._reference\", \"M.3.3.\"+sh1);
+    dpSetWait(\"pit\"+i+\".Status:_address.._reference\", \"M.3.3.\"+(sh1+66));
+    dpSetWait(\"pit\"+i+\".SP.high:_address.._reference\", \"M.3.3.\"+sh2);
+    dpSetWait(\"pit\"+i+\".SP.low:_address.._reference\", \"M.3.3.\"+(sh2+66));
+    dpSetWait(\"pit\"+i+\".SP.set_high:_address.._reference\", \"M.3.16.\"+sh2);
+    dpSetWait(\"pit\"+i+\".SP.set_low:_address.._reference\", \"M.3.16.\"+(sh2+66));
+    dpSetWait(\"pit\"+i+\".SimValue:_address.._reference\", \"M.3.3.\"+(sh2+66*2));
+    dpSetWait(\"pit\"+i+\".Scale.span:_address.._reference\", \"M.3.3.\"+(sh2+66*3));
+    dpSetWait(\"pit\"+i+\".Scale.set_span:_address.._reference\", \"M.3.16.\"+(sh2+66*3));
+    dpSetWait(\"pit\"+i+\".raw_value:_address.._reference\", \"M.3.3.\"+(sh2+66*4));
+    dpSetWait(\"pit\"+i+\".Value:_address.._reference\", \"M.3.3.\"+(sh2+66*5));
+    dpSetWait(\"pit\"+i+\".Scale.zero:_address.._reference\", \"M.3.3.\"+(sh2+66*6));
+    dpSetWait(\"pit\"+i+\".Scale.set_zero:_address.._reference\", \"M.3.16.\"+(sh2+66*6));
+
+    dpSetWait(\"pit\"+i+\".block_mask:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".Status:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".SP.high:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".SP.low:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".SP.set_high:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".SP.set_low:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".SimValue:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".Scale.span:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".Scale.set_span:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".raw_value:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".Value:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".Scale.zero:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\".Scale.set_zero:_address.._active\", 1);
+
+    sh1+=2;
+    sh2+=2;
+  }
+
+  sh1=4099;
+  sh2=4299;
+  for(uint i=401101; i<=401104; ++i)
+  {
+    dpSetWait(\"pit\"+i+\"a.block_mask:_address.._reference\", \"M.3.3.\"+sh1);
+    dpSetWait(\"pit\"+i+\"a.Status:_address.._reference\", \"M.3.3.\"+(sh1+66));
+    dpSetWait(\"pit\"+i+\"a.SP.high:_address.._reference\", \"M.3.3.\"+sh2);
+    dpSetWait(\"pit\"+i+\"a.SP.low:_address.._reference\", \"M.3.3.\"+(sh2+66));
+    dpSetWait(\"pit\"+i+\"a.SP.set_high:_address.._reference\", \"M.3.16.\"+sh2);
+    dpSetWait(\"pit\"+i+\"a.SP.set_low:_address.._reference\", \"M.3.16.\"+(sh2+66));
+    dpSetWait(\"pit\"+i+\"a.SimValue:_address.._reference\", \"M.3.3.\"+(sh2+66*2));
+    dpSetWait(\"pit\"+i+\"a.Scale.span:_address.._reference\", \"M.3.3.\"+(sh2+66*3));
+    dpSetWait(\"pit\"+i+\"a.Scale.set_span:_address.._reference\", \"M.3.16.\"+(sh2+66*3));
+    dpSetWait(\"pit\"+i+\"a.raw_value:_address.._reference\", \"M.3.3.\"+(sh2+66*4));
+    dpSetWait(\"pit\"+i+\"a.Value:_address.._reference\", \"M.3.3.\"+(sh2+66*5));
+    dpSetWait(\"pit\"+i+\"a.Scale.zero:_address.._reference\", \"M.3.3.\"+(sh2+66*6));
+    dpSetWait(\"pit\"+i+\"a.Scale.set_zero:_address.._reference\", \"M.3.16.\"+(sh2+66*6));
+
+    dpSetWait(\"pit\"+i+\"b.block_mask:_address.._reference\", \"M.3.3.\"+(sh1+2));
+    dpSetWait(\"pit\"+i+\"b.Status:_address.._reference\", \"M.3.3.\"+(sh1+68));
+    dpSetWait(\"pit\"+i+\"b.SP.high:_address.._reference\", \"M.3.3.\"+(sh2+2));
+    dpSetWait(\"pit\"+i+\"b.SP.low:_address.._reference\", \"M.3.3.\"+(sh2+68));
+    dpSetWait(\"pit\"+i+\"b.SP.set_high:_address.._reference\", \"M.3.16.\"+(sh2+2));
+    dpSetWait(\"pit\"+i+\"b.SP.set_low:_address.._reference\", \"M.3.16.\"+(sh2+68));
+    dpSetWait(\"pit\"+i+\"b.SimValue:_address.._reference\", \"M.3.3.\"+(sh2+66*2+2));
+    dpSetWait(\"pit\"+i+\"b.Scale.span:_address.._reference\", \"M.3.3.\"+(sh2+66*3+2));
+    dpSetWait(\"pit\"+i+\"b.Scale.set_span:_address.._reference\", \"M.3.16.\"+(sh2+66*3+2));
+    dpSetWait(\"pit\"+i+\"b.raw_value:_address.._reference\", \"M.3.3.\"+(sh2+66*4+2));
+    dpSetWait(\"pit\"+i+\"b.Value:_address.._reference\", \"M.3.3.\"+(sh2+66*5+2));
+    dpSetWait(\"pit\"+i+\"b.Scale.zero:_address.._reference\", \"M.3.3.\"+(sh2+66*6+2));
+    dpSetWait(\"pit\"+i+\"b.Scale.set_zero:_address.._reference\", \"M.3.16.\"+(sh2+66*6+2));
+
+    dpSetWait(\"pit\"+i+\"a.block_mask:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.Status:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.SP.high:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.SP.low:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.SP.set_high:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.SP.set_low:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.SimValue:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.Scale.span:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.Scale.set_span:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.raw_value:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.Value:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.Scale.zero:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"a.Scale.set_zero:_address.._active\", 1);
+
+    dpSetWait(\"pit\"+i+\"b.block_mask:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.Status:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.SP.high:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.SP.low:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.SP.set_high:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.SP.set_low:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.SimValue:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.Scale.span:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.Scale.set_span:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.raw_value:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.Value:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.Scale.zero:_address.._active\", 1);
+    dpSetWait(\"pit\"+i+\"b.Scale.set_zero:_address.._active\", 1);
+
+    sh1+=4;
+    sh2+=4;
+  }
+
+  sh1=4145;
+  sh2=4345;
+  for(uint i=401101; i<=401110; ++i)
+  {
+    dpSetWait(\"te\"+i+\".block_mask:_address.._reference\", \"M.3.3.\"+sh1);
+    dpSetWait(\"te\"+i+\".Status:_address.._reference\", \"M.3.3.\"+(sh1+66));
+    dpSetWait(\"te\"+i+\".SP.high:_address.._reference\", \"M.3.3.\"+sh2);
+    dpSetWait(\"te\"+i+\".SP.low:_address.._reference\", \"M.3.3.\"+(sh2+66));
+    dpSetWait(\"te\"+i+\".SP.set_high:_address.._reference\", \"M.3.16.\"+sh2);
+    dpSetWait(\"te\"+i+\".SP.set_low:_address.._reference\", \"M.3.16.\"+(sh2+66));
+    dpSetWait(\"te\"+i+\".SimValue:_address.._reference\", \"M.3.3.\"+(sh2+66*2));
+    dpSetWait(\"te\"+i+\".Scale.span:_address.._reference\", \"M.3.3.\"+(sh2+66*3));
+    dpSetWait(\"te\"+i+\".Scale.set_span:_address.._reference\", \"M.3.16.\"+(sh2+66*3));
+    dpSetWait(\"te\"+i+\".raw_value:_address.._reference\", \"M.3.3.\"+(sh2+66*4));
+    dpSetWait(\"te\"+i+\".Value:_address.._reference\", \"M.3.3.\"+(sh2+66*5));
+    dpSetWait(\"te\"+i+\".Scale.zero:_address.._reference\", \"M.3.3.\"+(sh2+66*6));
+    dpSetWait(\"te\"+i+\".Scale.set_zero:_address.._reference\", \"M.3.16.\"+(sh2+66*6));
+
+    dpSetWait(\"te\"+i+\".block_mask:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".Status:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".SP.high:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".SP.low:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".SP.set_high:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".SP.set_low:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".SimValue:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".Scale.span:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".Scale.set_span:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".raw_value:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".Value:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".Scale.zero:_address.._active\", 1);
+    dpSetWait(\"te\"+i+\".Scale.set_zero:_address.._active\", 1);
+
+    sh1+=2;
+    sh2+=2;
+  }
+
+  sh1=4143;
+  sh2=4343;
+
+    dpSetWait(\"tt401112.block_mask:_address.._reference\", \"M.3.3.\"+sh1);
+    dpSetWait(\"tt401112.Status:_address.._reference\", \"M.3.3.\"+(sh1+66));
+    dpSetWait(\"tt401112.SP.high:_address.._reference\", \"M.3.3.\"+sh2);
+    dpSetWait(\"tt401112.SP.low:_address.._reference\", \"M.3.3.\"+(sh2+66));
+    dpSetWait(\"tt401112.SP.set_high:_address.._reference\", \"M.3.16.\"+sh2);
+    dpSetWait(\"tt401112.SP.set_low:_address.._reference\", \"M.3.16.\"+(sh2+66));
+    dpSetWait(\"tt401112.SimValue:_address.._reference\", \"M.3.3.\"+(sh2+66*2));
+    dpSetWait(\"tt401112.Scale.span:_address.._reference\", \"M.3.3.\"+(sh2+66*3));
+    dpSetWait(\"tt401112.Scale.set_span:_address.._reference\", \"M.3.16.\"+(sh2+66*3));
+    dpSetWait(\"tt401112.raw_value:_address.._reference\", \"M.3.3.\"+(sh2+66*4));
+    dpSetWait(\"tt401112.Value:_address.._reference\", \"M.3.3.\"+(sh2+66*5));
+    dpSetWait(\"tt401112.Scale.zero:_address.._reference\", \"M.3.3.\"+(sh2+66*6));
+    dpSetWait(\"tt401112.Scale.set_zero:_address.._reference\", \"M.3.16.\"+(sh2+66*6));
+
+    dpSetWait(\"tt401112.block_mask:_address.._active\", 1);
+    dpSetWait(\"tt401112.Status:_address.._active\", 1);
+    dpSetWait(\"tt401112.SP.high:_address.._active\", 1);
+    dpSetWait(\"tt401112.SP.low:_address.._active\", 1);
+    dpSetWait(\"tt401112.SP.set_high:_address.._active\", 1);
+    dpSetWait(\"tt401112.SP.set_low:_address.._active\", 1);
+    dpSetWait(\"tt401112.SimValue:_address.._active\", 1);
+    dpSetWait(\"tt401112.Scale.span:_address.._active\", 1);
+    dpSetWait(\"tt401112.Scale.set_span:_address.._active\", 1);
+    dpSetWait(\"tt401112.raw_value:_address.._active\", 1);
+    dpSetWait(\"tt401112.Value:_address.._active\", 1);
+    dpSetWait(\"tt401112.Scale.zero:_address.._active\", 1);
+    dpSetWait(\"tt401112.Scale.set_zero:_address.._active\", 1);
+
   DebugN(\"success\");
 }" 0
  E E E

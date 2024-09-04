@@ -1,0 +1,327 @@
+# ascii dump of database
+
+# DpType
+TypeName
+Alarms.Alarms	23#1
+
+# Datapoint/DpId
+DpName	TypeName	ID
+CRASH_PSE_401101	Alarms	1347
+CRASH_PSE_401102	Alarms	1348
+CRASH_PSE_401103	Alarms	1349
+CRASH_PSE_401104	Alarms	1350
+CRASH_PSE_401105	Alarms	1351
+CRASH_PSE_401106	Alarms	1352
+valve_not_move_op_401101	Alarms	1353
+valve_not_move_op_401102	Alarms	1354
+valve_not_move_op_401103	Alarms	1355
+valve_not_move_op_401104	Alarms	1356
+valve_not_move_op_401105	Alarms	1357
+valve_not_move_op_401106	Alarms	1358
+valve_not_move_op_401107	Alarms	1359
+valve_not_move_op_401108	Alarms	1360
+valve_not_move_op_401109	Alarms	1361
+valve_not_move_op_401110	Alarms	1362
+valve_not_move_op_401111	Alarms	1363
+valve_not_move_op_401112	Alarms	1364
+valve_not_move_op_401113	Alarms	1365
+valve_not_move_op_401114	Alarms	1366
+valve_not_move_op_401115	Alarms	1367
+valve_not_move_op_401116	Alarms	1368
+valve_not_move_op_401117	Alarms	1369
+valve_not_move_op_401118	Alarms	1370
+valve_not_move_op_401119	Alarms	1371
+valve_not_move_op_401120	Alarms	1372
+valve_not_move_op_401125	Alarms	1377
+valve_not_move_op_401126	Alarms	1378
+valve_not_move_op_401127	Alarms	1379
+valve_not_move_op_401128	Alarms	1380
+valve_not_move_cl_401101	Alarms	1381
+valve_not_move_cl_401102	Alarms	1382
+valve_not_move_cl_401103	Alarms	1383
+valve_not_move_cl_401104	Alarms	1384
+valve_not_move_cl_401105	Alarms	1385
+valve_not_move_cl_401106	Alarms	1386
+valve_not_move_cl_401107	Alarms	1387
+valve_not_move_cl_401108	Alarms	1388
+valve_not_move_cl_401109	Alarms	1389
+valve_not_move_cl_401110	Alarms	1390
+valve_not_move_cl_401111	Alarms	1391
+valve_not_move_cl_401112	Alarms	1392
+valve_not_move_cl_401113	Alarms	1393
+valve_not_move_cl_401114	Alarms	1394
+valve_not_move_cl_401115	Alarms	1395
+valve_not_move_cl_401116	Alarms	1396
+valve_not_move_cl_401117	Alarms	1397
+valve_not_move_cl_401118	Alarms	1398
+valve_not_move_cl_401119	Alarms	1399
+valve_not_move_cl_401120	Alarms	1400
+valve_not_move_cl_401125	Alarms	1405
+valve_not_move_cl_401126	Alarms	1406
+valve_not_move_cl_401127	Alarms	1407
+valve_not_move_cl_401128	Alarms	1408
+valve_not_move_op	Alarms	1409
+valve_not_move_cl	Alarms	1410
+ignition_fall_1	Alarms	1425
+ignition_fall_2	Alarms	1426
+ignition_fall_3	Alarms	1427
+ignition_fall_4	Alarms	1428
+ignition_fall_5	Alarms	1429
+ignition_fall_6	Alarms	1430
+ignition_fall_7	Alarms	1431
+ignition_fall_8	Alarms	1432
+ignition_fall_9	Alarms	1433
+ignition_fall_10	Alarms	1434
+flame_out_1	Alarms	1435
+flame_out_2	Alarms	1436
+flame_out_3	Alarms	1437
+flame_out_4	Alarms	1438
+flame_out_5	Alarms	1439
+flame_out_6	Alarms	1440
+flame_out_7	Alarms	1441
+flame_out_8	Alarms	1442
+flame_out_9	Alarms	1443
+flame_out_10	Alarms	1444
+CHECK_pit401101ab	Alarms	1445
+CHECK_pit401102ab	Alarms	1446
+CHECK_pit401103ab	Alarms	1447
+CHECK_pit401104ab	Alarms	1448
+ALARM_BTN_SimOn	Alarms	1527
+ALARM_BTN_SimValue	Alarms	1528
+ALARM_BTN_ProgUse	Alarms	1529
+ALARM_BTN_in	Alarms	1530
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	CRASH_PSE_401103.	Alarms	0	0x8300000000100101	21.08.2024 11:27:40.166
+CTL (2)/0	ALARM_BTN_SimOn.	Alarms	0	0x8300000000100101	22.08.2024 08:54:24.751
+UI (1)/0	ALARM_BTN_in.	Alarms	0	0x8300000000100101	30.08.2024 05:59:30.010
+
+# AlertValue
+Manager/User	StampSec	StampMSec	ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._multi_instance	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold	_alert_hdl.._went_text	_alert_hdl.._add_text	_alert_hdl.._status64_pattern	_alert_hdl.._neg	_alert_hdl.._status64_match	_alert_hdl.._match	_alert_hdl.._set
+UI (1)/0	1724308135	191	CRASH_PSE_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CRASH_PSE_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254321	248	CRASH_PSE_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254383	228	CRASH_PSE_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 1.4"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254383	229	CRASH_PSE_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 1.4"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	191	CRASH_PSE_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CRASH_PSE_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254392	332	CRASH_PSE_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254411	598	CRASH_PSE_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 1.5"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	191	CRASH_PSE_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CRASH_PSE_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254423	177	CRASH_PSE_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254433	26	CRASH_PSE_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 1.6"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254433	27	CRASH_PSE_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 1.6"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	192	CRASH_PSE_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CRASH_PSE_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254438	257	CRASH_PSE_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254447	132	CRASH_PSE_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 1.7"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	192	CRASH_PSE_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CRASH_PSE_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254451	330	CRASH_PSE_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254471	734	CRASH_PSE_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 3.1"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254471	735	CRASH_PSE_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 3.1"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254500	242	CRASH_PSE_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 3.1"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254504	237	CRASH_PSE_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 3.2"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	192	CRASH_PSE_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CRASH_PSE_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254476	779	CRASH_PSE_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254496	219	CRASH_PSE_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Прорыв мембраны на ступени 3.3"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_op_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	970	valve_not_move_op_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_op_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	970	valve_not_move_op_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	272	valve_not_move_op_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	970	valve_not_move_op_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	272	valve_not_move_op_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	970	valve_not_move_op_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	282	valve_not_move_op_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	985	valve_not_move_op_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	282	valve_not_move_op_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	282	valve_not_move_op_401107.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401107.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	282	valve_not_move_op_401108.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401108.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	283	valve_not_move_op_401109.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401109.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	286	valve_not_move_op_401110.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401110.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	286	valve_not_move_op_401111.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401111.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	287	valve_not_move_op_401112.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401112.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	287	valve_not_move_op_401113.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401113.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	287	valve_not_move_op_401114.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401114.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	298	valve_not_move_op_401115.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	0	valve_not_move_op_401115.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	298	valve_not_move_op_401116.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401116.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	298	valve_not_move_op_401117.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401117.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	298	valve_not_move_op_401118.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401118.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	298	valve_not_move_op_401119.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401119.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	316	valve_not_move_op_401120.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401120.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	317	valve_not_move_op_401125.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401125.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	317	valve_not_move_op_401126.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401126.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	317	valve_not_move_op_401127.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401127.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	317	valve_not_move_op_401128.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308153	32	valve_not_move_op_401128.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	239	valve_not_move_cl_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254648	21	valve_not_move_cl_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254678	991	valve_not_move_cl_401101.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Задвижка не дошла до концевика на закрытие"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	239	valve_not_move_cl_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401102.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	239	valve_not_move_cl_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401103.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	239	valve_not_move_cl_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401104.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	239	valve_not_move_cl_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401105.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	239	valve_not_move_cl_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401106.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	240	valve_not_move_cl_401107.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401107.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	240	valve_not_move_cl_401108.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401108.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	240	valve_not_move_cl_401109.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl_401109.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	254	valve_not_move_cl_401110.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401110.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	254	valve_not_move_cl_401111.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401111.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	254	valve_not_move_cl_401112.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401112.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	254	valve_not_move_cl_401113.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401113.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	254	valve_not_move_cl_401114.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401114.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	254	valve_not_move_cl_401115.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401115.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	254	valve_not_move_cl_401116.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401116.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	255	valve_not_move_cl_401117.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401117.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	255	valve_not_move_cl_401118.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401118.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	255	valve_not_move_cl_401119.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	955	valve_not_move_cl_401119.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_cl_401120.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	969	valve_not_move_cl_401120.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_cl_401125.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	969	valve_not_move_cl_401125.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_cl_401126.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	969	valve_not_move_cl_401126.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_cl_401127.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	969	valve_not_move_cl_401127.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_cl_401128.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	970	valve_not_move_cl_401128.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	271	valve_not_move_op.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	970	valve_not_move_op.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	239	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	940	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013402	381	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013451	748	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Задвижка не дошла до концевика закрыта"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254544	155	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Задвижка не дошла до концевика закрыта"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254576	151	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Задвижка не дошла до концевика закрыта"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254633	485	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Задвижка не дошла до концевика закрыта"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725254645	725	valve_not_move_cl.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Задвижка не дошла до концевика на закрытие"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_1.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_1.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013257	403	ignition_fall_1.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013280	464	ignition_fall_1.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 1"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_2.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_2.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013285	699	ignition_fall_2.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013291	640	ignition_fall_2.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 2"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_3.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_3.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013301	411	ignition_fall_3.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013308	863	ignition_fall_3.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 3"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_4.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_4.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013313	91	ignition_fall_4.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013321	492	ignition_fall_4.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 4"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013321	493	ignition_fall_4.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 4"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_5.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_5.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013326	924	ignition_fall_5.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013331	559	ignition_fall_5.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 5"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013335	443	ignition_fall_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013339	230	ignition_fall_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 6"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013340	731	ignition_fall_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 6"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013342	186	ignition_fall_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 6"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013342	187	ignition_fall_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 6"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_7.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_7.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013347	258	ignition_fall_7.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013353	783	ignition_fall_7.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 7"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	224	ignition_fall_8.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_8.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013357	427	ignition_fall_8.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013363	688	ignition_fall_8.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 8"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	224	ignition_fall_9.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_9.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013367	291	ignition_fall_9.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013374	261	ignition_fall_9.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 9"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013374	262	ignition_fall_9.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 9"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	223	ignition_fall_10.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	924	ignition_fall_10.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013379	243	ignition_fall_10.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013384	764	ignition_fall_10.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	0	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Неудачный розжиг ГД 10"	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	207	flame_out_1.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_1.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	207	flame_out_2.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_2.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	207	flame_out_3.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_3.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	207	flame_out_4.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_4.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	207	flame_out_5.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_5.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	207	flame_out_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_6.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	208	flame_out_7.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_7.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	208	flame_out_8.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	913	flame_out_8.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	208	flame_out_9.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	913	flame_out_9.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	207	flame_out_10.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	909	flame_out_10.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	191	CHECK_pit401101ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CHECK_pit401101ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	191	CHECK_pit401102ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CHECK_pit401102ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	191	CHECK_pit401103ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CHECK_pit401103ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308135	191	CHECK_pit401104ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724308152	894	CHECK_pit401104ab.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724313859	75	ALARM_BTN_SimOn.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724313873	68	ALARM_BTN_SimValue.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724313888	201	ALARM_BTN_ProgUse.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1724313894	592	ALARM_BTN_in.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+UI (1)/0	1725013147	859	ALARM_BTN_in.	Alarms		12					""	""	lt:1 LANG:10027 ""	\0	alert.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 ""	lt:1 LANG:10027 ""												0								
+# ascii dump of database
+
+# Datapoint/DpId
+DpName	TypeName	ID
+_ds_Alarms	_DynamicDptSettings	1412
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	_ds_Alarms.symbols	_DynamicDptSettings		0x8300000000000101	21.08.2024 11:24:51.550
+UI (1)/0	_ds_Alarms.symboldefault	_DynamicDptSettings	""	0x8300000000000101	21.08.2024 11:24:51.551
+UI (1)/0	_ds_Alarms.trendElements	_DynamicDptSettings		0x8300000000000101	21.08.2024 11:24:51.551

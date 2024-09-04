@@ -2,16 +2,7 @@ V 14
 1
 LANG:10027 0 
 PANEL,-1 -1 1023 768 N "white" 0
-E E "main()
-{
-  Inp_panelOff();
-}
-
-void Inp_panelOff()
-{
-  PanelOffPanel(\"Input_pnl\");
-}" 0
- E E 1 -1 -1 0  360 710
+E E E E E 1 -1 -1 0  360 710
 ""0  1
 E E 3
 "CBRef" "1"
@@ -45,7 +36,7 @@ E E 0 1 3 2 1 E 1 0 0.9992283950617283 -156 22.01388888888889 1 E 504 -12 832 16
 LANG:10027 56 MS Shell Dlg 2,-1,24,5,75,0,0,0,0,0,Полужирный
 0 1
 LANG:10027 39 НАСТРОЙКИ ПАРАМЕТРОВ
-1 8277 73 "" 1
+1 8311 73 "" 1
 0
 2 8061
 "PRIMITIVE_TEXT163"
@@ -128,161 +119,16 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "0"
-E E 0 1 3 2 1 E 2.065217391304348 0 1.623376623376624 -961.3043478260871 -471.7272727272729 0 E 480 322 941 631
+E E 0 1 3 2 1 E 2.065217391304348 0 1.928571428571429 -961.3043478260871 -570 0 E 480 322 941 631
 1
 LANG:10027 56 MS Shell Dlg 2,-1,16,5,75,0,0,0,0,0,Полужирный
 0 1
 LANG:10027 90 Настройки розжига, контроля пламени и управления
-30 8132
-"FRAME4"
-""
-1 480 322 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
- E E
-1355 0 0 0 0 0
-E E E
-1
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-E E 0 1 3 2 1 E 0.9781923844560426 0 0.3571428571428575 -188.5008413886801 464.9999999999999 0 E 480 322 941 631
-1
-LANG:10027 56 MS Shell Dlg 2,-1,16,5,75,0,0,0,0,0,Полужирный
-0 1
-LANG:10027 41 Специальные настройки
-13 8172
-"PUSH_BUTTON7"
-""
-1 580 634 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-1359 0 0 0 0 0
-E E E
-8
-1
-LANG:10027 0 
-
-1
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
-0  578 627 713.7472884904951 658
-
-T 
-1
-LANG:10027 15 Вкл/Откл
-"main(mapping event)
-{
-  bool ServiceMode;
-  if (getUserPermission(6))
-  {
-    dpGet(\"System1:SERVICE_MODE.:_online.._value\",ServiceMode);
-    if (!ServiceMode) dpSet(\"System1:CMD_SERVICE_MODE.:_original.._value\", true);
-      else dpSet(\"System1:CMD_SERVICE_OFF.:_original.._value\", true);
-  }
-  else dpSet(\"System1:CMD_SERVICE_OFF.:_original.._value\", true);
-
-}" 0
- E E "main()
-{
- B_value();
-}
-
-B_value()
-{
-  dpConnect(\"B_value_CB\",\"System1:SERVICE_MODE.:_online.._value\");
-}
-
-B_value_CB(string dp1, bool bNewValue)
-{
-  if (bNewValue)
-  {
-    setValue(\"\",\"text\",\"Отключить\");
-  }
-  else setValue(\"\",\"text\",\"Включить\");
-
-}
-
-" 0
-
-2 8209
-"PRIMITIVE_TEXT182"
-""
-1 309.5764751552795 634.7071428571428 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
- E E
-1360 0 0 0 0 0
-E E E
+1 8319 99 "" 3
 0
-1
-LANG:10027 0 
-
-4
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-"main()
-{
- B_value();
-}
-
-B_value()
-{
-  dpConnect(\"B_value_CB\",\"System1:SERVICE_MODE.:_online.._value\");
-}
-
-B_value_CB(string dp1, bool bNewValue)
-{
-  if (bNewValue)
-  {
-    setValue(\"\", \"backCol\", \"Red\");
-    setValue(\"\", \"foreCol\", \"White\");
-    setValue(\"\",\"text\",\"СЕРВИСНЫЙ РЕЖИМ - ВКЛЮЧЕН\");
-  }
-  else
-  {
-    setValue(\"\", \"backCol\", \"{240,240,240}\");
-    setValue(\"\", \"foreCol\", \"Black\");
-    setValue(\"\",\"text\",\"СЕРВИСНЫЙ РЕЖИМ - ОТКЛЮЧЕН\");
-  }
-}
-
-" 0
- E 0 1 3 2 1 E U  1 E 309.5764751552795 634.7071428571428 568 653
-0 2 2 "0s" 0 0 0 192 0 0  309.5764751552795 634.7071428571428 1
-1
-LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 48 СЕРВИСНЫЙ РЕЖИМ - ОТКЛЮЧЕН
-2 8246
-"PRIMITIVE_TEXT183"
-""
-1 741 692.0000000000001 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
- E E
-1361 0 0 0 0 0
-E E E
+1 8320 100 "" 3
 0
-1
-LANG:10027 0 
-
-4
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-E E 0 1 3 2 1 E U  0 E 283 692.0000000000001 741 710
-0 2 2 "0s" 0 0 0 194 0 0  741 692.0000000000001 1
-1
-LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 101 Для изменения настроек необходим уровень доступа "service"
-1 8284 99 "" 3
-0
-1 8285 100 "" 3
-0
-1 8286 101 "" 3
+1 8321 101 "" 3
 0
 2 8274
 "PRIMITIVE_TEXT184"
@@ -350,12 +196,144 @@ E E 0 1 3 2 1 E U  0 E 267 414.198129251701 512 432
 LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 57 Время на определение погасания
-1 8287 102 "" 3
+1 8322 102 "" 3
 0
-1 8288 103 "" 3
+1 8323 103 "" 3
 0
-1 8289 104 "" 3
+1 8324 104 "" 3
 0
+2 8290
+"PRIMITIVE_TEXT36"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1370 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 421.4228901135321 -196.955709280176 0 E 127.1987156164183 286.5885074854114 144 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4 мс
+2 8291
+"PRIMITIVE_TEXT187"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1371 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 420.4722505622224 -143.8135973663136 0 E 127.1987156164183 286.5885074854114 144 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4 мс
+2 8292
+"PRIMITIVE_TEXT188"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1372 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 419.4722505622224 -90.03264498536115 0 E 127.1987156164183 286.5885074854114 144 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4 мс
+2 8293
+"PRIMITIVE_TEXT189"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1373 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 419.4722505622224 -30.59454974726594 0 E 127.1987156164183 286.5885074854114 144 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4 мс
+2 8294
+"PRIMITIVE_TEXT190"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1374 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 418.4722505622224 24.18640263368638 0 E 127.1987156164183 286.5885074854114 144 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4 мс
+2 8295
+"PRIMITIVE_TEXT191"
+""
+1 127.1987156164183 286.5885074854114 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1375 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.466998393017748 0 1.178794577225161 417.4722505622224 76.96735501463888 0 E 127.1987156164183 286.5885074854114 144 301
+0 2 2 "0s" 0 0 0 192 0 0  127.1987156164183 286.5885074854114 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4 мс
 0
 LAYER, 1 
 1
@@ -364,6 +342,132 @@ LANG:10027 0
 LAYER, 2 
 1
 LANG:10027 0 
+6 8309
+"RECTANGLE5"
+""
+1 10 10 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+1376 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E 1.012871287128713 0 1.00921052631579 -10.62871287128729 -11.09210526315826 3 1 10 3 E 10 10 1020 770
+2 8310
+"PRIMITIVE_TEXT58"
+""
+1 480 160 E E E 1 E 1 E N "Red" E N "_Window" E E
+ E E
+1377 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1 0 1.23284468453098 41.99999999999994 186.6284281327775 0 E 255 51 705 270
+0 2 2 "0s" 0 0 0 201 0 0  480 160 3
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 НЕТ СВЯЗИ С
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 ИСТОЧНИКОМ
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 13 ДАННЫХ 
 0
 LAYER, 3 
 1

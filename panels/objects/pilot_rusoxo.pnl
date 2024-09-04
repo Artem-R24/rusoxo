@@ -1,9 +1,8 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 222 319 N "_3DFace" 2
+PANEL,-1 -1 216 211 N "_3DFace" 1
 "$num"
-"$te"
 E E E E E 1 -1 -1 0  2 35
 ""0  1
 E E 3
@@ -16,126 +15,10 @@ DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
 1
 LANG:10027 0 
-31 6
-"PIPE120"
-""
-1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
- E E
-1 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "1"
-E E 0 1 3 2 1 E 1.016103506799958e-16 1.848484848484848 -0.8240202043644713 5.620533199270172e-17 520.6736458044087 -613.8787878787874 0 0 0 3 2 410 520
-443 520
-1 58 0 "" 1
-0
-10 8
-"POLYGON10"
-""
-1 110 120 E E E 1 E 1 E N {0,0,0} E N "STD_led_Off" E E
- E E
-3 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "1"
-"// SimpleCtrlScriptStart {valid}
-main()
-{
-  EP_setVisible();
-}
-
-void EP_setVisible()
-{
-  dyn_errClass err;
-
-  if( !dpExists(\"hh_4011\"+ $num + \".Firing:_online.._value\"))
-  {
-    setValue(\"\", \"color\", \"_dpdoesnotexist\");
-    return;
-  }
-
-  dpConnect(\"EP_setVisibleCB\",
-           \"hh_4011\"+ $num + \".Firing:_online.._value\");
-  err = getLastError();
-  if (dynlen(err) > 0)
-    setValue(\"\", \"color\", \"_dpdoesnotexist\");
-
-}
-
-
-void EP_setVisibleCB(string dp, bool boNewValue)
-{
-    setValue(\"\", \"backCol\", (boNewValue) ? \"green\" : \"\");
-}
-
-// SimpleCtrlScript {EP_setBackColor}
-// DP {System1:WALL_TEMP.}
-// DPConfig {:_online.._value}
-// DPType {bool}
-// AlertHdl {FALSE}
-// DPEInvalid {}
-// DPEConfigInvalid {}
-// Operator1 {notequal}
-// Operant1 {0}
-// Color1 {\\{230,230,230\\}}
-// Operator2 {equal}
-// Operant2 {1}
-// Color2 {<\\{255,0,0\\},4,\\{230,230,230\\},4>}
-// SimpleCtrlScriptEnd {EP_setBackColor}
-" 0
- E 0 1 3 2 1 E 0.4835237718515457 0 0.5375 29.47143422226814 140.5 1 E 5 110 120
-150 120
-150 180
-130 200
-110 180
- 1
-31 9
-"PIPE1"
-""
-1 270 120 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
- E E
-4 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "1"
-E E 0 1 3 2 1 E 1 0 1.155555555555555 -132 -60.66666666666656 0 0 0 4 10 270 120
-270 130
-270 140
-270 150
-270 160
-270 170
-270 180
-270 190
-270 200
-270 210
-1 63 1 "" 5
-31 "transform" 0 0 1 0 -1 0 404
-0
-1 64 1 "" 6
-31 "transform" 0 0 1 0 -1 0 404
-0
 6 12
 "RECTANGLE29"
 ""
-1 210 30 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+1 210 30 E E E 1 E 0 E N {0,0,0} E N {255,255,255} E E
  E E
 6 0 0 0 0 0
 E E E
@@ -157,14 +40,14 @@ void EP_setVisible()
 {
   dyn_errClass err;
 
-  if( !dpExists(\"hh_4011\"+ $num + \".Flame:_online.._value\"))
+  if( !dpExists(\"es4011\" + $num + \".ProgUse:_online.._value\"))
   {
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
     return;
   }
 
   dpConnect(\"EP_setVisibleCB\",
-           \"hh_4011\"+ $num + \".Flame:_online.._value\");
+           \"es4011\"+ $num + \".ProgUse:_online.._value\");
   err = getLastError();
   if (dynlen(err) > 0)
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
@@ -186,61 +69,106 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // Value {TRUE}
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
- E -1 1 3 2 1 E 0.3379463171036217 0 0.7035528456411583 58.03127340823944 201.8934146307652 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
-13 29
-"PUSH_BUTTON2"
+ E -1 1 3 2 1 E 0.4452504831033156 0 0.8125639001420712 54.78475438364757 105.6230829957379 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
+1 109 0 "" 5
+31 "transform" 0 0 1 0 -1 -2.8421709430404e-14 220.4999999999999
+0
+1 110 0 "" 6
+31 "transform" 0 0 1 0 -1 0 220.5
+0
+31 86
+"PIPE1"
 ""
-1 53.406192548165 89.00000000000004 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 204 231 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
  E E
-9 0 0 0 0 0
+18 0 0 0 0 0
 E E E
-8
+0
 1
 LANG:10027 0 
 
-1
+3
 "layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  51.406192548165 81.6891879060714 129.9119057037113 109.0567611193568
-
-T 
-1
-LANG:10027 8 СТОП
-"// SimpleCtrlScriptStart {valid}
-main(mapping event)
-{
-   EP_childPanelOn();
-}
-
-void EP_childPanelOn()
-{
-  ChildPanelOnCentralModal(\"vision/Confirm.pnl\",
-      \"\",
-      makeDynString(\"$cmd:CMD_STOP_GD\" + $num + \".\", \"$msg:Остановить горелку?\"));
-}
-
-// SimpleCtrlScript {EP_childPanelOn}
-// Function {ChildPanelOnRelativModal}
-// File {vision/Confirm.pnl}
-// Panel {}
-// Parent {}
-// Module {}
-// OffsetX {130}
-// OffsetY {-40}
-// PanelPara1 {$cmd:System1:CMD_START.}
-// PanelPara2 {$msg:\"Начать розжиг горелок?\"}
-// SimpleCtrlScriptEnd {EP_childPanelOn}
-" 0
- E E E
-1 65 2 "7" 0
-0
-2 43
-"PRIMITIVE_TEXT38"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 0.2951388888888889 -44.58138208707328 23.32291666666669 0 0 0 6 2 204 231
+204 87
+10 89
+"POLYGON18"
 ""
-1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+1 110 120 E E E 1 E 1 E N {0,0,0} E N {230,230,230} E E
  E E
-10 0 0 0 0 0
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists(\"hh_4011\"+ $num+\".Firing:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            \"hh_4011\"+$num+\".Firing:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"STD_led_Off\");
+  else
+    setValue(\"\", \"backCol\", \"STD_led_On\");
+}" 0
+ E 0 1 3 2 1 E 0.4549879990509625 0 0.4312500000000001 35.80168013286524 72.24999999999999 1 E 5 110 120
+150 120
+150 180
+130 200
+110 180
+ 1
+4 90
+"LINE1"
+""
+1 94.95012000949038 124 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  94.95012000949038 124 95.04987999050962 85
+1 111 1 "" 1
+0
+2 98
+"PRIMITIVE_TEXT1"
+""
+1 59.41861791292673 52.12819500710366 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+22 0 0 0 0 0
 E E E
 0
 1
@@ -251,25 +179,22 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "0"
 "transformable" "0"
-"// SimpleCtrlScriptStart {valid}
-main()
+"main()
 {
-  setValue(\"\", \"text\", $te);
-}
-
-" 0
- E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 -221.539487340977 -646.2224060804383 0 E 165 323 199 336
-0 2 2 "0s" 0 0 0 201 0 0  182.4628986514007 328.7982270920354 1
+  this.text(\"te4011\"+$num);
+}" 0
+ E 0 1 3 2 1 E U  0 E 59.41861791292673 52.12819500710366 122 70
+0 2 2 "0s" 0 0 0 192 0 0  59.41861791292673 52.12819500710366 1
 1
-LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 6 te####
-2 57
-"PRIMITIVE_TEXT39"
+2 99
+"PRIMITIVE_TEXT165"
 ""
-1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+1 128.0498799905096 77.00000000000003 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
  E E
-11 0 0 0 0 0
+23 0 0 0 0 0
 E E E
 0
 1
@@ -280,25 +205,62 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "0"
 "transformable" "0"
-"// SimpleCtrlScriptStart {valid}
-main()
+E E 0 1 3 2 1 E U  0 E 128.0498799905096 77.00000000000003 148 95
+0 2 2 "0s" 0 0 0 192 0 0  128.0498799905096 77.00000000000003 1
+1
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 4 °С
+1 116 2 "" 3
+0
+6 108
+"RECTANGLE30"
+""
+1 23 156 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+5
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"mousePressedCB" "main()
 {
-  setValue(\"\", \"text\", \"es4011\"+$num);
+  EP_setDP();
 }
 
-" 0
- E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 -160.0250978970819 -550.3940418703039 0 E 182.4628986514007 323 220 336
-0 2 2 "0s" 0 0 0 200 0 0  182.4628986514007 328.7982270920354 1
-1
-LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 6 es####
+void EP_setDP()
+{
+  dyn_errClass err;
+
+  dpSetWait(\"CMD_STOP_GD\"+$num+\".:_original.._value\", 1);
+  err = getLastError();
+  if (dynlen(err) > 0)
+    errorDialog(err);
+}"
+"mouseReleasedCB" "main()
+{
+  EP_setDP();
+}
+
+void EP_setDP()
+{
+  dyn_errClass err;
+
+  dpSetWait(\"CMD_STOP_GD\"+$num+\".:_original.._value\", 0);
+  err = getLastError();
+  if (dynlen(err) > 0)
+    errorDialog(err);
+}"
+"antiAliased" "0"
+E E -1 1 3 2 1 E 1 0 1 86.41861791292669 -48.68590249644819 2  1 0  "pictures/stop.xpm" 4294967295 E 23 156 55 188
 0
 LAYER, 1 
 1
 LANG:10027 0 
-1 66 2 "" 0
-0
 0
 LAYER, 2 
 1
@@ -327,25 +289,21 @@ LANG:10027 0
 3 0 "PANEL_REF1" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/value_ind.pnl" 2 35 T 0 1 0 1 42.14638502808536 91.11111111111106
+"objects/Burner.pnl" 176.5 306 T 17 1 0 1 59.41861791292672 3.500000000000028
+0
+3 1 "PANEL_REF185" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/value_ind.pnl" 24.59389378429718 126 T 21 1 0 1 16.99010863562893 -51.71226265673828
 4
 "$b_Alarm""TRUE"
 "$b_Diag""TRUE"
 "$b_IBit""TRUE"
-"$dp_value""$te"
-3 1 "PANEL_REF2" -1
+"$dp_value""\"te4011\"+$num"
+3 2 "PANEL_REF186" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/Burner.pnl" 231.8333333333333 289 T 5 1 0 1 -17.33333333333334 112.4999999999999
-0
-3 2 "PANEL_REF3" -1
-"layoutAlignment" "AlignNone"
-"" ""
-"objects/STD_LEDS/Led_1.pnl" 138 158.8888888888889 T 10 0.6757339664723139 0 0.6629438907677174 54.88249600462554 71.9293267232086
-5
-"$b_IBit""TRUE"
-"$b_ShowAlert""TRUE"
-"$dpe_value""\"es4011\"+$num+\".ProgUse\""
-"$s_ColOff""STD_led_Off"
-"$s_ColOn""green"
+"objects/ignition.pnl" 159.4186179129267 150.3140975035518 T 25 1 0 1 -6 15
+1
+"$dpe_fail""\"ignition_fall_\"+$num+\".\""
 0

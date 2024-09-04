@@ -1,7 +1,9 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 94 71 N "_3DFace" 0
+PANEL,-1 -1 94 71 N "_3DFace" 2
+"$Alarm1"
+"$Alarm2"
 E E E E E 1 -1 -1 0  20 30
 ""0  1
 E E 3
@@ -30,7 +32,7 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "0"
 "// SimpleCtrlScriptStart {valid}
-/*main()
+main()
 {
   EP_setVisible();
 }
@@ -39,14 +41,20 @@ void EP_setVisible()
 {
   dyn_errClass err;
 
-  if( !dpExists( $Alarm+\":_online.._value\"))
+  if( !dpExists( $Alarm1+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  if( !dpExists( $Alarm2+\":_online.._value\"))
   {
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
     return;
   }
 
   dpConnect(\"EP_setVisibleCB\",
-            $Alarm+\":_online.._value\");
+            $Alarm1+\":_online.._value\",$Alarm2+\":_online.._value\");
   err = getLastError();
   if (dynlen(err) > 0)
     setValue(\"\", \"color\", \"_dpdoesnotexist\");
@@ -54,11 +62,11 @@ void EP_setVisible()
 }
 
 
-void EP_setVisibleCB(string dp, bool boNewValue)
+void EP_setVisibleCB(string dp, bool bval1, string dp2, bool bval2)
 {
-    setValue(\"\", \"visible\", boNewValue);
+    setValue(\"\", \"visible\", bval1 || bval2);
 }
-*/
+
 // SimpleCtrlScript {EP_setVisible}
 // DP {System1:SV0276.Alarm}
 // DPConfig {:_online.._value}

@@ -14,7 +14,8 @@ WCCILevent       | always |      30 |        3 |        1 |
 WCCILproxy       | manual |      30 |        2 |        2 |
 WCCOActrl        | always |      30 |        3 |        1 |-f pvss_scripts.lst
 WCCILsim         | always |      30 |        3 |        1 |
-WCCOAui          |   once |      30 |        3 |        1 |-m gedi
 WCCOAmod         | always |      30 |        2 |        2 |-num 3
 WCCOActrl        |   once |      30 |        2 |        2 |BitsScript.ctl
-WCCOActrl        | manual |      30 |        2 |        2 |BitsScript2.ctl
+WCCOAui          | manual |      30 |        3 |        1 |-m gedi
+WCCOAui          | manual |      30 |        2 |        2 |-p vision/startup.pnl
+WCCOAui          | manual |      30 |        2 |        2 |-p Collector1.pnl -user operator:

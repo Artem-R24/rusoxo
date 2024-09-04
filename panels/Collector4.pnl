@@ -1,7 +1,8 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 1104 768 N "white" 0
+PANEL,-1 -1 1023 768 N "white" 1
+"$nitro"
 E E E E E 1 -1 -1 0  168.3154711605943 47.59968904555126
 ""0  1
 E E 3
@@ -14,8 +15,6 @@ DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
 1
 LANG:10027 0 
-1 349 8 "" 1
-0
 31 1
 "PIPE125"
 ""
@@ -31,46 +30,12 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 2 1 E -24.54669710693486 0 0.8240202043644713 11204.14581384329 -20.4905062695251 0 0 0 3 2 410 520
-443 520
-31 2
-"PIPE121"
-""
-1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
- E E
-9 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "1"
-E E 0 1 3 2 1 E 1.016103506799958e-16 1.18462852906275 -0.8240202043644713 3.602000839691683e-17 1045.490506269524 119.3023030842724 0 0 0 3 2 410 520
-443 520
-31 3
-"PIPE120"
-""
-1 410 520 E E E 1 E 1 E N {0,0,0} E N "white" E E
- E E
-10 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "1"
-E E 0 1 3 2 1 E 1.016103506799958e-16 1.18462852906275 -0.8240202043644713 3.602000839691683e-17 961.0690964668471 119.3023030842724 0 0 0 3 2 410 520
+E E 0 1 3 2 1 E -25.62864595364756 0 0.8240202043644713 11633.41740610938 -87.1624750080742 0 0 0 3 2 410 520
 443 520
 2 4
 "PRIMITIVE_TEXT37"
 ""
-1 364.8948513636801 14.94406638837927 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+1 327.822100007186 14.94406638837927 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
  E E
 11 0 0 0 0 0
 E E E
@@ -83,16 +48,12 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "0"
 "transformable" "0"
-E E 0 1 3 2 1 E U  0 E 364.8948513636801 14.94406638837927 731 43
-0 2 2 "0s" 0 0 0 192 0 0  364.8948513636801 14.94406638837927 1
+E E 0 1 3 2 1 E U  0 E 327.822100007186 14.94406638837927 694 43
+0 2 2 "0s" 0 0 0 192 0 0  327.822100007186 14.94406638837927 1
 1
 LANG:10027 56 MS Shell Dlg 2,-1,24,5,75,0,0,0,0,0,Полужирный
 0 1
 LANG:10027 46 Коллектор склада ГЖ и ЛВЖ
-1 265 0 "" 1
-0
-1 270 1 "" 1
-0
 31 15
 "PIPE119"
 ""
@@ -108,35 +69,16 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 2 1 E 28.97647058823506 0 -0.434782608695652 -7814.364705882288 805.8260869565217 0 0 0 3 3 310.3333333333336 524
+E E 0 1 3 2 1 E 28.97647058823506 0 -0.434782608695652 -7892.901081560536 735.8260869565217 0 0 0 3 3 310.3333333333336 524
 282 524
 282 547
-1 275 2 "" 6
+1 364 4 "" 7
 0
-31 38
-"PIPE122"
-""
-1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
- E E
-13 0 0 0 0 0
-E E E
+1 371 5 "" 143
 0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "1"
-E E 0 1 3 2 1 E 3.072907047954782e-16 -0.8455537466579612 5.134228187919462 5.296984151975682e-17 -2045.979865771812 277.643699354573 0 0 0 6 2 240 350
-240 648
-1 295 4 "" 1
+1 414 6 "" 7
 0
-1 301 5 "" 1
-0
-1 337 6 "" 7
-0
-1 343 7 "" 7
+1 420 7 "" 7
 0
 10 95
 "POLYGON11"
@@ -153,7 +95,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 2 1 E 1 0 1 -435.0000000000009 233.2122626567379 1 E 4 614 381
+E E 0 1 3 2 1 E 1 0 1 -604 287.9999997801957 1 E 4 614 381
 614 398
 658 398
 614 381
@@ -173,7 +115,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 2 1 E 1.140158032474183e-16 -0.8455537466579612 1.904981640400691 5.296984151975682e-17 -494.4281029796475 845.8769655862899 0 0 0 6 2 240 350
+E E 0 1 3 2 1 E 1.671018734574104e-16 -0.8455537466579612 2.791946308724834 5.296984151975682e-17 -1069.181208053692 858.8769655862899 0 0 0 6 2 240 350
 240 648
 9 97
 "ARC1"
@@ -190,12 +132,12 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 1 1 E 0.7071067811865476 0.7071067811865476 -0.7071067811865476 0.7071067811865476 493.9268401470814 3.775469807360992 1 E 626 278 18.384776 18.384776
+E E 0 1 3 1 1 E 0.7071067811865476 0.7071067811865476 -0.7071067811865476 0.7071067811865476 493.9268401470814 16.77546980736099 1 E 626 278 18.384776 18.384776
  0 639 291 599 251 1
 13 176
 "PUSH_BUTTON5"
 ""
-1 23.66155004003324 648.7272727272727 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 19.66155004003324 16.69930592146238 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 17 0 0 0 0 0
 E E E
@@ -207,7 +149,7 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  21.66155004003324 636.5 113.0038588670937 685.5
+0  17.66155004003324 4.472033194189635 109.0038588670937 53.47203319418963
 
 T 
 1
@@ -224,62 +166,165 @@ void EP_childPanelOn()
       makeDynString(\"\"));
 }" 0
  E E E
-2 263
-"PRIMITIVE_TEXT38"
+1 426 9 "" 1
+0
+1 434 10 "" 1
+0
+1 452 11 "" 12
+0
+31 38
+"PIPE122"
 ""
-1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+1 240 350 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
  E E
-23 0 0 0 0 0
+13 0 0 0 0 0
 E E E
 0
 1
 LANG:10027 0 
 
-4
+3
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-E E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 218.4838445643951 -172.0507702905729 0 E 156 323 208 336
-0 2 2 "0s" 0 0 0 201 0 0  182.4628986514007 328.7982270920354 1
-1
-LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 10 pit401104a
-2 264
-"PRIMITIVE_TEXT39"
-""
-1 182.4628986514007 328.7982270920354 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
- E E
-24 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-4
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-E E 0 1 3 2 1 E 1.713565999472231 0 2.319676835179209 303.3567218250366 -172.0507702905729 0 E 156 323 208 336
-0 2 2 "0s" 0 0 0 201 0 0  182.4628986514007 328.7982270920354 1
-1
-LANG:10027 41 Arial,-1,11,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 10 pit401104b
-1 353 9 "" 1
+"antiAliased" "1"
+E E 0 1 3 2 1 E 3.072907047954782e-16 -0.8455537466579612 5.134228187919462 5.296984151975682e-17 -2045.979865771812 267.643699354573 0 0 0 6 2 240 350
+240 648
+1 467 12 "" 1
 0
 0
 LAYER, 1 
 1
 LANG:10027 0 
-1 290 2 "2" 0
-0
 0
 LAYER, 2 
 1
 LANG:10027 0 
+6 362
+"RECTANGLE5"
+""
+1 10 10 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E 1.012173563561897 0 1.008650045418571 -10.41703483313492 -9.66053497229958 3 1 10 3 E 10 10 1020 770
+2 363
+"PRIMITIVE_TEXT58"
+""
+1 480 160 E E E 1 E 1 E N "Red" E N "_Window" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"visible\",
+           (uNewValue != 1));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {System1:_Mod_Plc_1.ConnState}
+// DPConfig {:_online.._value}
+// DPTyp {unsigned}
+// Active {1}
+// Operator {notequal}
+// Value {1}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.111758091476831 0 1.281960474454884 -11.30814769927781 178.4669347590818 0 E 255 51 705 270
+0 2 2 "0s" 0 0 0 201 0 0  480 160 3
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 НЕТ СВЯЗИ С
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 20 ИСТОЧНИКОМ
+1
+LANG:10027 41 Arial,-1,64,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 13 ДАННЫХ 
 0
 LAYER, 3 
 1
@@ -301,64 +346,50 @@ LAYER, 7
 1
 LANG:10027 0 
 0
-3 0 "PANEL_REF10" -1
-"layoutAlignment" "AlignNone"
-"" ""
-"objects/value_ind.pnl" 81.99999999999997 335 T 0 0.8455537466579612 0 0.8240202043644713 422.4206250385125 325.2409688811637
-4
-"$b_Alarm""FALSE"
-"$b_Diag""TRUE"
-"$b_IBit""TRUE"
-"$dp_value""pit401104a"
-3 1 "PANEL_REF11" -1
-"layoutAlignment" "AlignNone"
-"" ""
-"objects/value_ind.pnl" 81.99999999999997 335 T 1 0.8455537466579612 0 0.8240202043644713 507.8420348411887 325.2409688811638
-4
-"$b_Alarm""FALSE"
-"$b_Diag""TRUE"
-"$b_IBit""TRUE"
-"$dp_value""pit401104b"
-3 2 "PANEL_REF12" -1
-"layoutAlignment" "AlignNone"
-"" ""
-"objects/pilot_rusoxo.pnl" 88.10553003198731 -18.28919984333766 T 2 1 0 1 146.5532782893619 50
-2
-"$num""10"
-"$te""te401110"
 3 4 "PANEL_REF16" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/first_stage_rusoxo.pnl" 56.59087031175326 267.1552446011067 T 4 1 0 1 152.9498031299058 67
-0
+"objects/first_stage_rusoxo.pnl" 56.59087031175326 267.1552446011067 T 4 1 0 1 89.90912968824591 -33.91052857928122
+1
+"$nitro""$nitro"
 3 5 "PANEL_REF17" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/stage_rusoxo_with_receiver.pnl" 146.704311941523 274.3181888961178 T 5 1 0 1 129.9999999999995 67
-4
-"$num""2"
-"$sens_num1""401110"
-"$sens_num2""401120"
-"$sens_num3""401124"
+"objects/stage_rusoxo_with_receiver.pnl" 146.704311941523 274.3181888961178 T 5 1 0 1 76.29568805847606 -70.56818889611782
+3
+"$main""401110"
+"$nitro""401120"
+"$second""401124"
 3 6 "PANEL_REF18" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/to_eject.pnl" 96.54067344165962 275.1552446011067 T 6 1 0 1 172.4593265583399 56.84475539889331
+"objects/to_eject.pnl" 96.54067344165962 275.1552446011067 T 6 1 0 1 117.3865752018463 -11.82721333965583
 0
 3 7 "PANEL_REF19" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/to_eject.pnl" 96.54067344165962 275.1552446011067 T 7 1 0 1 340.9941334432595 56.87536070895027
+"objects/to_eject.pnl" 96.54067344165962 275.1552446011067 T 7 1 0 1 318.7257234845397 -12.41948836804102
 0
-3 8 "PANEL_REF20" -1
-"layoutAlignment" "AlignNone"
-"" ""
-"objects/check_pit_ab.pnl" 1137 605.4245253134764 T 22 1 0 1 -562.7892794142034 24.57547468652342
-1
-"$num""4"
 3 9 "PANEL_REF97" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/Navigator.pnl" 27.55037815036528 733 T 25 1 0 1 39.78232630319818 -19.55681818181824
+"objects/Navigator.pnl" 27.55037815036528 733 T 25 1 0 1 -27.05037815036528 -7.55681818181824
+0
+3 10 "PANEL_REF104" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/pit_ab.pnl" 885.8321566403509 538.2727660164066 T 37 1 0 1 -424.0293840359049 -4.52775645869178
+1
+"$num""4"
+3 11 "PANEL_REF106" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/pilot_rusoxo.pnl" 1.196230817078415 54.48888622274964 T 39 1 0 1 104.8037691829216 -0.4888862227496418
+1
+"$num""10"
+3 12 "PANEL_REF107" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/commands.pnl" 913 140.4838790778111 T 44 1 0 1 20 38.51612092218889
 0
 0
