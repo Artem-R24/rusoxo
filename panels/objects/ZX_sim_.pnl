@@ -1,7 +1,7 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 227 207 N "_3DFace" 1
+PANEL,-1 -1 161 148 N "_3DFace" 1
 "$sens_num"
 E E E E E 1 -1 -1 0  91 57
 ""0  1
@@ -34,7 +34,7 @@ LANG:10027 0
 {
   this.text(\"ZX-4011\"+$sens_num);
 }" 0
- E 0 1 3 2 1 E 1.633663366336633 0 2.338983050847458 -129.6633663366336 -125.3220338983051 0 E 91 57 193 117
+ E 0 1 3 2 1 E 1.237623762376237 0 1.898305084745763 -93.62376237623761 -100.2033898305085 0 E 91 57 193 117
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
 0 1
@@ -85,7 +85,7 @@ void EP_setBackColorCB(string dp, bool boNewValue)
   this.backCol(boNewValue ? \"\" : \"yellow\");
 }
 " 0
- E 0 1 2 1 1 E 0.5333333333333337 0 0.5625 -23.00000000000004 14.25 1 E 12 120 60
+ E 0 1 2 1 1 E 0.4040404040404044 0 0.4565217391304348 -12.81818181818186 28.07246376811595 1 E 12 120 60
 180 60
 160 90
 170 90
@@ -144,7 +144,7 @@ void EP_setBackColorCB(string dp, bool boNewValue)
   this.backCol(boNewValue ? \"\" : \"yellow\");
 }
 " 0
- E 0 1 2 1 1 E 0.5333333333333337 0 0.5625 57.99999999999996 14.25 1 E 12 120 60
+ E 0 1 2 1 1 E 0.4040404040404044 0 0.4565217391304348 48.54545454545452 28.07246376811595 1 E 12 120 60
 180 60
 160 90
 170 90
@@ -173,10 +173,10 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "0"
 "transformable" "0"
-E E 0 1 3 2 1 E U  0 E 36 121 87 133
+E E 0 1 3 2 1 E 0.7575757575757578 0 0.8115942028985507 7.861660483493722 -71.49275362318841 0 E 36 121 75 130
 0 2 2 "0s" 0 0 0 192 0 0  36 121 1
 1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10027 49 MS Shell Dlg 2,-1,8,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 14 ОТКРЫТО
 2 61
@@ -195,12 +195,84 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "0"
 "transformable" "0"
-E E 0 1 3 2 1 E U  0 E 115.5277551619713 121 165 133
+E E 0 1 3 2 1 E 0.7575757575757578 0 0.8115942028985507 9.257246239652957 -71.51611015429224 0 E 115.5277551619713 121 152 130
 0 2 2 "0s" 0 0 0 192 0 0  115.5277551619713 121 1
 1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10027 49 MS Shell Dlg 2,-1,8,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 14 ЗАКРЫТО
+6 90
+"RECTANGLE1"
+""
+1 34 139 E E E 1 E 1 E N {0,0,0} E N {143,199,255} E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_toggleDP();
+}
+
+void EP_toggleDP()
+{
+bool bo;
+
+  dpGet(\"System1:zx_4011\"+$sens_num+\".OP.SimSet.SetSimValue:_online.._value\", bo);
+  dpSet(\"System1:zx_4011\"+$sens_num+\".OP.SimSet.SetSimValue:_original.._value\", !bo);
+}
+
+// SimpleCtrlScript {EP_toggleDP}
+// DP {System1:zx_401101.OP.SimSet.SetSimValue}
+// Config {:_original.._value}
+// DPType {bool}
+// SimpleCtrlScriptEnd {EP_toggleDP}
+" 0
+ 0 1 3 2 1 E 1 0 1 1.909090909090935 -41.01449275362317 1 E 34 139 57 153
+6 91
+"RECTANGLE2"
+""
+1 34 139 E E E 1 E 1 E N {0,0,0} E N {143,199,255} E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_toggleDP();
+}
+
+void EP_toggleDP()
+{
+bool bo;
+
+  dpGet(\"System1:zx_4011\"+$sens_num+\".CL.SimSet.SetSimValue:_online.._value\", bo);
+  dpSet(\"System1:zx_4011\"+$sens_num+\".CL.SimSet.SetSimValue:_original.._value\", !bo);
+}
+
+// SimpleCtrlScript {EP_toggleDP}
+// DP {System1:zx_401101.OP.SimSet.SetSimValue}
+// Config {:_original.._value}
+// DPType {bool}
+// SimpleCtrlScriptEnd {EP_toggleDP}
+" 0
+ 0 1 3 2 1 E 1 0 1 63.65151515151518 -41.01449275362317 1 E 34 139 57 153
 0
 LAYER, 1 
 1
@@ -262,14 +334,14 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // Value {TRUE}
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
- E 0 1 3 2 1 E 0.4030431254464376 0 2.252815601710126 15.47398747803901 -15.17704194100751 1 E 15.50000000000006 22.14019153330516 210.5000000000001 57.14019153330516
+ E 0 1 3 2 1 E 0.3053357010957862 0 1.828372082547349 16.3287783924538 12.18964712034174 1 E 15.50000000000006 22.14019153330516 210.5000000000001 57.14019153330516
 0 2 2 "0s" 0 0 0 73 0 0  15.50000000000006 22.14019153330516 2
 1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10027 49 MS Shell Dlg 2,-1,8,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 18 Симуляция
 1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10027 49 MS Shell Dlg 2,-1,8,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 18 отключена
 2 59
@@ -329,16 +401,20 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // Value {TRUE}
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
- E 0 1 3 2 1 E 0.4030431254464376 0 2.252815601710126 95.67956944188009 -15.17704194100751 1 E 15.50000000000006 22.14019153330516 210.5000000000001 57.14019153330516
+ E 0 1 3 2 1 E 0.3053357010957862 0 1.828372082547349 77.09058291051522 12.18964712034174 1 E 15.50000000000006 22.14019153330516 210.5000000000001 57.14019153330516
 0 2 2 "0s" 0 0 0 73 0 0  15.50000000000006 22.14019153330516 2
 1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10027 49 MS Shell Dlg 2,-1,8,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 18 Симуляция
 1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10027 49 MS Shell Dlg 2,-1,8,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 18 отключена
+1 62 0 "" 0
+0
+1 76 1 "" 0
+0
 0
 LAYER, 2 
 1
@@ -364,4 +440,24 @@ LAYER, 7
 1
 LANG:10027 0 
 0
+3 0 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_SWITCHES/switch_1.pnl" 257 17 T 19 -1.592040838891555e-16 0.8666666666666647 -0.8039215686274509 -1.47677996367769e-16 89.6666666666667 -110.7333333333328
+5
+"$b_IBit""TRUE"
+"$b_Toggle""TRUE"
+"$dpe_value_Off""\"zx_4011\"+$sens_num+\".OP.SimSet.SetSimOn\""
+"$dpe_value_On""\"zx_4011\"+$sens_num+\".OP.SimSet.SetSimOn\""
+"$dpe_value_Rm""\"zx_4011\"+$sens_num+\".OP.SimSet.SetSimOn\""
+3 1 "PANEL_REF5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_SWITCHES/switch_1.pnl" 257 17 T 21 -1.592040838891555e-16 0.8666666666666647 -0.8039215686274509 -1.47677996367769e-16 155.7937539105844 -110.6697333426975
+5
+"$b_IBit""TRUE"
+"$b_Toggle""TRUE"
+"$dpe_value_Off""\"zx_4011\"+$sens_num+\".CL.SimSet.SetSimOn\""
+"$dpe_value_On""\"zx_4011\"+$sens_num+\".CL.SimSet.SetSimOn\""
+"$dpe_value_Rm""\"zx_4011\"+$sens_num+\".CL.SimSet.SetSimOn\""
 0

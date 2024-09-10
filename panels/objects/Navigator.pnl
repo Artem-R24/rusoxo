@@ -165,51 +165,6 @@ void EP_childPanelOn()
 // SimpleCtrlScriptEnd {EP_childPanelOn}
 " 0
  E E E
-13 6
-"PUSH_BUTTON5"
-""
-1 477.9639830508476 15.66906523855892 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
- E E
-5 0 0 0 116 0
-E E E
-8
-1
-LANG:10027 0 
-
-2
-"layoutAlignment" "AlignNone"
-"focusPolicy" "NoFocus"
-1
-LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
-0  575.9131355932203 1.917497565725427 723.9131355932203 38.91749756572543
-
-T 
-1
-LANG:10027 39 Настройки параметров
-"// SimpleCtrlScriptStart {valid}
-main()
-{
-  EP_childPanelOn();
-}
-
-void EP_childPanelOn()
-{
-  RootPanelOn(\"Settings.pnl\",
-      \"\",
-      makeDynString(\"\"));
-}
-
-// SimpleCtrlScript {EP_childPanelOn}
-// Function {RootPanelOn}
-// File {Scale_SP.pnl}
-// Panel {}
-// Parent {}
-// Module {}
-// OffsetX {0}
-// OffsetY {0}
-// SimpleCtrlScriptEnd {EP_childPanelOn}
-" 0
- E E E
 13 7
 "PUSH_BUTTON6"
 ""
@@ -258,7 +213,7 @@ void EP_childPanelOn()
 14 10
 "TEXT_FIELD1"
 ""
-1 15.56683168316763 490 E E E 1 E 1 E N "STD_text" E N "STD_textfield_back" E E
+1 -1498.718069306931 490 E E E 1 E 1 E N "STD_text" E N "STD_textfield_back" E E
  "main(mapping event)
 {
   STD_UserPopup();
@@ -279,7 +234,7 @@ LANG:10001 12 Current user
 LANG:10027 41 Arial,-1,17,5,50,0,0,0,0,0,Обычный
 LANG:10000 26 Arial,-1,13,5,75,0,0,0,0,0
 LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
-0  901 2 1015 39
+0  734 2 1015 39
 2 "0s" 0 0 0 9 0 -1  E "main()
 {
 STD_showUser();
@@ -289,7 +244,7 @@ STD_showUser();
 13 11
 "PUSH_BUTTON7"
 ""
-1 621.9856991525426 15.64843962999026 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+1 477.9314088983052 15.65875243427459 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
  E E
 8 0 0 0 116 0
 E E E
@@ -302,7 +257,7 @@ LANG:10027 0
 "focusPolicy" "NoFocus"
 1
 LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
-0  719.9348516949153 1.896871957156769 867.9348516949153 38.89687195715677
+0  575.880561440678 1.907184761441098 723.880561440678 38.9071847614411
 
 T 
 1

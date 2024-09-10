@@ -1,7 +1,7 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 131 168 N "_3DFace" 0
+PANEL,-1 -1 131 189 N "_3DFace" 0
 E E E E E 1 -1 -1 0  42.99999999999989 41.44364142652663
 ""0  1
 E E 3
@@ -326,7 +326,7 @@ void EP_setVisibleCB(string dp, bool start, string dp2, bool stop)
 // Value {TRUE}
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
- E 0 1 3 2 1 E 1.207340227608454 0 1.669673269970299 -743.0848955758203 138.9103739535992 1 E 620 -5 716 10
+ E 0 1 3 2 1 E 1.207340227608454 0 1.669673269970299 -743.0848955758203 165.9103739535992 1 E 620 -5 716 10
 0 2 2 "0s" 0 0 0 73 0 0  668.1249999999998 1.953207950720483 1
 1
 LANG:10027 56 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0,Полужирный
@@ -380,6 +380,86 @@ void EP_setDP()
   if (dynlen(err) > 0)
     errorDialog(err);
 }" 0
+ "main()
+{
+  EP_setEnabled();
+}
+
+void EP_setEnabled()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:_Mod_Plc_3.ConnState:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setEnabledCB\",
+            \"System1:_Mod_Plc_3.ConnState:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setEnabledCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"enabled\",
+           (uNewValue == 1));
+}" 0
+
+13 6
+"PUSH_BUTTON11"
+""
+1 3.17699307316915 129.6949998403514 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+5 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  1.17699307316915 121.1386412668781 125.1769930731695 153.9866189901607
+
+T 
+1
+LANG:10027 26 КВИТ. ЗАДВИЖКИ
+E "main()
+{
+  EP_setDP();
+}
+
+void EP_setDP()
+{
+  dyn_errClass err;
+
+  dpSetWait(\"System1:CMD_NOT_MOVE_ACK.:_original.._value\", 1);
+  err = getLastError();
+  if (dynlen(err) > 0)
+    errorDialog(err);
+}
+" 0
+ "main()
+{
+  EP_setDP();
+}
+
+void EP_setDP()
+{
+  dyn_errClass err;
+
+  dpSetWait(\"System1:CMD_NOT_MOVE_ACK.:_original.._value\", 0);
+  err = getLastError();
+  if (dynlen(err) > 0)
+    errorDialog(err);
+}
+" 0
  "main()
 {
   EP_setEnabled();

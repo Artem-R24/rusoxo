@@ -16,36 +16,12 @@ DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
 LAYER, 0 
 1
 LANG:10027 0 
-1 79 0 "" 2
-0
 1 81 1 "" 3
 0
-2 8
-"PRIMITIVE_TEXT1"
-""
-1 130.0169497566088 45.45310681293188 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
- E E
-2 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-4
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-E E 0 1 3 2 1 E U  0 E 130.0169497566088 45.45310681293188 145 57
-0 2 2 "0s" 0 0 0 192 0 0  130.0169497566088 45.45310681293188 1
-1
-LANG:10027 50 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 4 мА
 2 55
 "PRIMITIVE_TEXT153"
 ""
-1 225.936934138439 44.45310681293189 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+1 170 43 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
  E E
 10 0 0 0 0 0
 E E E
@@ -62,8 +38,8 @@ LANG:10027 0
 {
   this.text($unit);
 }" 0
- E 0 1 3 2 1 E U  0 E 225.936934138439 44.45310681293189 246 56
-0 2 2 "0s" 0 0 0 192 0 0  225.936934138439 44.45310681293189 1
+ E 0 1 3 2 1 E U  0 E 170 43 190.063065861561 54.54689318706811
+0 2 2 "0s" 0 0 0 192 0 0  170 43 1
 1
 LANG:10027 50 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0,Обычный
 0 1
@@ -87,7 +63,7 @@ LANG:10027 0
 {
   this.text($dp_value);
 }" 0
- E 0 1 3 2 1 E 0.8171206225680934 0 0.7702702702702701 24.93774319066149 6.986486486486496 0 E 27 13 285 88
+ E 0 1 3 2 1 E 0.8171206225680934 0 0.7702702702702701 11.93774319066149 6.986486486486495 0 E 27 13 285 88
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
 0 1
@@ -99,7 +75,7 @@ LANG:10027 0
 2 78
 "PRIMITIVE_TEXT154"
 ""
-1 54.5 32.5 E E E 0 E 1 E N "_WindowText" E N {187,187,187} E E
+1 41.5 32.5 E E E 0 E 1 E N "_WindowText" E N {187,187,187} E E
  E E
 13 0 0 0 0 0
 E E E
@@ -153,12 +129,14 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // Value {TRUE}
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
- E 0 1 3 2 1 E U  1 E 54.5 32.5 249.5 67.5
-0 2 2 "0s" 0 0 0 73 0 0  54.5 32.5 1
+ E 0 1 3 2 1 E U  1 E 41.5 32.5 236.5 67.5
+0 2 2 "0s" 0 0 0 73 0 0  41.5 32.5 1
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
 0 1
 LANG:10027 37 Симуляция отключена
+1 86 2 "" 0
+0
 0
 LAYER, 2 
 1
@@ -184,20 +162,23 @@ LAYER, 7
 1
 LANG:10027 0 
 0
-3 0 "PANEL_REF1" -1
-"layoutAlignment" "AlignNone"
-"" ""
-"objects/RAW_value_ind.pnl" 40 50 T 0 1 0 1 48.45844592029169 20.56627816843061
-2
-"$b_IBit""false"
-"$dpe_value""$dp_value + \".raw_value\""
 3 1 "PANEL_REF2" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/simvalue_ind.pnl" 142 51.69086651053863 T 1 1 0 1 36.91998438183014 18.30913348946137
+"objects/simvalue_ind.pnl" 142 51.69086651053863 T 1 1 0 1 -19.01694975660886 16.85602667652948
 4
 "$b_Alarm""TRUE"
 "$b_Diag""TRUE"
 "$b_IBit""false"
 "$dp_value""$dp_value"
+3 2 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_SWITCHES/switch_1.pnl" 257 17 T 14 0.8666666666666647 0 0.8039215686274509 13.60000000000048 5.294117647058824
+5
+"$b_IBit""TRUE"
+"$b_Toggle""TRUE"
+"$dpe_value_Off""$dp_value+\".Alms.SetSimOn\""
+"$dpe_value_On""$dp_value+\".Alms.SetSimOn\""
+"$dpe_value_Rm""$dp_value+\".Alms.SetSimOn\""
 0

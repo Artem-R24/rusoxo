@@ -1,7 +1,7 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 234 265 N "_3DFace" 1
+PANEL,-1 -1 255 320 N "_3DFace" 1
 "$gd_num"
 E E E E E 1 -1 -1 0  50 33
 ""0  1
@@ -93,13 +93,49 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // Value {TRUE}
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
- E -1 1 3 2 1 E 0.8426252415516575 0 1.28092584266141 -82.01693176463948 81.52593258708721 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
-1 6 0 "" 5
-31 "transform" 0 0 1 0 -1 7.105427357601002e-15 177.6396103633776
+ E -1 1 3 2 1 E 0.8426252415516575 0 1.28092584266141 -82.01693176463948 121.5259325870872 2  1 0  "pictures/flameGD.png" 4294967295 E 210 30 260 80
+1 9 0 "" 5
+31 "transform" 0 0 1 0 -1 7.105427357601002e-15 257.6396103633775
 0
-1 7 0 "" 6
-31 "transform" 0 0 1 0 -1 0 177.6396103633775
+1 10 0 "" 6
+31 "transform" 0 0 0.9999999999999999 0 -0.9999999999999999 -1.4210854715202e-14 257.6396103633775
 0
+6 8
+"RECTANGLE1"
+""
+1 34 139 E E E 1 E 1 E N {0,0,0} E N {143,199,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_toggleDP();
+}
+
+void EP_toggleDP()
+{
+bool bo;
+
+  dpGet(\"System1:es4011\"+$gd_num+\".SimSet.SetSimValue:_online.._value\", bo);
+  dpSet(\"System1:es4011\"+$gd_num+\".SimSet.SetSimValue:_original.._value\", !bo);
+}
+
+// SimpleCtrlScript {EP_toggleDP}
+// DP {System1:zx_401101.OP.SimSet.SetSimValue}
+// Config {:_original.._value}
+// DPType {bool}
+// SimpleCtrlScriptEnd {EP_toggleDP}
+" 0
+ 0 1 3 2 1 E 2.195652173913045 0 2.358178053830227 15.09782608695643 -278.8012422360247 1 E 34 139 57 153
 0
 LAYER, 1 
 1
@@ -171,6 +207,8 @@ LANG:10027 18 Симуляция
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
 0 1
 LANG:10027 18 отключена
+1 11 1 "" 0
+0
 0
 LAYER, 2 
 1
@@ -199,6 +237,16 @@ LANG:10027 0
 3 0 "PANEL_REF1" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/Burner.pnl" 176.5 306 T 1 1.892474626144617 0 1.576400135961552 -73.24746261446174 -79.46090933220685
+"objects/Burner.pnl" 176.5 306 T 1 1.892474626144617 0 1.576400135961552 -73.24746261446174 -39.46090933220685
 0
+3 1 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_SWITCHES/switch_1.pnl" 257 17 T 5 -1.9371853881857e-16 1.054554608199112 -0.9119067917021881 -1.675145600368225e-16 164.075886183182 -39.09737474343501
+5
+"$b_IBit""TRUE"
+"$b_Toggle""TRUE"
+"$dpe_value_Off""\"es4011\"+$gd_num+\".SimSet.SetSimOn\""
+"$dpe_value_On""\"es4011\"+$gd_num+\".SimSet.SetSimOn\""
+"$dpe_value_Rm""\"es4011\"+$gd_num+\".SimSet.SetSimOn\""
 0

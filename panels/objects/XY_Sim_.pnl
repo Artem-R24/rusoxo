@@ -1,7 +1,7 @@
 V 14
 1
 LANG:10027 0 
-PANEL,-1 -1 117 126 N "_3DFace" 1
+PANEL,-1 -1 156 126 N "_3DFace" 1
 "$sens_num"
 E E E E E 1 -1 -1 0  52 72
 ""0  1
@@ -39,7 +39,43 @@ LANG:10027 0
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
 0 1
 LANG:10027 6 SENSOR
-1 241 7 "" 6
+6 259
+"RECTANGLE1"
+""
+1 34 139 E E E 1 E 1 E N {0,0,0} E N {143,199,255} E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_toggleDP();
+}
+
+void EP_toggleDP()
+{
+bool bo;
+
+  dpGet(\"System1:xy_4011\"+$sens_num+\".SimSet.SetSimValue:_online.._value\", bo);
+  dpSet(\"System1:xy_4011\"+$sens_num+\".SimSet.SetSimValue:_original.._value\", !bo);
+}
+
+// SimpleCtrlScript {EP_toggleDP}
+// DP {System1:zx_401101.OP.SimSet.SetSimValue}
+// Config {:_original.._value}
+// DPType {bool}
+// SimpleCtrlScriptEnd {EP_toggleDP}
+" 0
+ 0 1 3 2 1 E 1.388586956521739 0 1.214285714285717 -6.149456521739136 -87.78571428571475 1 E 34 139 57 153
+1 279 9 "" 6
 0
 0
 LAYER, 1 
@@ -102,7 +138,7 @@ void EP_setVisibleCB(string dp, bool boNewValue)
 // Value {TRUE}
 // SimpleCtrlScriptEnd {EP_setVisible}
 " 0
- E 0 1 3 2 1 E 0.4733355278382862 0 2.225342240713661 5.654194680975885 -23.64375170881397 1 E 15.50000000000006 22.14019153330516 210.5000000000001 57.14019153330516
+ E 0 1 3 2 1 E 0.4733355278382862 0 2.225342240713661 5.654194680975885 -22.64375170881397 1 E 15.50000000000006 22.14019153330516 210.5000000000001 57.14019153330516
 0 2 2 "0s" 0 0 0 73 0 0  15.50000000000006 22.14019153330516 2
 1
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
@@ -112,6 +148,8 @@ LANG:10027 18 Симуляция
 LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
 0 1
 LANG:10027 18 отключена
+1 260 8 "" 0
+0
 0
 LAYER, 2 
 1
@@ -137,10 +175,22 @@ LAYER, 7
 1
 LANG:10027 0 
 0
-3 7 "PANEL_REF11" -1
+3 8 "PANEL_REF3" -1
 "layoutAlignment" "AlignNone"
 "" ""
-"objects/Valve.pnl" 70.25 300.0905740388325 T 18 1 0 1 -25.25 -173.0905740388325
-1
+"objects/STD_SWITCHES/switch_1.pnl" 257 17 T 20 0.8666666666666647 0 0.8039215686274509 -122.258671222802 21.29411764705878
+5
+"$b_IBit""TRUE"
+"$b_Toggle""TRUE"
+"$dpe_value_Off""\"xy_4011\"+$sens_num+\".SimSet.SetSimOn\""
+"$dpe_value_On""\"xy_4011\"+$sens_num+\".SimSet.SetSimOn\""
+"$dpe_value_Rm""\"xy_4011\"+$sens_num+\".SimSet.SetSimOn\""
+3 9 "PANEL_REF4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Valve.pnl" 44.978515625 116 T 21 U 
+3
+"$Sim""\"xy_4011\"+$sens_num+\".SimOn\""
 "$State""\"xy_4011\"+$sens_num+\".SimValue\""
+"$simflag""1"
 0

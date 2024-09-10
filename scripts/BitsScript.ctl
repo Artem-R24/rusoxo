@@ -208,17 +208,88 @@ InitDyns()
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-  DPL_TOPACK[1]="commands.";
+  for(int i=0; i<70; ++i)
+  {
+    DPL_TOPACK[i+1]="cmd_byte"+i+".";
+  }
 
-  DPL_FROMPACK[1][1]="CMD_START.";
-  DPL_FROMPACK[1][2]="CMD_STOP.";
-  DPL_FROMPACK[1][3]="CMD_ACK.";
+  for(int i=1; i<=8; ++i)
+  {
+    DPL_FROMPACK[1][2*i-1]="zx_40110"+i+".OP.SimSet.SetSimOn";
+    DPL_FROMPACK[1][2*i]="zx_40110"+i+".CL.SimSet.SetSimOn";
+
+    DPL_FROMPACK[2][2*i-1]="zx_4011"+(i+8<10 ? "0" : "")+(i+8)+".OP.SimSet.SetSimOn";
+    DPL_FROMPACK[2][2*i]="zx_4011"+(i+8<10 ? "0" : "")+(i+8)+".CL.SimSet.SetSimOn";
+
+    DPL_FROMPACK[3][2*i-1]="zx_4011"+(i+16>20 ? i+20 : i+16)+".OP.SimSet.SetSimOn";
+    DPL_FROMPACK[3][2*i]="zx_4011"+(i+16>20 ? i+20 : i+16)+".CL.SimSet.SetSimOn";
+  }
+  for(int i=1; i<=8; ++i)
+  {
+    DPL_FROMPACK[11][2*i-1]="zx_40110"+i+".OP.SimSet.SetSimValue";
+    DPL_FROMPACK[11][2*i]="zx_40110"+i+".CL.SimSet.SetSimValue";
+
+    DPL_FROMPACK[12][2*i-1]="zx_4011"+(i+8<10 ? "0" : "")+(i+8)+".OP.SimSet.SetSimValue";
+    DPL_FROMPACK[12][2*i]="zx_4011"+(i+8<10 ? "0" : "")+(i+8)+".CL.SimSet.SetSimValue";
+
+    DPL_FROMPACK[13][2*i-1]="zx_4011"+(i+16>20 ? i+20 : i+16)+".OP.SimSet.SetSimValue";
+    DPL_FROMPACK[13][2*i]="zx_4011"+(i+16>20 ? i+20 : i+16)+".CL.SimSet.SetSimValue";
+  }
+
+  bit=1; word=6;
+  for(int i=1; i<=28; ++i)
+  {
+    if(bit==17) {++word; bit=1;}
+    DPL_FROMPACK[word][bit++]="xy_4011"+(i<10 ? "0" : "")+i+".SimSet.SetSimOn";
+  }
+  bit=1; word=16;
+  for(int i=1; i<=28; ++i)
+  {
+    if(bit==17) {++word; bit=1;}
+    DPL_FROMPACK[word][bit++]="xy_4011"+(i<10 ? "0" : "")+i+".SimSet.SetSimValue";
+  }
+  bit=1; word=26;
+  for(int i=1; i<=28; ++i)
+  {
+    if(bit==17) {++word; bit=1;}
+    DPL_FROMPACK[word][bit++]="xy_4011"+(i<10 ? "0" : "")+i+".SetProgUse";
+  }
+  for(int i=1; i<=10; ++i)
+  {
+    DPL_FROMPACK[8][i]="es4011"+(i<10 ? "0" : "")+i+".SimSet.SetSimOn";
+    DPL_FROMPACK[18][i]="es4011"+(i<10 ? "0" : "")+i+".SimSet.SetSimValue";
+    DPL_FROMPACK[28][i]="es4011"+(i<10 ? "0" : "")+i+".SetProgUse";
+  }
+
+  bit=1; word=58;
+  for(int i=1; i<=4; ++i)
+  {
+    DPL_FROMPACK[word][bit++]="pit40110"+i+"a.Alms.SetSimOn";
+    DPL_FROMPACK[word][bit++]="pit40110"+i+"b.Alms.SetSimOn";
+  }
+  for(int i=5;i<=20;++i)
+  {
+    if(i==13||i==17) continue;
+
+    if(bit==17) {++word; bit=1;}
+    DPL_FROMPACK[word][bit++]="pit4011"+(i<10 ? "0" : "")+i+".Alms.SetSimOn";
+  }
+  DPL_FROMPACK[word][bit++]="tt401112.Alms.SetSimOn";
+  for(int i=1;i<=10;++i)
+  {
+    if(bit==17) {++word; bit=1;}
+    DPL_FROMPACK[word][bit++]="te4011"+(i<10 ? "0" : "")+i+".Alms.SetSimOn";
+  }
+
+  DPL_FROMPACK[61][1]="CMD_START.";
+  DPL_FROMPACK[61][2]="CMD_STOP.";
+  DPL_FROMPACK[61][3]="CMD_ACK.";
   for(int i=4;i<=13;++i)
   {
-    DPL_FROMPACK[1][i]="CMD_STOP_GD"+(i<13 ? "0" : "")+(i-3)+".";
+    DPL_FROMPACK[61][i]="CMD_STOP_GD"+(i<13 ? "0" : "")+(i-3)+".";
   }
-  DPL_FROMPACK[1][14]="CMD_STOP_LOCK.";
-  DPL_FROMPACK[1][15]="CMD_NOT_MOVE_ACK.";
+  DPL_FROMPACK[61][14]="CMD_STOP_LOCK.";
+  DPL_FROMPACK[61][15]="CMD_NOT_MOVE_ACK.";
 
 }
 

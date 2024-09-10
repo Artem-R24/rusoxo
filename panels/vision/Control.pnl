@@ -61,12 +61,12 @@ void EP_childPanelOn()
 {
   if (this.selectedPos() == 1)
   {
-    dpSetWait($SV+\".CMD.Open:_original.._value\", true);
+    dpSetWait($SV+\".SetProgUse:_original.._value\", true);
     PanelOff();
   }
   if (this.selectedPos() == 2)
   {
-    dpSetWait($SV+\".CMD.Close:_original.._value\", true);
+    dpSetWait($SV+\".SetProgUse:_original.._value\", false);
     PanelOff();
   }
   if (this.selectedPos() == 3) PanelOff();

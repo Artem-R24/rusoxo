@@ -196,7 +196,7 @@ E E 0 1 3 2 1 E 1 0 0.9992283950617283 -158.1249999999998 14.04829915417977 1 E 
 LANG:10027 56 MS Shell Dlg 2,-1,24,5,75,0,0,0,0,0,Полужирный
 0 1
 LANG:10027 29 ПОДГОТОВКА ГАЗА
-1 7273 5 "" 1
+1 7355 5 "" 1
 0
 31 6254
 "PIPE1"
@@ -213,9 +213,9 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "dashclr"N "_Transparent"
 "antiAliased" "1"
-E E 0 1 3 2 1 E 1.11684563018831 0 1 -128.1791941131817 -26.40000000000001 0 0 0 6 2 70 240
+E E 0 1 3 2 1 E 2.520618556701031 0 1 -226.4432989690721 -26.40000000000001 0 0 0 6 2 70 240
 458 240
-1 7278 13 "" 1
+1 7360 13 "" 1
 0
 10 6269
 "POLYGON32"
@@ -256,7 +256,7 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "1"
 E E 0 1 3 2 1 E  802.3004662866067 435.5656492784032 802.3004662866067 396.5656492784032
-1 7283 16 "" 1
+1 7365 16 "" 1
 0
 31 6382
 "PIPE5"
@@ -275,7 +275,7 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E 2.536082474226804 0 1 -232.5257731958763 195.9141261133002 0 0 0 6 2 70 240
 458 240
-1 7288 17 "" 1
+1 7370 17 "" 1
 0
 10 6395
 "POLYGON36"
@@ -332,7 +332,7 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "1"
 E E 0 1 3 2 1 E  99.13386520205333 683.4560130744073 99.13386520205333 644.4560130744073
-1 7293 20 "" 1
+1 7375 20 "" 1
 0
 31 6445
 "PIPE7"
@@ -351,7 +351,7 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E 2.747422680412371 0 1 -335.319587628866 444.2708671593682 0 0 0 3 2 70 240
 458 240
-1 7298 21 "" 1
+1 7380 21 "" 1
 0
 10 6458
 "POLYGON38"
@@ -452,70 +452,7 @@ E E 0 1 3 2 1 E 1.054780329477736 0 1.085611407719969 118.0853356407641 274.9997
 LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 38 Блок подготовки пара
-31 6488
-"PIPE13"
-""
-1 70 240 E E E 1 E 1 E N {0,0,0} E N "Yellow" E E
- E E
-423 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-3
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "1"
-E E 0 1 3 2 1 E 1.286082474226804 0 1 339.974226804124 -25.88744185060474 0 0 0 6 2 70 240
-458 240
-29 6859
-"LCD2"
-""
-1 365.6881516394558 195.2132459388475 E E E 1 E 1 E N "green" E N {0,0,0} E E
- E E
-451 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-10
-"digitCount" "int 4"
-"segmentStyle" "enum 2"
-"frameShadow" "enum 16"
-"frameShape" "enum 0"
-"decimals" "int 1"
-"value" "float 888"
-"lineWidth" "int 3"
-"smallDecimalPoint" "bool TRUE"
-"intValue" "int 888"
-"layoutAlignment" "AlignNone"
-1
-LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
-0  365.6881516394558 195.2132459388475 429.0000000000001 233
-19 NUMLED.NumLEDCtrl.1
-0
-"main()
-{
-  dyn_errClass err;
-  if(!dpExists(\"buf.fit401101\"))
-  {
-    setValue(\"\", \"color\", \"_dpdoesnotexist\");
-    return;
-  }
-
-  dpConnect(\"flow\",\"buf.fit401101\");
-  err = getLastError();
-  if (dynlen(err) > 0)
-    setValue(\"\", \"color\", \"_dpdoesnotexist\");
-}
-
-flow(string dpe, float newVal)
-{
-  setValue(\"\",\"value\",newVal);
-}" 0
-1 7303 37 "" 1
+1 7385 37 "" 1
 0
 4 6873
 "LINE33"
@@ -533,7 +470,7 @@ LANG:10027 0
 "dashclr"N "_Transparent"
 "antiAliased" "1"
 E E 0 1 3 2 1 E  558.1639081327764 433.360020751699 558.1639081327764 394.360020751699
-1 7308 38 "" 1
+1 7390 38 "" 1
 0
 2 6897
 "PRIMITIVE_TEXT217"
@@ -557,7 +494,7 @@ E E 0 1 3 2 1 E 1.163791214525454 0 1.29848514490904 -43.0729323222557 441.86302
 LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 9  tt401112
-1 7313 41 "" 1
+1 7395 41 "" 1
 0
 2 6961
 "PRIMITIVE_TEXT218"
@@ -581,7 +518,7 @@ E E 0 1 3 2 1 E 1.163791214525454 0 1.29848514490904 32.3193676911829 474.119527
 LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 5  °С
-1 7321 42 "" 1
+1 7402 42 "" 1
 0
 2 7095
 "PRIMITIVE_TEXT219"
@@ -622,9 +559,9 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E 6.123233995736766e-17 -1 1 6.123233995736766e-17 500.1404786475996 844.3483364977728 0 0 0 3 2 194 43
 163 43
-1 7330 44 "" 4
+1 7411 44 "" 4
 0
-1 7326 43 "" 6
+1 7407 43 "" 6
 0
 2 7172
 "PRIMITIVE_TEXT1"
@@ -665,9 +602,9 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E 6.123233995736766e-17 -1 1 6.123233995736766e-17 178.2749629771812 480.2003412735268 0 0 0 3 2 194 43
 163 43
-1 7331 45 "" 4
+1 7412 45 "" 4
 0
-1 7332 46 "" 6
+1 7413 46 "" 6
 0
 31 7178
 "PIPE28"
@@ -686,9 +623,9 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E 6.123233995736766e-17 -1 1 6.123233995736766e-17 663.3720872164106 376.2121286227263 0 0 0 3 2 194 43
 163 43
-1 7336 47 "" 4
+1 7417 47 "" 4
 0
-1 7337 48 "" 6
+1 7418 48 "" 6
 0
 31 7183
 "PIPE29"
@@ -707,9 +644,9 @@ LANG:10027 0
 "antiAliased" "1"
 E E 0 1 3 2 1 E -1 -1.224646799147353e-16 1.224646799147353e-16 -1 825.6431741089856 330.3050537743178 0 0 0 3 2 194 43
 163 43
-1 7341 49 "" 4
+1 7422 49 "" 4
 0
-1 7342 50 "" 6
+1 7423 50 "" 6
 0
 2 7188
 "PRIMITIVE_TEXT221"
@@ -799,28 +736,6 @@ E E 0 1 3 2 1 E U  0 E 42.74417443282098 239.2942833611494 116 257
 LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 9 pit401115
-2 7192
-"PRIMITIVE_TEXT225"
-""
-1 363.3720872164105 169.1178127729141 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
- E E
-502 0 0 0 0 0
-E E E
-0
-1
-LANG:10027 0 
-
-4
-"layoutAlignment" "AlignNone"
-"dashclr"N "_Transparent"
-"antiAliased" "0"
-"transformable" "0"
-E E 0 1 3 2 1 E U  0 E 363.3720872164105 169.1178127729141 433 187
-0 2 2 "0s" 0 0 0 192 0 0  363.3720872164105 169.1178127729141 1
-1
-LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
-0 1
-LANG:10027 9 fit401101
 2 7194
 "PRIMITIVE_TEXT227"
 ""
@@ -1041,18 +956,194 @@ E E 0 1 3 2 1 E U  0 E 606.3852122519894 391 635 409
 LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
 0 1
 LANG:10027 6 кПа
-1 7346 51 "" 1
+1 7427 51 "" 1
 0
-1 7347 52 "" 1
+1 7428 52 "" 1
 0
-1 7348 53 "" 1
+1 7429 53 "" 1
 0
-1 7349 54 "" 1
+1 7430 54 "" 1
 0
 0
 LAYER, 1 
 1
 LANG:10027 0 
+6 7431
+"RECTANGLE40"
+""
+1 177 159 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+523 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.toolTipText(\"xv401126\");
+}" 0
+ "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Control.pnl\",
+      \"\",
+      makeDynString(\"$SV:xy_401126\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Control.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$SV:$SV}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ -1 1 3 2 1 E 1.364732274278459 0 1.315938658648502 -52.06702457010596 41.2082272987782 1 E 177 159 221 227
+6 7434
+"RECTANGLE65"
+""
+1 177 159 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+526 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.toolTipText(\"xv401127\");
+}" 0
+ "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Control.pnl\",
+      \"\",
+      makeDynString(\"$SV:xy_401127\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Control.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$SV:$SV}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ -1 1 3 2 1 E -2.506972517082303e-16 1.364732274278459 -1.315938658648502 -2.417340099282224e-16 895.6274208340974 17.48359615877843 1 E 177 159 221 227
+6 7432
+"RECTANGLE63"
+""
+1 177 159 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+524 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.toolTipText(\"xv401125\");
+}" 0
+ "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Control.pnl\",
+      \"\",
+      makeDynString(\"$SV:xy_401125\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Control.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$SV:$SV}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ -1 1 3 2 1 E 1.364732274278459 0 1.315938658648502 434.0479192413569 -62.93440280455118 1 E 177 159 221 227
+6 7433
+"RECTANGLE64"
+""
+1 177 159 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+525 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.toolTipText(\"xv401128\");
+}" 0
+ "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Control.pnl\",
+      \"\",
+      makeDynString(\"$SV:xy_401128\"));
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnCentralModal}
+// File {vision/Control.pnl}
+// Panel {}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$SV:$SV}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ -1 1 3 2 1 E 1.364732274278459 0 1.315938658648502 269.3190210320601 403.3562225230244 1 E 177 159 221 227
 0
 LAYER, 2 
 1
@@ -1294,14 +1385,16 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 206 230.0647580666103 T 485 -0.6893203883495144 -2.53252202153773e-16 2.640737329038436e-16 -0.718775223157409 693.5562452298327 758.8844704875745
-1
-"$State""\"xy_401127.ProgUse\""
+3
+"$Sim""\"xy_401128.SimOn\""
+"$State""\"xy_401128.ProgUse\""
+"$simflag""0"
 3 44 "PANEL_REF181" -1
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve1.pnl" 108.7768361581914 103.4616231120932 T 486 -8.060175361735134e-17 0.4387755102040818 -0.5220143093010454 -9.589247294919625e-17 622.9886346860258 621.6748671100179
 1
-"$dpe_flap""\"zx_401127\""
+"$dpe_flap""\"zx_401128\""
 3 45 "PANEL_REF244" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1312,8 +1405,10 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 206 230.0647580666103 T 490 -0.6893203883495144 -2.53252202153773e-16 2.640737329038436e-16 -0.718775223157409 371.6907295594143 394.7364752633284
-1
+3
+"$Sim""\"xy_401126.SimOn\""
 "$State""\"xy_401126.ProgUse\""
+"$simflag""0"
 3 47 "PANEL_REF246" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1324,8 +1419,10 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 206 230.0647580666103 T 493 -0.6893203883495144 -2.53252202153773e-16 2.640737329038436e-16 -0.718775223157409 856.7878537986437 290.748262612528
-1
+3
+"$Sim""\"xy_401125.SimOn\""
 "$State""\"xy_401125.ProgUse\""
+"$simflag""0"
 3 49 "PANEL_REF248" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -1336,8 +1433,10 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 206 230.0647580666103 T 496 -2.954609025127352e-16 0.6893203883495144 -0.718775223157409 -3.080860217211509e-16 740.1793080987873 136.8892871920847
-1
+3
+"$Sim""\"xy_401127.SimOn\""
 "$State""\"xy_401127.ProgUse\""
+"$simflag""0"
 3 51 "PANEL_REF187" -1
 "layoutAlignment" "AlignNone"
 "" ""

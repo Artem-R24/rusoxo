@@ -384,6 +384,70 @@ void EP_setBackColorCB(string dpSource1, bool boNewValueOpn,string dpSource2, bo
 LAYER, 1 
 1
 LANG:10027 0 
+6 444
+"RECTANGLE41"
+""
+1 177 159 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+86 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.toolTipText(\"xv\"+$main);
+}" 0
+ "main()
+{
+  if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Control.pnl\",
+      \"\",
+      makeDynString(\"$SV:xy_\" + $main));
+}
+" 0
+ -1 1 3 2 1 E 8.35657505694101e-17 -1.364732274278459 1.315938658648502 8.057800330940749e-17 -152.3289371636954 623.7404316587943 1 E 177 159 221 227
+6 443
+"RECTANGLE40"
+""
+1 177 159 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+85 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.toolTipText(\"xv\"+$nitro);
+}" 0
+ "main()
+{
+  if(getUserPermission(6)) EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentralModal(\"vision/Control.pnl\",
+      \"\",
+      makeDynString(\"$SV:xy_\" + $nitro));
+}
+" 0
+ -1 1 3 2 1 E 1.364732274278459 0 1.315938658648502 -188.6523029858707 23.41652353004476 1 E 177 159 221 227
 0
 LAYER, 2 
 1
@@ -425,8 +489,10 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 206 230.0647580666103 T 58 -1.266261010768865e-16 0.6893203883495144 -0.718775223157409 -1.320368664519218e-16 198.0839814166974 200.6434631238077
-1
+3
+"$Sim""\"xy_\"+$main+\".SimOn\""
 "$State""\"xy_\"+$main+\".ProgUse\""
+"$simflag""0"
 3 5 "PANEL_REF2" -1
 "layoutAlignment" "AlignNone"
 "" ""
@@ -436,8 +502,10 @@ LANG:10027 0
 "layoutAlignment" "AlignNone"
 "" ""
 "objects/Valve.pnl" 206 230.0647580666103 T 60 -0.6893203883495144 -2.53252202153773e-16 2.640737329038436e-16 -0.718775223157409 232.0343749999999 382.7715556167857
-1
+3
+"$Sim""\"xy_\"+$nitro+\".SimOn\""
 "$State""\"xy_\"+$nitro+\".ProgUse\""
+"$simflag""0"
 3 7 "PANEL_REF184" -1
 "layoutAlignment" "AlignNone"
 "" ""
